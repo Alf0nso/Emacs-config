@@ -1,0 +1,128 @@
+name
+mv Machine\ Learning_\ The\ Art\ and\ Science\ of\ Algorithms\ that\ Make\ Sense\ of\ Data\ \(\ PDFDrive.com\ \).pdf books/Machine_Learning.pdf
+clear
+ls
+cd books/
+ls
+cd ..
+cd ..
+clear
+ls
+gcc
+clear
+ls
+clear
+ls
+ff Aprendizagem_automatica.org 
+lls
+clear
+ls
+cd aulas/
+ls
+clear
+ls
+cd AI/
+ls
+ff Vida_artificial.org 
+clear
+cd
+clear
+cd .emacs.d/elpa/
+ls
+cd org-bullets-20200317.1740/
+ls
+ff org-bullets.el
+clear
+cd
+cd aulas/
+ls
+cd AI/
+ls
+clear
+ff test.org
+clear
+ls
+clear
+clear
+ls
+cd aulas/
+ls
+cd AI/
+ls
+clear
+ff Vida_artificial.org 
+[grass] λ 
+clear
+[grass] λ 
+clear
+ls
+clear
+cd aulas/
+ls
+cd AI/
+ls
+clear
+ff Vida_artificial.org 
+ff Vida_artificial.org 
+clear
+ls
+clear
+ls
+clear
+ff Vida_artificial.org 
+clear
+ls
+ff todo.org 
+clear
+ls
+clear
+cd aulas/
+ls
+clear
+cd AI/
+ls
+ff Vida_artificial.org 
+clear
+ls
+clear
+clear
+ls
+ff Vida_artificial.org 
+clear
+ls
+cd aulas/
+ls
+cd AI/
+ls
+clear
+ff Vida_artificial.org 
+clear
+ls
+cd ..
+ls
+cd CS/
+ls
+clear
+ff Computer_security.org 
+clear
+ls
+clear
+cd ..
+clear
+ls
+cd FW/
+ls
+clear
+ff fundamentos_websemantica.org 
+clear
+ls
+cd
+cd aulas/
+ls
+clear
+cd SA/
+ls
+clear
+ff sistemas_multi-agente.org 
+clear
+ls
