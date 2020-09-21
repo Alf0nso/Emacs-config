@@ -20,6 +20,11 @@
 (setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
 
+;; Smex
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
 ;; Treemacs
 (use-package treemacs
   :ensure t
@@ -154,10 +159,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (tango-dark)))
-;; '(gradle-mode t)
  '(package-selected-packages
    (quote
-    (org-bullets treemacs-persp treemacs-magit treemacs-icons-dired treemacs gradle-mode which-key pdf-tools helm gnu-elpa-keyring-update))))
+    (use-package smex pyvenv org-bullets treemacs-persp treemacs-magit treemacs-icons-dired treemacs gradle-mode which-key pdf-tools helm gnu-elpa-keyring-update))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
