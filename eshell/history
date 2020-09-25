@@ -1,128 +1,128 @@
-name
-mv Machine\ Learning_\ The\ Art\ and\ Science\ of\ Algorithms\ that\ Make\ Sense\ of\ Data\ \(\ PDFDrive.com\ \).pdf books/Machine_Learning.pdf
 clear
-ls
-cd books/
-ls
-cd ..
+ls -a
+cd. .
 cd ..
 clear
 ls
-gcc
-clear
-ls
+rm -rf ltximg/
 clear
 ls
 ff Aprendizagem_automatica.org 
-lls
 clear
+ls
+cd aulas/AI/
+cd ..
+cd AA/
+ls
+clear
+cd TP01/
+ls
+cd ..
+clear
+ls
+cd TP01/
+cd ..
+clear
+cd TP00/
+ls
+exit
 ls
 cd aulas/
 ls
 clear
+cd AI/
+ls
+cd exercises/
+ls
+clear
+s
+ls
+clear
+ls
+cd ..
+clear
+ls
+cd ..
+clear
 ls
 cd AI/
 ls
+clear
+ff Vida_artificial.org
+clear
+ls
+clear
 ff Vida_artificial.org 
 clear
+dired
+dired 
+clear
+clear
+ls
+clear
+ls
 cd
-clear
-cd .emacs.d/elpa/
 ls
-cd org-bullets-20200317.1740/
-ls
-ff org-bullets.el
-clear
-cd
-cd aulas/
-ls
-cd AI/
-ls
-clear
-ff test.org
-clear
-ls
-clear
-clear
-ls
-cd aulas/
-ls
-cd AI/
-ls
-clear
-ff Vida_artificial.org 
-[grass] λ 
-clear
-[grass] λ 
-clear
-ls
-clear
-cd aulas/
-ls
-cd AI/
-ls
-clear
-ff Vida_artificial.org 
-ff Vida_artificial.org 
-clear
-ls
-clear
-ls
-clear
-ff Vida_artificial.org 
+cd PrintHood/
 clear
 ls
 ff todo.org 
 clear
 ls
 clear
-cd aulas/
+cd Documents/
 ls
-clear
-cd AI/
-ls
-ff Vida_artificial.org 
-clear
-ls
-clear
-clear
-ls
-ff Vida_artificial.org 
-clear
-ls
-cd aulas/
-ls
-cd AI/
-ls
-clear
-ff Vida_artificial.org 
-clear
+cd TF/
 ls
 cd ..
-ls
-cd CS/
-ls
-clear
-ff Computer_security.org 
 clear
 ls
+cat TODO 
+clearcat TODO 
 clear
-cd ..
+s
+ls
+cd As\ Minhas\ Imagens/
+ls
+explorer .
 clear
 ls
-cd FW/
-ls
 clear
-ff fundamentos_websemantica.org 
+screenfetch
+clear
 clear
 ls
 cd
-cd aulas/
+ls
+hide
+cd Recent/
 ls
 clear
-cd SA/
 ls
 clear
-ff sistemas_multi-agente.org 
+ls
+ff todo.org 
+clear
+ff todo.org 
+clear
+ff todo.org 
+clear
+ls
+clear
+cd
+clear
+cd Application\ Data/
+ccd AppData/
+cd AppData/
+clear
+ls
+cd LocalLow/
+ls
+cd ..
+clear
+cd Local/
+clea
+clear
+ls
 clear
 ls

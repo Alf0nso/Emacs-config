@@ -1,0 +1,45 @@
+
+;; ----- smex-history -----
+(
+ pyvenv-create
+ pyvenv-mode
+ eshell
+ customize-themes
+ list-packages
+ auto-complete-mode
+ flyspell-mode
+)
+
+;; ----- smex-data -----
+(
+ (eshell . 43)
+ (package-install . 3)
+ (list-packages . 2)
+ (pyvenv-workon . 7)
+ (pyvenv-menu . 1)
+ (pyvenv-create . 12)
+ (load-file . 36)
+ (pyvenv-activate . 3)
+ (pyvenv-deactivate . 3)
+ (pyvenv-mode . 8)
+ (org-time-stamp . 7)
+ (org-create-math-formula . 2)
+ (org-latex-convert-region-to-latex . 1)
+ (org-preview-latex-fragment . 3)
+ (inferior-python-mode . 2)
+ (ispell . 3)
+ (flyspell-mode . 14)
+ (ispell-change-dictionary . 3)
+ (ispell-hunspell-add-multi-dic . 1)
+ (global-display-line-numbers-mode . 1)
+ (org-table-create . 1)
+ (load-theme . 11)
+ (package-refresh-contents . 1)
+ (package-list-packages . 2)
+ (customize-themes . 4)
+ (ein:notebooklist-open . 1)
+ (ein:run . 1)
+ (ein:stop . 1)
+ (dired . 1)
+ (auto-complete-mode . 1)
+)
