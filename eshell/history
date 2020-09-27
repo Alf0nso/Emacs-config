@@ -1,42 +1,31 @@
-clear
-ls -a
-cd. .
-cd ..
-clear
-ls
-rm -rf ltximg/
-clear
-ls
-ff Aprendizagem_automatica.org 
-clear
-ls
-cd aulas/AI/
-cd ..
-cd AA/
 ls
 clear
-cd TP01/
 ls
 cd ..
 clear
 ls
-cd TP01/
+ls
 cd ..
 clear
-cd TP00/
 ls
-exit
+cat build.gradle
+cd src/
+clear
 ls
-cd aulas/
+cd main/
+ls
+cd java/
+ls
+cd agent/
 ls
 clear
-cd AI/
-ls
-cd exercises/
 ls
 clear
-s
+cd ..
+cd ..
+clear
 ls
+cd ..
 clear
 ls
 cd ..
@@ -45,84 +34,95 @@ ls
 cd ..
 clear
 ls
-cd AI/
+rmdir /S agent/
+rmdir /R agent/
+rm -rf agent/
+clear
 ls
+mkdir agent
 clear
-ff Vida_artificial.org
-clear
-ls
-clear
-ff Vida_artificial.org 
-clear
-dired
-dired 
-clear
-clear
+cd agent/
 ls
 clear
 ls
-cd
-ls
-cd PrintHood/
 clear
-ls
-ff todo.org 
-clear
-ls
-clear
-cd Documents/
-ls
-cd TF/
-ls
 cd ..
 clear
 ls
-cat TODO 
-clearcat TODO 
+java jade.Boot -gui
 clear
-s
 ls
-cd As\ Minhas\ Imagens/
+cat APDescription.txt 
+rm APDescription.txt 
+rm MTPs-Main-Container.txt 
 ls
+clear
+ls
+clear
+ls
+mkdir img
+cd img/
 explorer .
 clear
 ls
-clear
-screenfetch
-clear
-clear
 ls
-cd
+cd aulas/
 ls
-hide
-cd Recent/
+cd AA/
 ls
-clear
+cd Biblio_Slides/
 ls
-clear
+cd slides/
 ls
-ff todo.org 
+ff AA_202021_T01_compressed.pdf 
 clear
-ff todo.org 
-clear
-ff todo.org 
-clear
-ls
-clear
-cd
-clear
-cd Application\ Data/
-ccd AppData/
-cd AppData/
-clear
-ls
-cd LocalLow/
 ls
 cd ..
 clear
-cd Local/
-clea
+ls
+ls
+cd books/
+ls
 clear
+ff Machine_Learning.pdf
+clear
+ls
+cd ..
+clear
+ls
+cd slides/
+ls
+ff AA_202021_T02.pdf
+ff AA_202021_T02.pdf
+clear
+ls
+ff AA_202021_T01_compressed.pdf
+ff AA_202021_T02.pdf
+clear
+ls
+AA_202021_T01_compressed.pdf
+ff AA_202021_T02.pdf
+ff AA_202021_T01_compressed.pdf 
 ls
 clear
 ls
+compress
+clear
+AA_202021_T02.pdf
+ff AA_202021_T02.pdf
+clear
+ls
+clear
+exit
+cd Pictures/
+cd Screenshots/
+ls
+ff character_sheet.png
+clear
+ff character_sheet.png
+clear
+ls
+clear
+ff character_sheet.png
+cd
+clear

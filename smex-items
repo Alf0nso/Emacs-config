@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
+ eshell
+ flyspell-mode
+ auto-complete-mode
  pyvenv-create
  pyvenv-mode
- eshell
  customize-themes
  list-packages
- auto-complete-mode
- flyspell-mode
 )
 
 ;; ----- smex-data -----
 (
- (eshell . 43)
+ (eshell . 51)
  (package-install . 3)
  (list-packages . 2)
  (pyvenv-workon . 7)
@@ -28,7 +28,7 @@
  (org-preview-latex-fragment . 3)
  (inferior-python-mode . 2)
  (ispell . 3)
- (flyspell-mode . 14)
+ (flyspell-mode . 15)
  (ispell-change-dictionary . 3)
  (ispell-hunspell-add-multi-dic . 1)
  (global-display-line-numbers-mode . 1)
@@ -41,5 +41,5 @@
  (ein:run . 1)
  (ein:stop . 1)
  (dired . 1)
- (auto-complete-mode . 1)
+ (auto-complete-mode . 2)
 )
