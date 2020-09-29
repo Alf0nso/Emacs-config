@@ -4,15 +4,15 @@
  eshell
  flyspell-mode
  auto-complete-mode
- pyvenv-create
- pyvenv-mode
- customize-themes
- list-packages
+ recover-file
+ gdb
+ org-toggle-latex-fragment
+ load-file
 )
 
 ;; ----- smex-data -----
 (
- (eshell . 51)
+ (eshell . 75)
  (package-install . 3)
  (list-packages . 2)
  (pyvenv-workon . 7)
@@ -24,11 +24,11 @@
  (pyvenv-mode . 8)
  (org-time-stamp . 7)
  (org-create-math-formula . 2)
- (org-latex-convert-region-to-latex . 1)
- (org-preview-latex-fragment . 3)
+ (org-latex-convert-region-to-latex . 3)
+ (org-preview-latex-fragment . 6)
  (inferior-python-mode . 2)
  (ispell . 3)
- (flyspell-mode . 15)
+ (flyspell-mode . 17)
  (ispell-change-dictionary . 3)
  (ispell-hunspell-add-multi-dic . 1)
  (global-display-line-numbers-mode . 1)
@@ -41,5 +41,9 @@
  (ein:run . 1)
  (ein:stop . 1)
  (dired . 1)
- (auto-complete-mode . 2)
+ (auto-complete-mode . 4)
+ (org-toggle-latex-fragment . 17)
+ (gdb . 1)
+ (recover-file . 1)
+ (pdf-view-mode . 1)
 )

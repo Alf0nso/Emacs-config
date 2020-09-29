@@ -22,9 +22,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/Users/afons/.emacs.d/"
  "c:/Users/afons/aulas/SA/"
  "c:/Users/afons/"
- "c:/Users/afons/.emacs.d/"
  "c:/Users/afons/aulas/AI/"
  "c:/Users/afons/aulas/AI/abstracts/"
  "c:/Users/afons/Desktop/"
@@ -39,9 +39,9 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "init.el"
  "sistemas_multi-agente.org"
  "todo.org"
- "init.el"
  "Vida_artificial.org"
  "dynamical_systems.tex"
  "Computer Security_ Principles and Practice (2018, Pearson Education Limited) Stallings, William_ Brown, Lawrie.pdf"
@@ -53,11 +53,11 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/afons/" (24431 14138 0 0) "_viminfo" "vimfiles/" "Videos/" "todo.org" "SendTo/" "Searches/" "Recent/" "py_home/" "PrintHood/" "Pictures/" "Os Meus Documentos/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "IntelGraphicsProfiles/" "games/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" ".saves/" ".matplotlib/" ".jupyter/" ".ipython/" ".gradle/" ".gitconfig" ".emacs.d/" "../" "./")
+ ("c:/Users/afons/.emacs.d/" (24433 43106 0 0) "transient/" "smex-items" "request/" "README.md" "places" "init.el" "ido.last" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" ".git/" ".cache/" "../" "./")
+
+ ("c:/Users/afons/" (24432 61158 0 0) "_viminfo" "vimfiles/" "Videos/" "todo.org" "SendTo/" "Searches/" "Recent/" "py_home/" "PrintHood/" "Pictures/" "Os Meus Documentos/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "IntelGraphicsProfiles/" "img/" "games/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" ".saves/" ".matplotlib/" ".jupyter/" ".ipython/" ".gradle/" ".gitconfig" ".emacs.d/" "../" "./")
 
  ("c:/Users/afons/aulas/SA/" (24430 13323 0 0) "smart_agent.png" "sistemas_multi-agente.org" "Biblio/" "agent/" "../" "./")
-
- ("c:/Users/afons/.emacs.d/" (24429 50235 0 0) "transient/" "smex-items" "request/" "README.md" "places" "init.el" "ido.last" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" ".git/" ".cache/" "../" "./")
 
  ("c:/Users/afons/aulas/AI/" (24429 48378 0 0) "Vida_artificial.org" "exercises/" "biblio/" "abstracts/" "../" "./")
 

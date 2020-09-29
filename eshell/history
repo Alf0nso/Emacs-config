@@ -1,128 +1,128 @@
+ff Study.org 
+ff Study.org 
+ff Study.org 
 ls
 clear
-ls
-cd ..
-clear
-ls
-ls
-cd ..
-clear
-ls
-cat build.gradle
-cd src/
-clear
-ls
-cd main/
-ls
-cd java/
-ls
-cd agent/
-ls
-clear
-ls
-clear
-cd ..
-cd ..
-clear
-ls
-cd ..
-clear
-ls
-cd ..
-clear
-ls
-cd ..
-clear
-ls
-rmdir /S agent/
-rmdir /R agent/
-rm -rf agent/
-clear
-ls
-mkdir agent
-clear
-cd agent/
-ls
-clear
-ls
-clear
-cd ..
-clear
-ls
-java jade.Boot -gui
-clear
-ls
-cat APDescription.txt 
-rm APDescription.txt 
-rm MTPs-Main-Container.txt 
-ls
-clear
-ls
-clear
-ls
-mkdir img
-cd img/
-explorer .
-clear
-ls
+ff Study.org 
 ls
 cd aulas/
 ls
-cd AA/
+AA/
 ls
 cd Biblio_Slides/
 ls
-cd slides/
-ls
-ff AA_202021_T01_compressed.pdf 
-clear
-ls
-cd ..
-clear
-ls
-ls
 cd books/
 ls
-clear
 ff Machine_Learning.pdf
 clear
+exit
+cd img/
+ff schedule.png 
+cls
+clear
+ls
+exit
+ls
+ff Books/C.pdf 
+ff Books/C.pdf 
+clear
+ls
+ff img/my_background.jfif 
+ff img/my_background.jfif 
+exit
+ff Books/C.pdf 
+ff Books/C.pdf 
+ff Books/C.pdf
+ls
+ff Books/C.pdf 
+ls
+ff img/my_background.jfif 
+clear
+ff Books/C.pdf 
+clear
+ff Books/C.pdf 
+ff img/my_background.jfif 
+ff Books/C.pdf 
+ff Books/C.pdf 
+ff Books/C.pdf 
+ff Books/C.pdf 
+ff img/my_background.jfif 
+ff Books/C.pdf 
+ff img/my_background.jfif 
+ls
+cd
+clear
+ls
+ff Books/C.pdf 
+clear
+ff Books/C.pdf 
+clear
+exit
+ls
+ff img/my_background.jfif 
+clear
+ls
+clear
+ff Books/C.pdf 
+clear
+ls
+cd aulas/
+l
+clear
+ls
+cd AA/
+ls
+cd Study/
+exit
+ls
+cd aulas/
+cd AA/
+cd Study/
+clear
+ls
+cd ltximg/
+ls
+ff org-ltximg_0cf6e5adf16eef365e9424135c5f8b0e00997622.png 
+clear
+cd
+cd AI
+exit
+ls
+cd aulas/
+ls
+cd aulas/
+ls
+cd AI
+ls
+cd abstracts/
+ls
+cd ..
+cd abstracts
+ls
+cd aulas/
+cd ..
+ls
+cd aulas
+ls
+cd AI
 ls
 cd ..
 clear
-ls
-cd slides/
-ls
-ff AA_202021_T02.pdf
-ff AA_202021_T02.pdf
-clear
-ls
-ff AA_202021_T01_compressed.pdf
-ff AA_202021_T02.pdf
-clear
-ls
-AA_202021_T01_compressed.pdf
-ff AA_202021_T02.pdf
-ff AA_202021_T01_compressed.pdf 
-ls
-clear
-ls
-compress
-clear
-AA_202021_T02.pdf
-ff AA_202021_T02.pdf
-clear
-ls
-clear
-exit
-cd Pictures/
-cd Screenshots/
-ls
-ff character_sheet.png
-clear
-ff character_sheet.png
-clear
-ls
-clear
-ff character_sheet.png
 cd
 clear
+ls
+tree
+clear
+clear
+ls
+cd au
+cd aulas/
+clear
+ls
+cd AI
+ls
+cd abstracts
+exit
+clear
+ls
+exit
