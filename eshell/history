@@ -1,128 +1,128 @@
-ff Study.org 
-ff Study.org 
-ff Study.org 
-ls
-clear
-ff Study.org 
-ls
-cd aulas/
-ls
-AA/
-ls
-cd Biblio_Slides/
-ls
-cd books/
-ls
-ff Machine_Learning.pdf
-clear
-exit
+cd
 cd img/
-ff schedule.png 
-cls
+ls
+clear
+cd img/
 clear
 ls
+cd ..
+clear
+ls
+clear
+cd img/
+clear
+eshell/cd img
+clear
+ls
+cd
+eshell/cd img
+clear
+ls
+cd
+eshell/cd img
+clear
+alias cd eshell/cd
+cleear
+clear
+sl
+ls
+clear
+cd
+clear
+where cd
+clear
+cd img/
+clear
+ls
+clear
+alias
+ff alias
+ff
+alias ff find-file
+ff alias
+clear
+ls
+cd img/
+ls
+clear
+ls
+ff .emacs.d/eshell/alias 
+clear
+cd
+cd
+cd ..
+clear
+ls
+cd ..
+eshell/cd
+ls
+clear
+eshell/cd img/
+clear
+ls
+eshell/cd ..
+ff .emacs.d/init.el
 exit
-ls
-ff Books/C.pdf 
-ff Books/C.pdf 
-clear
-ls
-ff img/my_background.jfif 
-ff img/my_background.jfif 
-exit
-ff Books/C.pdf 
-ff Books/C.pdf 
-ff Books/C.pdf
-ls
-ff Books/C.pdf 
-ls
-ff img/my_background.jfif 
-clear
-ff Books/C.pdf 
-clear
-ff Books/C.pdf 
-ff img/my_background.jfif 
-ff Books/C.pdf 
-ff Books/C.pdf 
-ff Books/C.pdf 
-ff Books/C.pdf 
-ff img/my_background.jfif 
-ff Books/C.pdf 
-ff img/my_background.jfif 
-ls
 cd
 clear
 ls
-ff Books/C.pdf 
-clear
-ff Books/C.pdf 
-clear
-exit
-ls
-ff img/my_background.jfif 
+cd py_home/
 clear
 ls
+cd ..
 clear
-ff Books/C.pdf 
-clear
-ls
-cd aulas/
-l
+eshell/cd img/
+clea
 clear
 ls
-cd AA/
-ls
-cd Study/
-exit
-ls
-cd aulas/
-cd AA/
-cd Study/
 clear
 ls
-cd ltximg/
-ls
-ff org-ltximg_0cf6e5adf16eef365e9424135c5f8b0e00997622.png 
 clear
+alias
 cd
-cd AI
-exit
+where cd
+cd
+clear
+alias
+cd img/
+cd
+eshell/cd img/
+cd img/
+cd
+eshell/cd img/
+cd img/
+cd
+eshell/cd img/
+(version-emacs)
+(emacs-version)
+clear
+clear
+ls
+clear
 ls
 cd aulas/
+cd AA/
 ls
-cd aulas/
+clear
+cd ..
+nasm
+clear
 ls
-cd AI
+clear
+cd AI/
+lcear
+clear
 ls
 cd abstracts/
+cd abstract_2
+clear
+ls
+ff fractals.tex 
+clear
 ls
 cd ..
-cd abstracts
-ls
-cd aulas/
-cd ..
-ls
-cd aulas
-ls
-cd AI
 ls
 cd ..
 clear
-cd
-clear
 ls
-tree
-clear
-clear
-ls
-cd au
-cd aulas/
-clear
-ls
-cd AI
-ls
-cd abstracts
-exit
-clear
-ls
-exit
+ff biblio/slides/dyn-sys.pdf
