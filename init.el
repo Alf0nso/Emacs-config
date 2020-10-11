@@ -155,6 +155,9 @@
     'utf-8))
 (prefer-coding-system 'utf-8)
 
+;; Better frame control
+(global-set-key (kbd "C-x o") 'ace-window)
+
 ;; Theme (colors of the emacs editor)
 (load-theme 'solarized-gruvbox-dark t)
 (custom-set-variables
@@ -164,7 +167,7 @@
  ;; If there is more than one, they won't work right.
  '(ein:output-area-inlined-images t)
  '(package-selected-packages
-   '(pdf-tools ein solarized-theme auto-complete auctex use-package smex pyvenv org-bullets treemacs-persp treemacs-magit treemacs-icons-dired treemacs gradle-mode which-key helm gnu-elpa-keyring-update)))
+   '(ace-window sparql-mode pdf-tools ein solarized-theme auto-complete auctex use-package smex pyvenv org-bullets treemacs-persp treemacs-magit treemacs-icons-dired treemacs gradle-mode which-key helm gnu-elpa-keyring-update)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -207,6 +210,7 @@
 ;;;
 ;; Org
 (setq org-hide-emphasis-markers t)
+(setq org-image-actual-width nil)
 
 ;; Java
 (add-hook 'java-mode-hook 'gradle-mode)
@@ -216,7 +220,13 @@
 (use-package ein
   :ensure t
   :init
-  :config (require 'ein))
+  :config (require 'ein)
+  (require 'ein-notebook)
+  (require 'ein-subpackages))
+
+;; Sparql
+(add-to-list 'auto-mode-alist '("\\.sparql$" . sparql-mode))
+(add-to-list 'auto-mode-alist '("\\.rq$" . sparql-mode))
 
 ;; Latex
 (require 'latex)
@@ -225,3 +235,26 @@
 (add-hook 'TeX-after-compilation-finished-functions
            #'TeX-revert-document-buffer)
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.3))
+(put 'dired-find-alternate-file 'disabled nil)
+
+;; Org-babel
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((sparql . t)))
+
+;; Dired
+(add-hook 'dired-mode-hook
+      (lambda ()
+        (dired-hide-details-mode)))
+
+
+
+;; Start commands
+(treemacs-icons-dired-mode)
+
+
+;; Rebindings
+(global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-S-<down>") 'shrink-window)
+(global-set-key (kbd "C-S-<up>") 'enlarge-window)

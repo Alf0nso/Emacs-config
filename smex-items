@@ -1,48 +1,48 @@
 
 ;; ----- smex-history -----
 (
- flyspell-mode
- auto-complete-mode
- eshell
- emacs-version
  ein:stop
- customize-group
- ein:run
+ run-python
+ eshell
+ pyvenv-workon
+ pyvenv-mode
+ pyvenv-activate
+ pyvenv-deactivate
 )
 
 ;; ----- smex-data -----
 (
- (eshell . 124)
+ (eshell . 221)
  (package-install . 3)
- (list-packages . 2)
- (pyvenv-workon . 8)
+ (list-packages . 4)
+ (pyvenv-workon . 19)
  (pyvenv-menu . 1)
  (pyvenv-create . 12)
- (load-file . 41)
- (pyvenv-activate . 3)
- (pyvenv-deactivate . 3)
- (pyvenv-mode . 9)
- (org-time-stamp . 7)
+ (load-file . 49)
+ (pyvenv-activate . 7)
+ (pyvenv-deactivate . 5)
+ (pyvenv-mode . 24)
+ (org-time-stamp . 17)
  (org-create-math-formula . 2)
  (org-latex-convert-region-to-latex . 3)
  (org-preview-latex-fragment . 6)
  (inferior-python-mode . 2)
  (ispell . 3)
- (flyspell-mode . 18)
+ (flyspell-mode . 50)
  (ispell-change-dictionary . 3)
  (ispell-hunspell-add-multi-dic . 1)
  (global-display-line-numbers-mode . 1)
  (org-table-create . 1)
  (load-theme . 11)
- (package-refresh-contents . 3)
- (package-list-packages . 7)
+ (package-refresh-contents . 7)
+ (package-list-packages . 9)
  (customize-themes . 11)
  (ein:notebooklist-open . 1)
- (ein:run . 2)
- (ein:stop . 2)
- (dired . 1)
- (auto-complete-mode . 5)
- (org-toggle-latex-fragment . 17)
+ (ein:run . 18)
+ (ein:stop . 12)
+ (dired . 49)
+ (auto-complete-mode . 31)
+ (org-toggle-latex-fragment . 24)
  (gdb . 1)
  (recover-file . 2)
  (pdf-view-mode . 1)
@@ -52,8 +52,35 @@
  (message-tab . 1)
  (cd . 2)
  (emacs-version . 2)
- (recover-this-file . 1)
+ (recover-this-file . 2)
  (pdf-tools-install . 2)
  (ein:log-pop-to-all-buffer . 1)
- (customize-group . 1)
+ (customize-group . 2)
+ (profiler-start . 1)
+ (profiler-report . 3)
+ (profiler-stop . 1)
+ (run-python . 9)
+ (pacmacs-start . 1)
+ (treemacs-add-project . 2)
+ (gradle-build . 5)
+ (gradle-execute . 9)
+ (executable-interpret . 1)
+ (image-dired . 3)
+ (org-latex-preview . 15)
+ (global-semantic-idle-completions-mode . 1)
+ (ac-fuzzy-complete . 2)
+ (line-number-mode . 2)
+ (dired-find-file . 1)
+ (life . 1)
+ (tetris . 1)
+ (snake . 1)
+ (calendar . 2)
+ (lisp-mode . 3)
+ (common-lisp-mode . 1)
+ (org-ascii-convert-region-to-utf8 . 1)
+ (python-mode . 1)
+ (gradle-mode . 1)
+ (irc . 1)
+ (erc . 5)
+ (ein:dev-bug-report-template . 1)
 )

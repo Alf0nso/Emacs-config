@@ -1,128 +1,128 @@
-cd
-cd img/
-ls
-clear
-cd img/
 clear
 ls
-cd ..
+git pull
+clear
+ls
+ls
+clear
+git list
+git --help
+git branch list
+git checkout
+git branch list
+git branch
+git branch delete list
+clear
+ls
+git branch
+git branch -d delete
+git branch -d list
+clear
+ls
+git branch
+git branch -a
+git checkout
+clear
+ls
+git checkout master
+clear
+ls
+branch
+git branch
+git pull origin main
+clear
+ls
+branch
+git branch
+git merge main
+git branch -d main
+clear
+git push
+cçear
+clear
+ls
+git checkout main
+git branch
+git merge master
+ls
+ls
+clear
+git merge master
+git branch
+git pull origin master --allow-unrelated-histories
+clear
+ls
+git push
+´clear
+ls
+clear
+ls
+git pull
+clear
+ls
+git branch
+git branch -d master
+git push
+clear
+git pull
+git push origin --delete master
 clear
 ls
 clear
-cd img/
+ls
+git branch -a
 clear
-eshell/cd img
+git pull
 clear
 ls
-cd
-eshell/cd img
+ff listings_resumed.csv
 clear
 ls
-cd
-eshell/cd img
-clear
-alias cd eshell/cd
-cleear
-clear
-sl
-ls
-clear
-cd
-clear
-where cd
-clear
-cd img/
-clear
-ls
-clear
-alias
-ff alias
-ff
-alias ff find-file
-ff alias
-clear
-ls
-cd img/
-ls
-clear
-ls
-ff .emacs.d/eshell/alias 
-clear
-cd
-cd
-cd ..
-clear
-ls
-cd ..
-eshell/cd
-ls
-clear
-eshell/cd img/
-clear
-ls
-eshell/cd ..
-ff .emacs.d/init.el
 exit
-cd
-clear
-ls
-cd py_home/
-clear
-ls
-cd ..
-clear
-eshell/cd img/
-clea
-clear
 ls
 clear
-ls
-clear
-alias
-cd
-where cd
-cd
-clear
-alias
-cd img/
-cd
-eshell/cd img/
-cd img/
-cd
-eshell/cd img/
-cd img/
-cd
-eshell/cd img/
-(version-emacs)
-(emacs-version)
-clear
+cat sales.csv
 clear
 ls
-clear
 ls
-cd aulas/
-cd AA/
+cat sample.xml
 ls
 clear
-cd ..
-nasm
+git init
+git pul
+git pull
 clear
 ls
+cat README.md 
 clear
-cd AI/
-lcear
-clear
+exit
 ls
-cd abstracts/
-cd abstract_2
-clear
+ff a_note.xml 
 ls
-ff fractals.tex 
+clear
+pip install xmlschema
 clear
 ls
-cd ..
+exit
+py
+exit
+exit
 ls
-cd ..
+cd aulas/FW/TP/TP01
+ls
+clear
+ks
+lks
 clear
 ls
-ff biblio/slides/dyn-sys.pdf
+cat a_note.xml 
+cat note.xsd 
+clear
+ls
+exit
+ls
+cat sales.csv 
+clear
+ls
+(begin recording)
+clear

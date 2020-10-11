@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("c:/Users/afons/aulas/AI/abstracts/" . "abstract_1/")
  ("c:/Users/afons/aulas/AI/" . "abstracts/")
  ("c:/Users/afons/aulas/AA/Biblio_Slides/" . "books/")
  ("c:/Users/afons/aulas/AA/" . "Biblio_Slides/")
@@ -13,8 +14,8 @@
  ("c:/Users/afons/aulas/SA/agent/build/" . "classes/")
  ("c:/Users/afons/aulas/SA/agent/" . "build/")
  ("c:/Users/afons/aulas/SA/" . "agent/")
- ("c:/Users/afons/aulas/" . "SA/")
- ("c:/Users/afons/" . ".emacs.d/")
+ ("c:/Users/afons/aulas/" . "AI/")
+ ("c:/Users/afons/" . "Books/")
  ("c:/Users/" . "afons/")
  ("c:/" . "Users/")
  ("c:/Users/afons/.emacs.d/" . "elpa/")
@@ -22,8 +23,17 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "c:/Users/afons/.emacs.d/"
  "c:/Users/afons/"
+ "c:/Users/afons/Books/"
+ "c:/Users/afons/aulas/SA/agents/messaging_agent/"
+ "c:/Users/afons/.emacs.d/"
+ "c:/Users/afons/aulas/AI/abstracts/abstract_1/"
+ "c:/Users/afons/aulas/SA/Entregas/Entrega_1/"
+ "c:/Users/afons/aulas/AI/abstracts/abstarct_4/"
+ "c:/Users/afons/aulas/AI/abstracts/abstract_3/"
+ "c:/Users/afons/aulas/CS/"
+ "c:/Users/afons/MISC/dwarf/Dwarf_OS/"
+ "c:/Users/afons/aulas/AI/abstracts/abstract_2/"
  "c:/Users/afons/aulas/SA/"
  "c:/Users/afons/aulas/AI/"
  "c:/Users/afons/aulas/AI/abstracts/"
@@ -33,33 +43,86 @@
  "c:/Users/afons/aulas/AA/TP01/"
  "c:/Users/afons/.emacs.d/elpa/"
  "c:/Users/afons/aulas/FW/"
- "c:/Users/afons/Books/"
  "c:/Users/afons/aulas/SA/agent/build/classes/java/main/agent/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "init.el"
- "README.md"
  "todo.org"
- "sistemas_multi-agente.org"
- "Vida_artificial.org"
+ "Compilers_ Principles_Techniques_Tools.pdf"
+ "messaging_agent.java"
+ "BaseComunicator.java"
+ "AgentPresenter.java"
+ "init.el"
  "dynamical_systems.tex"
- "Computer Security_ Principles and Practice (2018, Pearson Education Limited) Stallings, William_ Brown, Lawrie.pdf"
- "isi-malware2020.pdf"
- "Study.org"
- "Machine_Learning.pdf"
+ "Martian_Touring_Machine.tex"
+ "Evol_Alg.cl"
+ "Evol_Alg.lisp"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("c:/Users/afons/aulas/AI/abstracts/abstract_3/" (24448 63244 0 0) "Rule_bit.PNG" "Rule_90.png" "game_life.py" "Cellular_automaton.tex" "Cellular_automaton.py" "Cellular_automaton.pdf" "Cellular_automaton.log" "Cellular_automaton.aux" ".#Cellular_automaton.tex" "#Cellular_automaton.tex#" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/" (24448 37005 0 0) "abstract_4/" "abstract_3/" "abstract_2/" "abstract_1/" "../" "./")
+
+ ("c:/Users/afons/aulas/SA/agents/messaging_agent/" (24448 36817 0 0) "MTPs-Main-Container.txt" "messaging_agent.java" "messaging_agent.class" "APDescription.txt" "../" "./")
+
+ ("c:/Users/afons/aulas/AA/" (24448 19747 0 0) "TP01/" "TP00/" "Study/" "Biblio_Slides/" "Aprendizagem_automatica.org" "../" "./")
+
+ ("c:/Users/afons/Desktop/" (24447 57286 0 0) "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" "../" "./")
+
+ ("c:/Users/afons/Books/" (24447 48476 0 0) "Write_Yourself_a_Scheme_in_48_Hours.pdf" "WriteYouASchemeVersion2.pdf" "The_C_Programming_Language.pdf" "The Rise and Fall of the The Soviet Economy_ An Economic History of the USSR from 1945.pdf" "The neoliberal mind - Madsen Pirie.pdf" "the economics book.pdf" "The Boglehead’s Guide To Investing.pdf" "The art of computer programming. Vol.2. Seminumerical algorithms.pdf" "The Art of Computer Programming, Vol. 1_ Fundamental Algorithms, 3rd Edition.pdf" "TComp.v05.pdf" "relativity.pdf" "recursive.pdf" "personal/" "Neoliberalism_ The Genesis of a Political Swearword - Oliver Marc Hartwich.pdf" "Modern Compiler Implementation in C ( PDFDrive.com ).pdf" "Introduction to Rocket Science and Engineering.pdf" "HR_SOL.pdf" "HR.pdf" "haskell-98-tutorial.pdf" "Groen O., Hervik S. Einstein's general theory of relativity (book draft, 2004)(538s)_PGr_.pdf" "Global Positioning System_ Theory and Applications Volume  I ( PDFDrive.com ).pdf" "Geometric_Geodes_part_1.pdf" "Geometric_Geodesy_part_2.pdf" "geokniga-seeber-g-satellite-geodesy-2003.pdf" "Geodesy The Concepts ( PDFDrive.com ).pdf" "EconomistPhilosophyBriefs.pdf" "databook.pdf" "Compilers_ Principles_Techniques_Tools.pdf" "C.pdf" "Art Of Intel x86 Assembly.pdf" "advanced-problems-mathematics.pdf" "../" "./")
+
+ ("c:/Users/afons/aulas/SA/Entregas/Entrega_1/" (24447 57121 0 0) "Sample.png" "mv.png" "Martian_Touring_Machine.tex" "Martian_Touring_Machine.pdf" "Martian_Touring_Machine.log" "Martian_Touring_Machine.aux" "auto/" "../" "./")
+
+ ("c:/Users/afons/.emacs.d/" (24448 25718 0 0) "transient/" "smex-items" "showcase.png" "request/" "README.md" "places" "init.el" "image-dired/" "ido.last" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" ".git/" ".cache/" "../" "./")
+
+ ("c:/Users/afons/aulas/SA/agents/" (24448 29045 0 0) "MTPs-Main-Container.txt" "APDescription.txt" "../" "./")
+
+ ("c:/Users/afons/aulas/SA/" (24448 22641 0 0) "smart_agent.png" "sistemas_multi-agente.org" "MTPs-Main-Container.txt" "Entregas/" "Biblio/" "APDescription.txt" "agents/" "../" "./")
+
+ ("c:/Users/afons/" (24447 50747 0 0) "_viminfo" "VirtualBox VMs/" "vimfiles/" "Videos/" "todo.org" "SendTo/" "Searches/" "Recent/" "py_home/" "PrintHood/" "Pictures/" "Os Meus Documentos/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "IntelGraphicsProfiles/" "img/" "games/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" ".VirtualBox/" ".saves/" ".matplotlib/" ".jupyter/" ".ipython/" ".gradle/" ".gitconfig" ".emacs.d/" ".config/" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/abstract_1/" (24431 24486 0 0) "Lorenz.py" "Figure_1.png" "dynamical_systems.tex" "dynamical_systems.pdf" "dynamical_systems.log" "dynamical_systems.aux" "../" "./")
+
+ ("c:/Users/afons/aulas/SA/Entregas/" (24447 32767 0 0) "Entrega_1/" "../" "./")
+
+ ("c:/Users/afons/aulas/FW/" (24447 17938 0 0) "TP/" "Project/" "fundamentos_websemantica.org" "../" "./")
+
+ ("c:/Users/afons/.emacs.d/elpa/" (24447 15090 0 0) "with-editor-20200720.2014/" "which-key-20200908.2301/" "websocket-20200419.2124/" "use-package-20200721.2156/" "treemacs-persp-20200901.1550/" "treemacs-magit-20200901.1550/" "treemacs-icons-dired-20200901.1550/" "treemacs-20200901.1550/" "transient-20200819.1133/" "tablist-20200427.2205/" "sparql-mode-20200429.1719/" "solarized-theme-20200913.2046/" "smex-20151212.2209/" "s-20180406.808/" "request-20200517.1305/" "pyvenv-20191202.1039/" "popup-20200610.317/" "polymode-20200606.1106/" "pfuture-20200425.1357/" "persp-mode-20200617.2154/" "pdf-tools-20200512.1524/" "pacmacs-20160131.832/" "org-bullets-20200317.1740/" "magit-20200913.2013/" "lv-20200507.1518/" "hydra-20200711.1210/" "ht-20200217.2331/" "helm-core-20200905.1311/" "helm-20200910.1036/" "gradle-mode-20150313.1905/" "gnupg/" "gnu-elpa-keyring-update-2019.3.signed" "gnu-elpa-keyring-update-2019.3/" "git-commit-20200828.1753/" "f-20191110.1357/" "exec-path-from-shell-20200526.324/" "ein-20200922.1740/" "deferred-20170901.1330/" "dash-functional-20200617.702/" "dash-20200803.1520/" "bind-key-20200805.1727/" "avy-20200624.1148/" "auto-complete-20200823.1758/" "auctex-12.2.4.signed" "auctex-12.2.4/" "async-20200809.501/" "archives/" "anaphora-20180618.2200/" "ace-window-20200606.1259/" "abridge-diff-readme.txt" "0blayout-readme.txt" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/abstarct_4/" (24447 10009 0 0) "Evol_Alg.cl" "../" "./")
+
+ ("c:/Users/afons/aulas/FW/TP/TP03/" (24447 22053 0 0) "sales.csv" "FWS_2021_TP03.ipynb" "arq.bat" "../" "./")
+
+ ("c:/Users/afons/aulas/FW/TP/TP02/" (24447 20418 0 0) "sales.csv" "graph.png" "FWS_2021_TP02.ipynb" ".ipynb_checkpoints/" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/" (24447 6413 0 0) "Vida_artificial.org" "ltximg/" "exercises/" "biblio/" "abstracts/" "../" "./")
+
+ ("c:/Users/afons/aulas/CS/" (24445 58390 0 0) "test.py" "os/" "Computer_security.org" "Biblio/" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/exercises/" (24440 39208 0 0) "TP02/" "TP01/" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/exercises/TP02/" (24440 39211 0 0) "CAS.jar" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/abstract_2/" (24442 63482 0 0) "fractal_triangle.py" "Fractal_triangle.png" "fractals.tex" "fractals.pdf" "auto/" "../" "./")
+
+ ("c:/Users/afons/MISC/dwarf/Dwarf_OS/" (24442 28192 0 0) "OS_prog.org" "boot.bin" "boot.asm" "../" "./")
+
+ ("c:/Users/afons/MISC/dwarf/" (24294 1958 0 0) "SDL2.dll" "Makefile" "main.cpp" "extra_c/" "dwarf.exe" "../" "./")
+
+ ("c:/Users/afons/Pictures/windows_terminal/" (24431 10365 0 0) "romantic_1.jpg" "rightway.png" "not_everything.gif" "minus.png" "lain_gif.gif" "lain_confused.png" "lain.jpg" "lain.gif" "globe.gif" "giger.jpg" "col.png" "../" "./")
+
+ ("c:/Users/afons/aulas/AA/Study/" (24441 43326 0 0) "Study.org" "ltximg/" "img/" "../" "./")
+
+ ("c:/Emacs/" (24436 32761 0 0) "x86_64/" "Uninstall.exe" "../" "./")
+
+ ("c:/Users/afons/MISC/frabric/src/test/" (24439 12936 0 0) "resources/" "java/" "../" "./")
+
+ ("c:/Users/afons/aulas/AA/TP01/" (24435 19593 0 0) "myfile.csv" "AA_202021_TP02_TP03_WithOutput.html" "AA_202021_TP02_TP03.ipynb" "AA_202021_TP02_TP03.html" ".ipynb_checkpoints/" "../" "./")
+
  ("c:/Users/afons/img/" (24434 10442 0 0) "schedule.png" "my_background.jfif" "../" "./")
-
- ("c:/Users/afons/.emacs.d/" (24435 15601 0 0) "transient/" "smex-items" "request/" "README.md" "places" "init.el" "ido.last~" "ido.last" "eshell/" "elpa/" "auto-save-list/" "ac-comphist.dat" ".git/" ".cache/" "../" "./")
-
- ("c:/Users/afons/" (24435 15429 0 0) "_viminfo" "vimfiles/" "Videos/" "todo.org" "SendTo/" "Searches/" "Recent/" "py_home/" "PrintHood/" "Pictures/" "Os Meus Documentos/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "IntelGraphicsProfiles/" "img/" "games/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" ".saves/" ".matplotlib/" ".jupyter/" ".ipython/" ".gradle/" ".gitconfig" ".emacs.d/" ".config/" ".bash_history" "#todo.org#" "../" "./")
-
- ("c:/Users/afons/Desktop/" (24435 7123 0 0) "epdfinfo.exe" "emax64-bin-26.3/" "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" ".emacs" "../" "./")
 
  ("c:/Users/afons/Desktop/emax64-bin-26.3/" (24435 6594 0 0) "emax64/" "../" "./")
 
@@ -67,31 +130,13 @@
 
  ("c:/Users/afons/Desktop/emax64-bin-26.3/emax64/bin/" (24067 42166 0 0) "zlib1.dll" "viewflif.exe" "trietool.exe" "trietool-0.2.exe" "stream.exe" "smime3.dll" "runemacs.exe" "rsvg-convert.exe" "nssutil3.dll" "nss3.dll" "montage.exe" "mogrify.exe" "MagickWand-config" "MagickCore-config" "magick.exe" "magick-script.exe" "Magick++-config" "libzstd.dll" "libxml2-2.dll" "libwinpthread-1.dll" "libunistring-2.dll" "libtiffxx-5.dll" "libtiff-5.dll" "libthai-0.dll" "libtasn1-6.dll" "libstdc++-6.dll" "libssh2-1.dll" "librsvg-2-2.dll" "libraqm-0.dll" "libpoppler-qt5-1.dll" "libpoppler-glib-8.dll" "libpoppler-cpp-0.dll" "libpoppler-93.dll" "libpng16-16.dll" "libplds4.dll" "libplc4.dll" "libpixman-1-0.dll" "libpcreposix-0.dll" "libpcrecpp-0.dll" "libpcre32-0.dll" "libpcre16-0.dll" "libpcre-1.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libopenjpwl-7.dll" "libopenjpip-7.dll" "libopenjp3d-7.dll" "libopenjp2-7.dll" "libnspr4.dll" "libnghttp2-14.dll" "libnettle-7.dll" "libMagickWand-7.Q16HDRI-7.dll" "libMagickCore-7.Q16HDRI-7.dll" "libMagick++-7.Q16HDRI-4.dll" "liblzma-5.dll" "libltdl-7.dll" "liblqr-1-0.dll" "liblcms2-2.dll" "libjpeg-8.dll" "libjbig-0.dll" "libjasper-4.dll" "libintl-8.dll" "libidn2-0.dll" "libiconv-2.dll" "libhogweed-5.dll" "libharfbuzz-subset-0.dll" "libharfbuzz-icu-0.dll" "libharfbuzz-gobject-0.dll" "libharfbuzz-0.dll" "libgraphite2.dll" "libgomp-1.dll" "libgobject-2.0-0.dll" "libgnutlsxx-28.dll" "libgnutls-30.dll" "libgmpxx-4.dll" "libgmp-10.dll" "libgmodule-2.0-0.dll" "libglib-2.0-0.dll" "libgio-2.0-0.dll" "libgif-7.dll" "libgdk_pixbuf-2.0-0.dll" "libgdiplus-0.dll" "libgcc_s_seh-1.dll" "libfribidi-0.dll" "libfreetype-6.dll" "libfontconfig-1.dll" "libflif_dec.dll" "libflif.dll" "libfftw3l-3.dll" "libfftw3f-3.dll" "libfftw3-3.dll" "libffi-6.dll" "libexpat-1.dll" "libdjvulibre-21.dll" "libdatrie-1.dll" "libcurl-4.dll" "libcroco-0.6-3.dll" "libcairo-script-interpreter-2.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "libbrotlienc.dll" "libbrotlidec.dll" "libbrotlicommon.dll" "import.exe" "identify.exe" "gif2flif" "flif.exe" "etags.exe" "epdfinfo.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-26.3.exe" "ebrowse.exe" "display.exe" "dflif.exe" "ctags.exe" "convert.exe" "conjure.exe" "composite.exe" "compare.exe" "apng2flif" "animate.exe" "addpm.exe" "../" "./")
 
- ("c:/Users/afons/aulas/AI/abstracts/" (24435 507 0 0) "abstract_2/" "abstract_1/" "../" "./")
-
- ("c:/Users/afons/aulas/AI/abstracts/abstract_2/" (24435 489 0 0) "../" "./")
-
- ("c:/Users/afons/aulas/SA/" (24430 13323 0 0) "smart_agent.png" "sistemas_multi-agente.org" "Biblio/" "agent/" "../" "./")
-
- ("c:/Users/afons/aulas/AI/" (24429 48378 0 0) "Vida_artificial.org" "exercises/" "biblio/" "abstracts/" "../" "./")
-
  ("c:/Users/afons/aulas/AA/TP00/.ipynb_checkpoints/" (24425 5494 0 0) "AA_201920_TP01-checkpoint.ipynb" "../" "./")
 
  ("c:/Users/afons/aulas/AA/TP00/" (24425 8974 0 0) "AA_201920_TP01_withOutput.html" "AA_201920_TP01.ipynb" "AA_201920_TP01.html" ".ipynb_checkpoints/" "../" "./")
 
- ("c:/Users/afons/.emacs.d/elpa/" (24427 59202 0 0) "with-editor-20200720.2014/" "which-key-20200908.2301/" "use-package-20200721.2156/" "treemacs-persp-20200901.1550/" "treemacs-magit-20200901.1550/" "treemacs-icons-dired-20200901.1550/" "treemacs-20200901.1550/" "transient-20200819.1133/" "tablist-20200427.2205/" "smex-20151212.2209/" "s-20180406.808/" "pyvenv-20191202.1039/" "popup-20200610.317/" "pfuture-20200425.1357/" "persp-mode-20200617.2154/" "pdf-tools-20200512.1524/" "org-bullets-20200317.1740/" "magit-20200913.2013/" "lv-20200507.1518/" "hydra-20200711.1210/" "ht-20200217.2331/" "helm-core-20200905.1311/" "helm-20200910.1036/" "gradle-mode-20150313.1905/" "gnupg/" "gnu-elpa-keyring-update-2019.3.signed" "gnu-elpa-keyring-update-2019.3/" "git-commit-20200828.1753/" "f-20191110.1357/" "dash-20200803.1520/" "bind-key-20200805.1727/" "avy-20200624.1148/" "auctex-12.2.4.signed" "auctex-12.2.4/" "async-20200809.501/" "archives/" "ace-window-20200606.1259/" "abridge-diff-readme.txt" "0blayout-readme.txt" "../" "./")
-
- ("c:/Users/afons/aulas/CS/" (24427 38295 0 0) "test.py" "Computer_security.org" "../" "./")
-
- ("c:/Users/afons/aulas/AA/" (24426 5478 0 0) "TP01/" "TP00/" "Study.org" "ltxmathml-inTYEhKc" "ltxmathml-inQN6k8H" "ltximg/" "Biblio_Slides/" "Aprendizagem_automatica.org" ".#Study.org" "#Study.org#" "../" "./")
-
  ("c:/Users/afons/aulas/AA/Biblio_Slides/" (24424 31660 0 0) "slides/" "books/" "../" "./")
 
  ("c:/Users/afons/aulas/AA/Biblio_Slides/books/" (24424 31763 0 0) "Machine_Learning_PP.pdf" "Machine_Learning.pdf" "../" "./")
-
- ("c:/Users/afons/Books/" (24424 31569 0 0) "Write_Yourself_a_Scheme_in_48_Hours.pdf" "WriteYouASchemeVersion2.pdf" "The_C_Programming_Language.pdf" "The Rise and Fall of the The Soviet Economy_ An Economic History of the USSR from 1945.pdf" "The neoliberal mind - Madsen Pirie.pdf" "the economics book.pdf" "The Boglehead’s Guide To Investing.pdf" "The art of computer programming. Vol.2. Seminumerical algorithms.pdf" "The Art of Computer Programming, Vol. 1_ Fundamental Algorithms, 3rd Edition.pdf" "TComp.v05.pdf" "relativity.pdf" "recursive.pdf" "personal/" "Neoliberalism_ The Genesis of a Political Swearword - Oliver Marc Hartwich.pdf" "Modern Compiler Implementation in C ( PDFDrive.com ).pdf" "HR_SOL.pdf" "HR.pdf" "haskell-98-tutorial.pdf" "Groen O., Hervik S. Einstein's general theory of relativity (book draft, 2004)(538s)_PGr_.pdf" "Global Positioning System_ Theory and Applications Volume  I ( PDFDrive.com ).pdf" "Geometric_Geodes_part_1.pdf" "Geometric_Geodesy_part_2.pdf" "geokniga-seeber-g-satellite-geodesy-2003.pdf" "Geodesy The Concepts ( PDFDrive.com ).pdf" "EconomistPhilosophyBriefs.pdf" "databook.pdf" "Compilers_ Principles_Techniques_Tools.pdf" "C.pdf" "Art Of Intel x86 Assembly.pdf" "advanced-problems-mathematics.pdf" "../" "./")
-
- ("c:/Users/afons/aulas/AA/TP01/" (24425 5494 0 0) "AA_201920_TP01_withOutput.html" "AA_201920_TP01.ipynb" "AA_201920_TP01.html" ".ipynb_checkpoints/" "../" "./")
 
  ("c:/Users/afons/py_home/ML/Scripts/" (24425 4979 0 0) "_tkinter.pyd" "_testmultiphase.pyd" "_testimportmultiple.pyd" "_testconsole.pyd" "_testcapi.pyd" "_testbuffer.pyd" "_ssl.pyd" "_sqlite3.pyd" "_socket.pyd" "_queue.pyd" "_overlapped.pyd" "_multiprocessing.pyd" "_msi.pyd" "_lzma.pyd" "_hashlib.pyd" "_elementtree.pyd" "_decimal.pyd" "_ctypes_test.pyd" "_ctypes.pyd" "_bz2.pyd" "_asyncio.pyd" "winsound.pyd" "wheel3.exe" "wheel.exe" "wheel-3.8.exe" "vcruntime140.dll" "unicodedata.pyd" "tk86t.dll" "tcl86t.dll" "sqlite3.dll" "select.pyd" "pythonw.exe" "python38.dll" "python3.dll" "python.exe" "pyexpat.pyd" "pydoc.bat" "pip3.exe" "pip3.8.exe" "pip.exe" "pip-3.8.exe" "libssl-1_1.dll" "libffi-7.dll" "libcrypto-1_1.dll" "easy_install3.exe" "easy_install.exe" "easy_install-3.8.exe" "deactivate.bat" "activate_this.py" "activate.xsh" "activate.ps1" "activate.fish" "activate.bat" "activate" "../" "./")
 
@@ -102,8 +147,6 @@
  ("c:/Users/afons/AppData/Local/Programs/Python/Python38-32/" (24269 22081 0 0) "vcruntime140.dll" "Tools/" "tcl/" "share/" "Scripts/" "pythonw.exe" "python38.dll" "python3.dll" "python.exe" "NEWS.txt" "LICENSE.txt" "libs/" "Lib/" "include/" "etc/" "Doc/" "DLLs/" "../" "./")
 
  ("c:/Users/afons/.emacs.d/auto-save-list/" (24421 63825 0 0) ".saves-8180-PORTATIL-AR~" ".saves-3720-PORTATIL-AR~" ".saves-11300-PORTATIL-AR~" "../" "./")
-
- ("c:/Users/afons/aulas/FW/" (24419 60604 0 0) "fundamentos_websemantica.org" "../" "./")
 
  ("c:/Users/afons/Desktop/demo/" (24421 56920 0 0) "src/" "settings.gradle" "gradlew.bat" "gradlew" "gradle/" "build.gradle" "build/" ".gradle/" ".gitignore" ".gitattributes" "../" "./")
 
