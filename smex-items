@@ -1,48 +1,48 @@
 
 ;; ----- smex-history -----
 (
- ein:stop
- run-python
+ compile
+ flyspell-mode
  eshell
- pyvenv-workon
- pyvenv-mode
- pyvenv-activate
- pyvenv-deactivate
+ dired
+ linum-mode
+ erc
+ ein:stop
 )
 
 ;; ----- smex-data -----
 (
- (eshell . 221)
+ (eshell . 255)
  (package-install . 3)
  (list-packages . 4)
- (pyvenv-workon . 19)
+ (pyvenv-workon . 21)
  (pyvenv-menu . 1)
  (pyvenv-create . 12)
- (load-file . 49)
+ (load-file . 51)
  (pyvenv-activate . 7)
- (pyvenv-deactivate . 5)
- (pyvenv-mode . 24)
- (org-time-stamp . 17)
+ (pyvenv-deactivate . 6)
+ (pyvenv-mode . 26)
+ (org-time-stamp . 21)
  (org-create-math-formula . 2)
  (org-latex-convert-region-to-latex . 3)
  (org-preview-latex-fragment . 6)
  (inferior-python-mode . 2)
  (ispell . 3)
- (flyspell-mode . 50)
+ (flyspell-mode . 62)
  (ispell-change-dictionary . 3)
  (ispell-hunspell-add-multi-dic . 1)
  (global-display-line-numbers-mode . 1)
  (org-table-create . 1)
  (load-theme . 11)
- (package-refresh-contents . 7)
- (package-list-packages . 9)
+ (package-refresh-contents . 9)
+ (package-list-packages . 12)
  (customize-themes . 11)
  (ein:notebooklist-open . 1)
- (ein:run . 18)
- (ein:stop . 12)
- (dired . 49)
- (auto-complete-mode . 31)
- (org-toggle-latex-fragment . 24)
+ (ein:run . 34)
+ (ein:stop . 26)
+ (dired . 79)
+ (auto-complete-mode . 39)
+ (org-toggle-latex-fragment . 26)
  (gdb . 1)
  (recover-file . 2)
  (pdf-view-mode . 1)
@@ -59,28 +59,32 @@
  (profiler-start . 1)
  (profiler-report . 3)
  (profiler-stop . 1)
- (run-python . 9)
+ (run-python . 10)
  (pacmacs-start . 1)
- (treemacs-add-project . 2)
- (gradle-build . 5)
+ (treemacs-add-project . 3)
+ (gradle-build . 6)
  (gradle-execute . 9)
  (executable-interpret . 1)
  (image-dired . 3)
  (org-latex-preview . 15)
  (global-semantic-idle-completions-mode . 1)
  (ac-fuzzy-complete . 2)
- (line-number-mode . 2)
+ (line-number-mode . 4)
  (dired-find-file . 1)
  (life . 1)
  (tetris . 1)
  (snake . 1)
  (calendar . 2)
- (lisp-mode . 3)
+ (lisp-mode . 4)
  (common-lisp-mode . 1)
  (org-ascii-convert-region-to-utf8 . 1)
  (python-mode . 1)
  (gradle-mode . 1)
  (irc . 1)
- (erc . 5)
+ (erc . 23)
  (ein:dev-bug-report-template . 1)
+ (package-autoremove . 1)
+ (compile . 195)
+ (doctor . 1)
+ (linum-mode . 4)
 )

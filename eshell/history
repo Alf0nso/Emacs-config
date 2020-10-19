@@ -1,128 +1,128 @@
-clear
-ls
-git pull
-clear
-ls
-ls
-clear
-git list
-git --help
-git branch list
-git checkout
-git branch list
-git branch
-git branch delete list
-clear
-ls
-git branch
-git branch -d delete
-git branch -d list
-clear
-ls
-git branch
-git branch -a
-git checkout
-clear
-ls
-git checkout master
-clear
-ls
-branch
-git branch
-git pull origin main
-clear
-ls
-branch
-git branch
-git merge main
-git branch -d main
-clear
-git push
-cçear
-clear
-ls
-git checkout main
-git branch
-git merge master
-ls
-ls
-clear
-git merge master
-git branch
-git pull origin master --allow-unrelated-histories
-clear
-ls
-git push
-´clear
-ls
-clear
-ls
-git pull
-clear
-ls
-git branch
-git branch -d master
-git push
-clear
-git pull
-git push origin --delete master
-clear
-ls
-clear
-ls
-git branch -a
-clear
-git pull
-clear
-ls
-ff listings_resumed.csv
-clear
-ls
 exit
-ls
-clear
-cat sales.csv
 clear
 ls
-ls
-cat sample.xml
-ls
-clear
-git init
-git pul
-git pull
+make Run
 clear
 ls
-cat README.md 
+cat Makefile 
+java jade.Boot -gui 'fred:talkativeAgent;jon:talkativeAgent'
+java jade.Boot -gui 'fred:talkativeAgent;jon:talkativeAgent'
 clear
-exit
-ls
-ff a_note.xml 
-ls
+java jade.Boot -gui fred:talkativeAgent
 clear
-pip install xmlschema
-clear
-ls
-exit
-py
-exit
-exit
-ls
-cd aulas/FW/TP/TP01
+make Build FILE=talkativeAgent
+make Build FILE=talkativeAgent
 ls
 clear
-ks
-lks
+ls
+clear
+mkdir test
+cd test
+cls
+ls
 clear
 ls
-cat a_note.xml 
-cat note.xsd 
+clear
+ff testAgent.java
 clear
 ls
-exit
-ls
-cat sales.csv 
+pwd
 clear
 ls
-(begin recording)
+cd ..
+ls
+clear
+cls
+ls
+clear
+ls
+pwd
+clear
+ls
+rm -rf test/
+clear
+cat Makefile 
+ff Makefile 
+clear
+make Run_simple
+clear
+ls
+cat Makefile 
+ff Makefile 
+make Run_simple
+make Run_simple
+clear
+clear
+ls
+rm talkativeAgent.java 
+clear
+ls
+rm talkativeAgent.class 
+clear
+ls
+rm APDescription.txt 
+clear
+ls
+rm MTPs-Main-Container.txt 
+clear
+ls
+rm talkativeAgent\$agentCommuntication.class
+clear
+ls
+ff Makefile 
+clear
+ls
+ff mainAgent.java
+clear
+make Run_simple FILE=mainAgent
+make Run_simple FILE=mainAgent
+clear
+ls
+ls
+pwd
+clear
+ff Makefile 
+clear
+ff Makefile 
+ff Makefile 
+cat Makefile 
+java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
+clear
+java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
+clear
+clear
+ls
+java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
+clear
+ls
+java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
+clear
+java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
+clear
+java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
+clear
+java jade.Boot -gui 'fred:mainAgent'
+clear
+ls
+java jade.Boot -gui 'fred:mainAgent'
+cleaar
+cleart
+clear
+clear
+clear
+ls
+java jade.Boot -gui 'fred:mainAgent'
+clear
+java jade.Boot -gui 'fred:mainAgent'
+java jade.Boot -gui 'fred:mainAgent'
+clear
+ls
+clear
+java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
+clear
+ff mainAgent.java 
+clear
+ls
+clear
+java jade.Boot -gui 'fred:mainAgent'
 clear
