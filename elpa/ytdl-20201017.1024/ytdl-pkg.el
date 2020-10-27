@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/afons/.emacs.d/elpa/ytdl-20201017.1024/ytdl.el  -*- no-byte-compile: t -*-
+(define-package "ytdl" "20201017.1024" "Emacs Interface for youtube-dl" '((emacs "26.1") (async "1.9.4") (transient "0.2.0") (dash "2.17.0")) :commit "8ef80b85f766cc1f93a932e64604998cfe7f6f03" :keywords '("comm" "emulations" "multimedia") :authors '(("Arnaud Hoffmann" . "tuedachu@gmail.com")) :maintainer '("Arnaud Hoffmann" . "tuedachu@gmail.com") :url "https://gitlab.com/tuedachu/ytdl")

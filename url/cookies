@@ -1,0 +1,18 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ 'nil)
+(setq url-cookie-secure-storage
+ '((".4channel.org"
+  [url-cookie "__cfduid" "d65344bdb1fd5e729ac3e65087b341e4c1603536146" "Mon, 23-Nov-20 10:42:26 GMT" "/" ".4channel.org" t])
+ (".dollars-bbs.org"
+  [url-cookie "__cfduid" "d4852f8e6faac19b7655a73a2d5511c921603536259" "Mon, 23-Nov-20 10:44:19 GMT" "/" ".dollars-bbs.org" t])
+ (".4chan.org"
+  [url-cookie "__cfduid" "df5cbce9dc0134ecbf212d70700c192b51603536140" "Mon, 23-Nov-20 10:42:20 GMT" "/" ".4chan.org" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

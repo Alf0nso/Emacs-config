@@ -1,8 +1,27 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Deprecated warnings that I am to ignore for now:
+(setq byte-compile-warnings '(not obsolete))
+
 ;;;
 ;; Package stuff
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
+
+;; In case stuff no on melpa, can always use el-get
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(el-get 'sync)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 ;; always use use-package
 (unless (package-installed-p 'use-package)
@@ -102,12 +121,6 @@
 ;; Treemacs python search isn't working by default
 (setq treemacs-python-executable "C:/Users/afons/AppData/Local/Programs/Python/Python38-32/python.exe")
 
-;; Gives the treemacs icons on dired
-(use-package treemacs-icons-dired
-  :after treemacs dired
-  :ensure t
-  :config (treemacs-icons-dired-mode))
-
 ;; Magit integration in emacs
 (use-package treemacs-magit
   :after treemacs magit
@@ -130,6 +143,8 @@
 ;;;
 ;; Don't show the Emacs splash screen
 (setq inhibit-startup-screen t)
+(setq initial-major-mode 'text-mode)
+(setq initial-scratch-message "Present Day, Present Time...\n")
 
 ;; Set default-directory to Home directory
 (setq default-directory (concat (getenv "HOME") "/"))
@@ -142,6 +157,8 @@
 (add-to-list 'default-frame-alist '(fullscreen . fullboth))
 (set-face-attribute 'default nil :font "Consolas 14" )
 (set-frame-font "Consolas 14" nil t)
+(display-time-mode 1)
+(display-battery-mode 1)
 
 ;; Be sure that anything deleted goes to trash
 (setq delete-by-moving-to-t t)
@@ -158,9 +175,6 @@
     'utf-8))
 (prefer-coding-system 'utf-8)
 
-;; Better frame control
-(global-set-key (kbd "C-x o") 'ace-window)
-
 ;; Theme (colors of the emacs editor)
 (load-theme 'solarized-gruvbox-dark t)
 (custom-set-variables
@@ -170,13 +184,17 @@
  ;; If there is more than one, they won't work right.
  '(ein:output-area-inlined-images t)
  '(package-selected-packages
-   '(ein ace-window sparql-mode pdf-tools solarized-theme auto-complete auctex use-package smex pyvenv org-bullets treemacs-persp treemacs-magit treemacs-icons-dired treemacs gradle-mode which-key helm gnu-elpa-keyring-update)))
+   '(exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ ein sparql-mode pdf-tools solarized-theme auto-complete auctex use-package smex pyvenv org-bullets treemacs-persp treemacs-magit treemacs gradle-mode which-key helm gnu-elpa-keyring-update)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(diredp-deletion-file-name ((t (:foreground "indian red"))))
+ '(diredp-dir-heading ((t (:background "SystemWindowFrame"))))
+ '(diredp-dir-name ((t (:background "#2C2C2C2C2C2C" :foreground "LavenderBlush3"))))
+ '(diredp-file-name ((t (:foreground "gainsboro"))))
+ '(diredp-file-suffix ((t (:foreground "misty rose")))))
 
 ;; Backing up files on a directory
 (setq backup-by-copying t
@@ -199,8 +217,7 @@
     (global-auto-complete-mode t)
     ))
 
-
-;; Eshell stuff
+;; Eshell stuff and Shell
 ; λ
 (defalias 'ff 'find-file)
 (defalias 'ffo 'find-file-other-window)
@@ -209,11 +226,26 @@
 (setq eshell-prompt-function
   (lambda ()
     (concat (format-time-string "%Y-%m-%d" (current-time))
-      (if (= (user-uid) 0) " # " " λ "))))
+	    (if (= (user-uid) 0) " # " " λ "))))
+
+(defun start-cmd ()
+  (interactive)
+  (let ((proc (start-process "cmd" nil "cmd.exe" "/C" "start" "\"---\"" "/MAX" "cmd.exe")))
+    (set-process-query-on-exit-flag proc nill)))
 ;;;
 ;; Org
 (setq org-hide-emphasis-markers t)
 (setq org-image-actual-width nil)
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((sparql . t)
+   (R . t)
+   (python . t)
+   (C . t)
+   (dot . t)))
+
+(eval-after-load 'org
+  (add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images))
 
 ;; Java
 (add-hook 'java-mode-hook 'gradle-mode)
@@ -239,21 +271,66 @@
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.3))
 (put 'dired-find-alternate-file 'disabled nil)
 
-;; Org-babel
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((sparql . t)))
+;; Haskell
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
 ;; Dired
-(add-hook 'dired-mode-hook
-      (lambda ()
-        (dired-hide-details-mode)))
+(require 'dired+)
+(use-package treemacs-icons-dired
+  :after treemacs dired
+  :ensure t
+  :config (treemacs-icons-dired-mode))
+(add-hook 'dired-mode-hook 'treemacs-icons-dired-mode)
+;;(treemacs-icons-dired-mode)
+(defadvice dired-subtree-toggle (after add-icons activate) (treemacs-icons-dired--display))
+(defadvice dired-subtree-toggle (after add-icons activate) (revert-buffer))
 
-;; Start commands
-(treemacs-icons-dired-mode)
+(use-package dired-subtree
+        :ensure t
+        :bind (:map dired-mode-map
+                    ("i" . dired-subtree-insert)
+                    (";" . dired-subtree-remove)
+                    ("<tab>" . dired-subtree-toggle)
+                    ("<backtab>" . dired-subtree-cycle)))
+
+
+;; Youtube-dl incorp
+(require 'ytdl)
+(ytdl-add-field-in-download-type-list "Music"
+                                       "m"
+                                       (expand-file-name "~/Music")
+                                       nil)
+
+
+;; Buffer improvement
+(defalias 'list-buffers 'ibuffer)
 
 ;; Rebindings
 (global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "C-S-<down>") 'shrink-window)
 (global-set-key (kbd "C-S-<up>") 'enlarge-window)
+
+
+;; Aesthetics
+(global-prettify-symbols-mode 1)
+(defun add-pretty-lambda ()
+  "Make some word or string show as pretty Unicode symbols.  See https://unicodelookup.com for more."
+  (setq prettify-symbols-alist
+        '(
+          ("lambda" . 955)
+          ("delta" . 120517)
+          ("epsilon" . 120518)
+          ("->" . 8594)
+	  ("Wking" . 9812)
+	  ("WQueen" . 9813)
+	  ("WRook" . 9814)
+	  ("WBishop" . 9815)
+	  ("WKnight" . 9816)
+	  ("WPawn" . 9817)
+	  ("&Sum" . ∑)
+          ("<=" . 8804)
+          (">=" . 8805)
+          )))
+(add-hook 'prog-mode-hook 'add-pretty-lambda)
+(add-hook 'org-mode-hook 'add-pretty-lambda)

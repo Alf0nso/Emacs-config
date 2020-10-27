@@ -1,128 +1,128 @@
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent;henrique:mainAgent;joao:mainAgent;sandro:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+ce
+lear
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+java jade.Boot -gui "fred:mainAgent;jon:mainAgent"
+clear
+ls
+ff Makefile 
+ls
+clear
+ls
+clear
+cat Makefile 
+make Run_many
+clear
+ff Run_many
+clear
+ls
+ff Makefile 
+make Run_many
+clear
+ls
+ff Makefile 
+make Run_many
+clear
+ff Makefile 
+make Run_many
+clear
+ff Makefile 
+make Run_many
+clear
+ff Makefile 
+make Run_many
+clear
+ff Makefile 
+make Run_many
+clear
+ff Makefile 
+make Run_many
+clea
+clear
+make Run_many
+clear
+make Run_many
+clear
+make Run_many
+clear
+make Run_many
+clear
+make Run_many
+clear
+make Run_many
+clear
+ls
+clear
+ls
+clear
+explorer .
+ls
 exit
-clear
-ls
-make Run
-clear
-ls
-cat Makefile 
-java jade.Boot -gui 'fred:talkativeAgent;jon:talkativeAgent'
-java jade.Boot -gui 'fred:talkativeAgent;jon:talkativeAgent'
-clear
-java jade.Boot -gui fred:talkativeAgent
-clear
-make Build FILE=talkativeAgent
-make Build FILE=talkativeAgent
-ls
+pwd
 clear
 ls
 clear
-mkdir test
-cd test
+ls
+exit
 cls
 ls
 clear
+chcp 65001
+cçs
+cls
+clear
+curl rate.s
+cls
+clear
+ls
+curl rate.sx
+clear
+sl
 ls
 clear
-ff testAgent.java
+cd Desktop/
 clear
 ls
-pwd
 clear
-ls
-cd ..
-ls
+ff emacs.png 
+mv emacs.png ~/Pictures/
+clear
+fx
+weather ascs
+weather ascc
+│               0.0 mm | 0%    │     ‘ ‘ ‘ ‘   0.2 mm | 88%   │    ‘ ‘ ‘ ‘    1.0 mm | 62%   │     ‘ ‘ ‘ ‘   0.1 mm | 89%   │
+weather ascg
+clear
+fx
+fx BTC
 clear
 cls
-ls
+clear
+exit
+weather
+clear
+cls
 clear
 ls
-pwd
-clear
-ls
-rm -rf test/
-clear
-cat Makefile 
-ff Makefile 
-clear
-make Run_simple
-clear
-ls
-cat Makefile 
-ff Makefile 
-make Run_simple
-make Run_simple
-clear
-clear
-ls
-rm talkativeAgent.java 
-clear
-ls
-rm talkativeAgent.class 
-clear
-ls
-rm APDescription.txt 
-clear
-ls
-rm MTPs-Main-Container.txt 
-clear
-ls
-rm talkativeAgent\$agentCommuntication.class
-clear
-ls
-ff Makefile 
-clear
-ls
-ff mainAgent.java
-clear
-make Run_simple FILE=mainAgent
-make Run_simple FILE=mainAgent
-clear
-ls
-ls
-pwd
-clear
-ff Makefile 
-clear
-ff Makefile 
-ff Makefile 
-cat Makefile 
-java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
-clear
-java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
-clear
-clear
-ls
-java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
-clear
-ls
-java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
-clear
-java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
-clear
-java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
-clear
-java jade.Boot -gui 'fred:mainAgent'
-clear
-ls
-java jade.Boot -gui 'fred:mainAgent'
-cleaar
-cleart
-clear
-clear
-clear
-ls
-java jade.Boot -gui 'fred:mainAgent'
-clear
-java jade.Boot -gui 'fred:mainAgent'
-java jade.Boot -gui 'fred:mainAgent'
-clear
-ls
-clear
-java jade.Boot -gui 'fred:mainAgent;grass:mainAgent'
-clear
-ff mainAgent.java 
-clear
-ls
-clear
-java jade.Boot -gui 'fred:mainAgent'
-clear
+exit
