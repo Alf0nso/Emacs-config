@@ -1,4 +1,4 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Deprecated warnings that I am to ignore for now:
 (setq byte-compile-warnings '(not obsolete))
 
@@ -30,6 +30,9 @@
 
 ;; Load lisp functionalities from the lisp folder
 (load "~/.emacs.d/lisp/iscroll.el")
+
+; Rates need some work since is not working as I want it to
+;;(load "~/.emacs.d/lisp/rate-sx.el")
 
 ;; Whic-key
 (use-package which-key
@@ -134,7 +137,7 @@
   :ensure t
   :init
   (setq org-bullets-bullet-list
-	'("◉" "➥" "➞" "➵" "➾"))
+	'("◉" "∴" "➞" "➵" "➾"))
   (setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "✔ DONE(d)" "|")
 			    (sequence "∞ WAITING(w)" "|")
 			    (sequence "|" "✘ CANCELED(c)")))
@@ -160,6 +163,9 @@
 (display-time-mode 1)
 (display-battery-mode 1)
 
+(substitute-key-definition 'kill-buffer 'kill-buffer-and-window global-map)
+(global-set-key (kbd "C-c k") 'kill-buffer)
+
 ;; Be sure that anything deleted goes to trash
 (setq delete-by-moving-to-t t)
 
@@ -174,6 +180,11 @@
       'utf-16-le
     'utf-8))
 (prefer-coding-system 'utf-8)
+;;
+;;;
+
+
+
 
 ;; Theme (colors of the emacs editor)
 (load-theme 'solarized-gruvbox-dark t)
@@ -183,8 +194,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ein:output-area-inlined-images t)
+ '(erc-modules
+   '(autojoin button completion fill irccontrols list match menu move-to-prompt netsplit networks noncommands readonly ring smiley stamp spelling track))
  '(package-selected-packages
-   '(exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ ein sparql-mode pdf-tools solarized-theme auto-complete auctex use-package smex pyvenv org-bullets treemacs-persp treemacs-magit treemacs gradle-mode which-key helm gnu-elpa-keyring-update)))
+   '(elpy live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ ein sparql-mode pdf-tools solarized-theme auto-complete auctex use-package smex pyvenv org-bullets treemacs-persp treemacs-magit treemacs gradle-mode which-key helm gnu-elpa-keyring-update)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -214,8 +227,12 @@
   :init
   (progn
     (ac-config-default)
-    (global-auto-complete-mode t)
-    ))
+    (global-auto-complete-mode t)))
+
+;; Company-mode
+(use-package company
+  :ensure t
+  :init (add-hook 'after-init-hook 'global-company-mode))
 
 ;; Eshell stuff and Shell
 ; λ
@@ -230,7 +247,7 @@
 
 (defun start-cmd ()
   (interactive)
-  (let ((proc (start-process "cmd" nil "cmd.exe" "/C" "start" "\"---\"" "/MAX" "cmd.exe")))
+  (let ((proc (start-process "cmd" nil "cmd.exe" "/C" "start" "\"---\"" "cmd.exe")))
     (set-process-query-on-exit-flag proc nill)))
 ;;;
 ;; Org
@@ -242,13 +259,27 @@
    (R . t)
    (python . t)
    (C . t)
-   (dot . t)))
+   (dot . t)
+   (java . t)))
+
+(setq org-ellipsis "⤵")
 
 (eval-after-load 'org
   (add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images))
 
+(setq org-comfim-babel-evaluate nil)
+
+(require 'org-tempo)
+(add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
+(add-to-list 'org-structure-template-alist '("py" . "src python :results output"))
+(add-to-list 'org-structure-template-alist '("cp" . "src C"))
+(add-to-list 'org-structure-template-alist '("ja" . "src java :results output"))
+
 ;; Java
 (add-hook 'java-mode-hook 'gradle-mode)
+
+;; C Lisp
+(setq inferior-lisp-program "clisp -I")
 
 ;; Python
 (setenv "WORKON_HOME" "c:/Users/afons/py_home")
@@ -257,6 +288,17 @@
   :init
   :config (require 'ein)
   (require 'ein-notebook))
+
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
+(setq python-shell-interpreter "python"
+      python-shell-interpreter-args "-i")
+
+(when (load "flymake" t)
+  (add-to-list 'flymake-allowed-file-name-masks
+               '("\\.py\\'" flymake-pyflakes-init)))
 
 ;; Sparql
 (add-to-list 'auto-mode-alist '("\\.sparql$" . sparql-mode))
@@ -270,6 +312,7 @@
            #'TeX-revert-document-buffer)
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.3))
 (put 'dired-find-alternate-file 'disabled nil)
+(add-hook 'text-mode-hook 'flyspell-mode)
 
 ;; Haskell
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
