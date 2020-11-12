@@ -1,9 +1,14 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Deprecated warnings that I am to ignore for now:
-(setq byte-compile-warnings '(not obsolete))
 
+;;;; Deprecated warnings that I am to ignore for now:
 ;;;
-;; Package stuff
+(setq byte-compile-warnings '(not obsolete))
+;;;
+;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;
+;;; Package stuff
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
@@ -20,6 +25,8 @@
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
+;;;
+;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -158,7 +165,7 @@
 (tool-bar-mode 0)
 (setq visible-bell t)
 (add-to-list 'default-frame-alist '(fullscreen . fullboth))
-(set-face-attribute 'default nil :font "Consolas 14" )
+(set-face-attribute 'default nil :font "Consolas 20" )
 (set-frame-font "Consolas 14" nil t)
 (display-time-mode 1)
 (display-battery-mode 1)
@@ -249,10 +256,17 @@
   (interactive)
   (let ((proc (start-process "cmd" nil "cmd.exe" "/C" "start" "\"---\"" "cmd.exe")))
     (set-process-query-on-exit-flag proc nill)))
-;;;
-;; Org
+;;;;
+;;; Org Setup
+
+;; Remove the chars that indicate starting and ending of
+;; things like /italic/
 (setq org-hide-emphasis-markers t)
+
+;; change the size of images
 (setq org-image-actual-width nil)
+
+;; Languages for Org babel snipetts
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((sparql . t)
@@ -262,18 +276,31 @@
    (dot . t)
    (java . t)))
 
+;; Change the sign of closing in headers
 (setq org-ellipsis "⤵")
 
+;; Always show images in Org files
 (eval-after-load 'org
   (add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images))
 
+;; No need for confirmation when executing code blocks
 (setq org-comfim-babel-evaluate nil)
 
+;; Short for code snippets
 (require 'org-tempo)
 (add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
 (add-to-list 'org-structure-template-alist '("py" . "src python :results output"))
 (add-to-list 'org-structure-template-alist '("cp" . "src C"))
 (add-to-list 'org-structure-template-alist '("ja" . "src java :results output"))
+
+;; Set up Org Agenda
+(setq org-agenda-files (quote ("~/todo.org")))
+
+;;;
+;;;;
+
+;;;;
+;;; Programing Languages
 
 ;; Java
 (add-hook 'java-mode-hook 'gradle-mode)
@@ -293,6 +320,7 @@
   :ensure t
   :init
   (elpy-enable))
+
 (setq python-shell-interpreter "python"
       python-shell-interpreter-args "-i")
 
@@ -316,6 +344,8 @@
 
 ;; Haskell
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+;;;
+;;;;
 
 ;; Dired
 (require 'dired+)
