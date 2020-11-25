@@ -1,3 +1,4 @@
-alias nil 18 $*
-alias tree "C:\MinGW\bin\tree.exe"
+alias 18  $*
 alias clear clear 0
+alias tree "C:\MinGW\bin\tree.exe"
+alias nil 18 $*

@@ -57,6 +57,10 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+;; Neotree
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
 ;; Treemacs
 (use-package treemacs
   :ensure t
@@ -166,8 +170,8 @@
 (tool-bar-mode 0)
 (setq visible-bell t)
 (add-to-list 'default-frame-alist '(fullscreen . fullboth))
-(set-face-attribute 'default nil :font "Consolas 20" )
-(set-frame-font "Consolas 14" nil t)
+(set-face-attribute 'default nil :font "Consolas 17" )
+(set-frame-font "Consolas 17" nil t)
 (display-time-mode 1)
 (display-battery-mode 1)
 
@@ -204,8 +208,9 @@
  '(ein:output-area-inlined-images t)
  '(erc-modules
    '(autojoin button completion fill irccontrols list match menu move-to-prompt netsplit networks noncommands readonly ring smiley stamp spelling track))
+ '(org-agenda-files '("~/todo.org"))
  '(package-selected-packages
-   '(elpy live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ ein sparql-mode pdf-tools solarized-theme auto-complete auctex use-package smex pyvenv org-bullets treemacs-persp treemacs-magit treemacs gradle-mode which-key helm gnu-elpa-keyring-update)))
+   '(graphviz-dot-mode neotree elpy live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ ein sparql-mode pdf-tools solarized-theme auto-complete auctex use-package smex pyvenv org-bullets treemacs-persp treemacs-magit treemacs gradle-mode which-key helm gnu-elpa-keyring-update)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -260,6 +265,11 @@
 ;;;;
 ;;; Org Setup
 
+;; no eval prompt
+(defun ck/org-confirm-babel-evaluate (lang body)
+  (not (or (string= lang "latex") (string= lang "python"))))
+(setq org-confirm-babel-evaluate 'ck/org-confirm-babel-evaluate)
+
 ;; Remove the chars that indicate starting and ending of
 ;; things like /italic/
 (setq org-hide-emphasis-markers t)
@@ -280,6 +290,9 @@
 ;; Change the sign of closing in headers
 (setq org-ellipsis "⤵")
 
+;; Make done todo's tick all boxes
+(setq org-log-done t)
+
 ;; Always show images in Org files
 (eval-after-load 'org
   (add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images))
@@ -290,12 +303,15 @@
 ;; Short for code snippets
 (require 'org-tempo)
 (add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
-(add-to-list 'org-structure-template-alist '("py" . "src python :results output"))
+(add-to-list 'org-structure-template-alist '("py" . "src python :results output :exports both"))
+(add-to-list 'org-structure-template-alist '("pyp" . "src python :session :results output :exports both"))
 (add-to-list 'org-structure-template-alist '("cp" . "src C"))
 (add-to-list 'org-structure-template-alist '("ja" . "src java :results output"))
+(add-to-list 'org-structure-template-alist '("sp" . "src sparql"))
 
 ;; Set up Org Agenda
 (setq org-agenda-files (quote ("~/todo.org")))
+(global-set-key (kbd "C-c a") 'org-agenda)
 
 ;;;
 ;;;;
@@ -332,6 +348,7 @@
 ;; Sparql
 (add-to-list 'auto-mode-alist '("\\.sparql$" . sparql-mode))
 (add-to-list 'auto-mode-alist '("\\.rq$" . sparql-mode))
+(add-hook 'sparql-mode-hook 'auto-complete-mode)
 
 ;; Latex
 (require 'latex)
@@ -405,6 +422,10 @@
 	  ("&Sum" . ∑)
           ("<=" . 8804)
           (">=" . 8805)
+	  ("#+BEGIN_SRC"     . "λ")
+	  ("#+END_SRC"       . "λ")
+	  ("#+begin_src"     . "λ")
+	  ("#+end_src"       . "λ")
           )))
 (add-hook 'prog-mode-hook 'add-pretty-lambda)
 (add-hook 'org-mode-hook 'add-pretty-lambda)

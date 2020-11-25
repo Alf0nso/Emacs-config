@@ -1,128 +1,128 @@
 clear
-make Run_all
+arq --data sudoku.ttl --query test_sparql.rq
+clear
+arq --data sudoku.ttl --query test_sparql.rq
+arq --data sudoku.ttl --query test_sparql.rq
+arq --data sudoku.ttl --query test_sparql.rq
+arq --data sudoku.ttl --query test_sparql.rq
+exit
+clear
+ls
+clear
+ls
+git init
+clear
+git push --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git
+git push --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git master
+git add *
+clear
+git commit -m "first push"
+clear
+git push --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git master
+git push --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git master
+git pull
+git pull --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git master
+clear
+git remote add origin https://gitlab.com/ai_games/tic-tac-toe.git
+clea
+clear
+git pull
+git pull master
+git remote add origin https://gitlab.com/ai_games/tic-tac-toe.git
+git pull origin master
+git reset HEAD~1
+git pull origin master
+git push origin master
+git pull
+git pull origin master
+git pull origin master --allow-unrelated-histories
+clear
+ls
+clear
+git push origin master
+clear
+exit
+clear
+ls
+clear
+ls
+clear
+clear
+ls
+exit
+exit
+ls
+clear
+cd __pycache__/
+clear
+ls
+exit
 pwd
 clear
 ls
-make Run_all
-clear
-make Run_all
+dot test.dot 
 clear
 ls
+ls -a
 clear
-ls
-clear
-make Build_all 
-clear
-ls
-make Run_all
-clear
-make Build_all 
-make Build_all 
-make Run_all
-lear
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-make Run_all
-make Run_all
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clea
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-make Run_all
-make Run_all			
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-make Run_all
-clear
-make Run_all
-clear
-make Run_all
-clear
-make Build_all
-clear
-ls
-clear
-make Run_all
+exit
+git add *
+git commit -m "altered some functions on the tic-tac-toe, almost finishing implementing the game. The org file serves as documentation of the work being done"
+git push
+git push origin maaster
+git push origin main
+git push origin
+git push --set-upstream origin master
 clear
 clear
 ls
-cd ..
-clea
+brave games_neural_net.html 
+ff games_neural_net.org 
+exit
+clear
+py main.py 
+clear
+exit
+unzip archive.zip 
+7z x archive.zip 
 clear
 ls
-explorer .
+ff Raw_Data_for_train_test.csv 
+ls
+clear
+ls
+exit
+git add *
+cls
+clear
+git commit -m "Tic tac toe game is playable, needs to add a if full -> draw. The missing part is making a function to generate games and results"
+git push
+clear
+pwd
+clear
+pwd
+cls
+clear
+exit
+git add *
+git commit -m "Tic Tac Toe complete. Random game generator Missing"
+git push
+clear
+exit
+clear
+ls
+test.exe 
+test.
+test.exe 
+rm test.c test.exe 
+clear
+ls
+ls
+clear
+ls
+cd data/
+clear
+ls
+ff Example.py 
+Example.py 
+exit

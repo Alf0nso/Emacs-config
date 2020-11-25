@@ -1,2 +1,21 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/afons/.emacs.d/init.el" . 4544))
+(("c:/Users/afons/Desktop/elegant-emacs/Splash.org" . 8)
+ ("c:/Users/afons/Desktop/elegant-emacs/data/"
+  (dired-filename . "c:/Users/afons/Desktop/elegant-emacs/data/Article.org"))
+ ("c:/Users/afons/Desktop/elegant-emacs/data/Languages.org" . 449)
+ ("c:/Users/afons/Desktop/elegant-emacs/data/ltximg/"
+  (dired-filename . "c:/Users/afons/Desktop/elegant-emacs/data/ltximg/.."))
+ ("c:/Users/afons/Desktop/elegant-emacs/data/Gaussian-Integral.org" . 935)
+ ("c:/Users/afons/Desktop/elegant-emacs/data/file-2.txt" . 2)
+ ("c:/Users/afons/Desktop/elegant-emacs/data/file-1.txt" . 2)
+ ("c:/Users/afons/Desktop/elegant-emacs/data/Example.py" . 391)
+ ("c:/Users/afons/Desktop/elegant-emacs/"
+  (dired-filename . "c:/Users/afons/Desktop/elegant-emacs/data"))
+ ("c:/Users/afons/Books/"
+  (dired-filename . "c:/Users/afons/Books/Global Positioning System_ Theory and Applications Volume  I ( PDFDrive.com ).pdf"))
+ ("c:/Users/afons/"
+  (dired-filename . "c:/Users/afons/Books"))
+ ("c:/Users/afons/Desktop/"
+  (dired-filename . "c:/Users/afons/Desktop/.."))
+ ("c:/Users/afons/Desktop/elegant-emacs/sanity.el" . 1427)
+ ("c:/Users/afons/.emacs.d/init.el" . 4544))
