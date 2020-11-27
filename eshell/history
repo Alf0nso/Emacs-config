@@ -1,46 +1,3 @@
-clear
-arq --data sudoku.ttl --query test_sparql.rq
-clear
-arq --data sudoku.ttl --query test_sparql.rq
-arq --data sudoku.ttl --query test_sparql.rq
-arq --data sudoku.ttl --query test_sparql.rq
-arq --data sudoku.ttl --query test_sparql.rq
-exit
-clear
-ls
-clear
-ls
-git init
-clear
-git push --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git
-git push --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git master
-git add *
-clear
-git commit -m "first push"
-clear
-git push --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git master
-git push --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git master
-git pull
-git pull --set-upstream https://gitlab.com/ai_games/tic-tac-toe.git master
-clear
-git remote add origin https://gitlab.com/ai_games/tic-tac-toe.git
-clea
-clear
-git pull
-git pull master
-git remote add origin https://gitlab.com/ai_games/tic-tac-toe.git
-git pull origin master
-git reset HEAD~1
-git pull origin master
-git push origin master
-git pull
-git pull origin master
-git pull origin master --allow-unrelated-histories
-clear
-ls
-clear
-git push origin master
-clear
 exit
 clear
 ls
@@ -125,4 +82,47 @@ clear
 ls
 ff Example.py 
 Example.py 
+exit
+git add *
+clear
+git commit -m "minor changes to the emacs config, probably going to remove emacs tree and other tree like packages since I don't really use them"
+git push
+clear
+ls
+Ck
+clear
+unzip FaCTpp-win-v1.6.2.zip 
+clear
+ls
+cd FaCT++-win-v1.6.2/
+clear
+exit
+ls
+clear
+ls
+cd elpy/
+clear
+ls
+exit
+clear
+ls
+clear
+pwd
+clear
+ls
+cd AA
+ls
+cd ..
+clear
+ls
+cd AA/
+cd ..
+clear
+ls
+exit
+clear
+ls
+clear
+pip
+clear
 exit

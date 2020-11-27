@@ -21,7 +21,7 @@
  ("c:/Users/afons/aulas/SA/agent/" . "build/")
  ("c:/Users/afons/aulas/SA/" . "Entregas/")
  ("c:/Users/afons/aulas/" . "AI/")
- ("c:/Users/afons/" . ".emacs.d/")
+ ("c:/Users/afons/" . "MISC/")
  ("c:/Users/" . "afons/")
  ("c:/" . "Users/")
  ("c:/Users/afons/.emacs.d/" . "transient/")
@@ -29,10 +29,10 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "c:/Users/afons/.emacs.d/"
- "c:/Users/afons/aulas/AI/project/"
  "c:/Users/afons/"
+ "c:/Users/afons/.emacs.d/"
  "c:/Users/afons/MISC/pols/"
+ "c:/Users/afons/aulas/AI/project/"
  "c:/Users/afons/aulas/AI/"
  "c:/Users/afons/MISC/"
  "c:/Users/afons/aulas/SA/"
@@ -83,29 +83,45 @@
 
 ;; ----- ido-work-file-list -----
 (
- "init.el"
- "main.py"
  "todo.org"
+ "init.el"
+ "b_init.el"
+ "init.org"
+ "main.py"
  "politics_pt.org"
  "test.dot"
  "tic_tac_toe.py"
  "games_neural_net.org"
  "gpfieldguide.pdf"
- "Learning SPARQL, 2nd Edition_ Querying and Updating with SPARQL 1.1.pdf"
- "sudoku.ttl"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/afons/.emacs.d/" (24509 35246 0 0) "url/" "transient/" "todo/" "snippets/" "smex-items" "showcase.png" "request/" "README.md" "places" "lisp/" "init.el" "image-dired/" "ido.last" "fonts/" "eshell/" "elpy/" "elpa/" "el-get/" "auto-save-list/" "ac-comphist.dat" ".org-id-locations" ".git/" ".cache/" "../" "./")
+ ("c:/Users/afons/" (24512 59504 0 0) "_viminfo" "VirtualBox VMs/" "vimfiles/" "Videos/" "todo.org_archive" "todo.org" "SendTo/" "Searches/" "Saved Games/" "Recent/" "py_home/" "PrintHood/" "politics_pt.html" "Pictures/" "Os Meus Documentos/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "Links/" "IntelGraphicsProfiles/" "img/" "Google Drive/" "games/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "data/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" "3D Objects/" ".VirtualBox/" ".ssh/" ".saves/" ".Protege/" ".matplotlib/" ".jupyter/" ".ipython/" ".gradle/" ".gitconfig" ".emacs.d/" ".config/" ".cache/" ".bash_history" "../" "./")
 
- ("c:/Users/afons/" (24509 7410 0 0) "_viminfo" "VirtualBox VMs/" "vimfiles/" "Videos/" "todo.org_archive" "todo.org" "SendTo/" "Searches/" "Saved Games/" "Recent/" "py_home/" "PrintHood/" "politics_pt.html" "Pictures/" "Os Meus Documentos/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "Links/" "IntelGraphicsProfiles/" "img/" "Google Drive/" "games/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "data/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" "3D Objects/" ".VirtualBox/" ".ssh/" ".saves/" ".Protege/" ".matplotlib/" ".jupyter/" ".ipython/" ".gradle/" ".gitconfig" ".emacs.d/" ".config/" ".cache/" ".bash_history" "../" "./")
+ ("c:/Users/afons/.emacs.d/" (24512 59445 0 0) "url/" "transient/" "todo/" "thumbs/" "snippets/" "smex-items" "showcase.png" "request/" "README.md" "places" "lisp/" "init.el" "image-dired/" "ido.last" "fonts/" "eshell/" "elpy/" "elpa/" "elegant-emacs/" "el-get/" "config.org" "config.el" "backup.el" "auto-save-list/" "ac-comphist.dat" ".org-id-locations" ".git/" ".cache/" "../" "./")
 
- ("c:/Users/afons/aulas/AI/project/" (24508 20167 0 0) "__pycache__/" "tic_tac_toe.py" "README.md" "games_neural_net.org" "games_neural_net.html" ".git/" "../" "./")
+ ("c:/Users/afons/Google Drive/" (24511 36106 0 0) "todo.org" "desktop.ini" ".tmp.drivedownload/" "../" "./")
+
+ ("c:/Users/afons/aulas/CS/project/" (24505 20424 0 0) "Project_2/" "Project_1/" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/abstract_8/" (24510 44376 0 0) "SOM.tex" "SOM.pdf" "SOM.log" "SOM.aux" "../" "./")
+
+ ("c:/Users/afons/Books/" (24512 7872 0 0) "Write_Yourself_a_Scheme_in_48_Hours.pdf" "WriteYouASchemeVersion2.pdf" "The_C_Programming_Language.pdf" "The Rise and Fall of the The Soviet Economy_ An Economic History of the USSR from 1945.pdf" "The neoliberal mind - Madsen Pirie.pdf" "the economics book.pdf" "The Boglehead’s Guide To Investing.pdf" "The art of computer programming. Vol.2. Seminumerical algorithms.pdf" "The Art of Computer Programming, Vol. 1_ Fundamental Algorithms, 3rd Edition.pdf" "TComp.v05.pdf" "Relativity_ The Special and the General Theory.pdf" "relativity.pdf" "recursive.pdf" "personal/" "Neoliberalism_ The Genesis of a Political Swearword - Oliver Marc Hartwich.pdf" "Modern Compiler Implementation in C ( PDFDrive.com ).pdf" "Modeling & Reasoning with Bayesian Networks.pdf" "Kalman1960.pdf" "Introduction to Rocket Science and Engineering.pdf" "HR_SOL.pdf" "HR.pdf" "haskell-98-tutorial.pdf" "Groen O., Hervik S. Einstein's general theory of relativity (book draft, 2004)(538s)_PGr_.pdf" "Global Positioning System_ Theory and Applications Volume  I ( PDFDrive.com ).pdf" "Geometric_Geodes_part_1.pdf" "Geometric_Geodesy_part_2.pdf" "geokniga-seeber-g-satellite-geodesy-2003.pdf" "Geodesy The Concepts ( PDFDrive.com ).pdf" "EconomistPhilosophyBriefs.pdf" "databook.pdf" "Compilers_ Principles_Techniques_Tools.pdf" "Chess Openings for Black, Explained.pdf" "C.pdf" "Art Of Intel x86 Assembly.pdf" "advanced-problems-mathematics.pdf" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/abstract_9/" (24505 19454 0 0) "_region_.tex" "AIS.tex" "AIS.pdf" "AIS.log" "AIS.aux" "../" "./")
+
+ ("c:/Users/afons/aulas/FW/" (24512 7826 0 0) "TP/" "test_sparql.rq" "sudoku.ttl" "study.org" "Project/" "HermiT/" "fundamentos_websemantica.org" "Biblio/" "../" "./")
+
+ ("c:/Users/afons/Desktop/" (24512 7872 0 0) "freest-1.0.2/" "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/project/" (24509 29731 0 0) "__pycache__/" "utils.py" "tic_tac_toe.py" "README.md" "main.py" "games_neural_net.org" "games_neural_net.html" "games_generator.py" ".git/" "../" "./")
+
+ ("c:/Users/afons/.emacs.d/elegant-emacs/" (24511 48851 0 0) "Welcome.org" "Splash.org" "screenshots/" "sanity.el" "README.md" "LICENSE" "elegant.el" "elegant-light-theme.el" "elegant-dark-theme.el" "elegance.el" "data/" ".git/" "../" "./")
+
+ ("c:/Users/afons/MISC/pols/" (24508 16791 0 0) "politics_pt.org" "politics_pt.html" "general.org" "../" "./")
 
  ("c:/Users/" (24506 34677 0 0) "Public/" "MSSQL$SQLEXPRESS/" "desktop.ini" "defaultuser100000/" "Default User/" "Default/" "All Users/" "afons/" "../" "./")
-
- ("c:/Users/afons/MISC/pols/" (24508 15626 0 0) "politics_pt.org" "politics_pt.html" "general.org" "../" "./")
 
  ("c:/Users/afons/MISC/" (24507 64164 0 0) "The_Antichrist" "Simulators/" "simple_c/" "QB/" "py_aero/" "pols/" "netgarage/" "lisp_programs/" "lisp/" "IMG_20190709_212126.jpg" "HR/" "Haskel_learning/" "frabric/" "dwarf/" "comfy_reader/" "chall/" "brainfcomp/" "Assembly/" "ascii_frice/" "../" "./")
 
@@ -115,15 +131,7 @@
 
  ("c:/Users/afons/aulas/AI/biblio/" (24428 36839 0 0) "slides/" "books/" "../" "./")
 
- ("c:/Users/afons/aulas/FW/" (24503 43758 0 0) "TP/" "test_sparql.rq" "sudoku.ttl" "study.org" "Project/" "fundamentos_websemantica.org" "Biblio/" "../" "./")
-
- ("c:/Users/afons/Google Drive/" (24503 41686 0 0) "todo.org" "desktop.ini" ".tmp.drivedownload/" "../" "./")
-
- ("c:/Users/afons/Desktop/" (24503 43632 0 0) "Resumo_Aula_12-11.pdf" "Resumo10.pdf" "GMT20201112-130550_VA_1920x1050.mp4" "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" "../" "./")
-
  ("c:/Users/afons/aulas/FW/Project/Project_notbooks/" (24501 53443 0 0) "Sparql_Dbpedia.ipynb" "reviews_summary.csv" "README.md" "names_foaf_person.rq" "listings_summary.csv" "Graph_Building.ipynb" "graph.png" "FWS_2021_Projecto1.pdf" "Data_Processing.ipynb" "conf.ttl" "Backup_airBnb_data.ttl" "airBnb_data.ttl" "airBnb_data.csv" "airBnb_after_dbpedia.ttl" ".ipynb_checkpoints/" ".git/" "../" "./")
-
- ("c:/Users/afons/aulas/AI/abstracts/abstract_9/" (24502 38098 0 0) "_region_.tex" "AIS.tex" "AIS.pdf" "AIS.log" "AIS.aux" "../" "./")
 
  ("c:/Users/afons/aulas/FW/Biblio/Slides/" (24481 60638 0 0) "FWS_2021_T07.pdf" "FWS_2021_T06.pdf" "FWS_2021_T05.pdf" "FWS_2021_T04.pdf" "FWS_2021_T03.pdf" "FWS_2021_T02.pdf" "FWS_2021_T01.pdf" "../" "./")
 
@@ -147,11 +155,7 @@
 
  ("c:/Users/afons/MISC/Haskel_learning/" (24499 13045 0 0) "haskel_intro.hs" "../" "./")
 
- ("c:/Users/afons/Books/" (24498 27398 0 0) "Write_Yourself_a_Scheme_in_48_Hours.pdf" "WriteYouASchemeVersion2.pdf" "The_C_Programming_Language.pdf" "The Rise and Fall of the The Soviet Economy_ An Economic History of the USSR from 1945.pdf" "The neoliberal mind - Madsen Pirie.pdf" "the economics book.pdf" "The Boglehead’s Guide To Investing.pdf" "The art of computer programming. Vol.2. Seminumerical algorithms.pdf" "The Art of Computer Programming, Vol. 1_ Fundamental Algorithms, 3rd Edition.pdf" "TComp.v05.pdf" "Relativity_ The Special and the General Theory.pdf" "relativity.pdf" "recursive.pdf" "personal/" "Neoliberalism_ The Genesis of a Political Swearword - Oliver Marc Hartwich.pdf" "Modern Compiler Implementation in C ( PDFDrive.com ).pdf" "Kalman1960.pdf" "Introduction to Rocket Science and Engineering.pdf" "HR_SOL.pdf" "HR.pdf" "haskell-98-tutorial.pdf" "Groen O., Hervik S. Einstein's general theory of relativity (book draft, 2004)(538s)_PGr_.pdf" "Global Positioning System_ Theory and Applications Volume  I ( PDFDrive.com ).pdf" "Geometric_Geodes_part_1.pdf" "Geometric_Geodesy_part_2.pdf" "geokniga-seeber-g-satellite-geodesy-2003.pdf" "Geodesy The Concepts ( PDFDrive.com ).pdf" "EconomistPhilosophyBriefs.pdf" "databook.pdf" "Compilers_ Principles_Techniques_Tools.pdf" "Chess Openings for Black, Explained.pdf" "C.pdf" "Art Of Intel x86 Assembly.pdf" "advanced-problems-mathematics.pdf" "../" "./")
-
  ("c:/Users/afons/aulas/FW/Project/" (24497 27604 0 0) "Project_notbooks/" "Data_Files/" "../" "./")
-
- ("c:/Users/afons/aulas/AI/abstracts/abstract_8/" (24496 36413 0 0) "SOM.tex" "SOM.pdf" "SOM.log" "SOM.aux" "../" "./")
 
  ("c:/Users/afons/aulas/AI/" (24496 36467 0 0) "Vida_artificial.org" "project/" "ltximg/" "exercises/" "biblio/" "abstracts/" "../" "./")
 
@@ -182,8 +186,6 @@
  ("c:/Users/afons/aulas/CS/" (24478 7921 0 0) "Wireshark-win64-3.4.0.exe" "test.py" "project.zip" "project/" "os/" "Computer_security.org" "Biblio/" "../" "./")
 
  ("c:/Users/afons/MISC/lisp_programs/" (24480 4936 0 0) "test.lisp" "../" "./")
-
- ("c:/Users/afons/aulas/CS/project/" (24478 7861 0 0) "Project_1.tex" "Project_1.pdf" "Project_1.log" "Project_1.aux" "isi.trab1.20.21.pdf" "img/" "../" "./")
 
  ("c:/Users/afons/MISC/brainfcomp/" (24479 19600 0 0) "readme.txt" "Makefile" "brainfuck.c" "bf.exe" ".git/" "../" "./")
 
@@ -294,8 +296,6 @@
  ("c:/Users/afons/aulas/SA/agent/build/classes/java/main/agent/" (24420 65473 0 0) "App.class" "../" "./")
 
  ("c:/Users/afons/aulas/SA/agent/build/classes/java/main/" (24420 65473 0 0) "agent/" "../" "./")
-
- ("c:/Users/afons/aulas/SA/agent/build/classes/java/" (24420 65476 0 0) "test/" "main/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

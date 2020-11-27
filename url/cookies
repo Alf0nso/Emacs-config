@@ -6,18 +6,18 @@
   [url-cookie "i18n.locale" "pt-PT" "Thu Dec 10 13:23:50 2020 GMT" "/" "fenix.ciencias.ulisboa.pt" nil]))
 )
 (setq url-cookie-secure-storage
- '((".4channel.org"
-  [url-cookie "__cfduid" "d65344bdb1fd5e729ac3e65087b341e4c1603536146" "Mon, 23-Nov-20 10:42:26 GMT" "/" ".4channel.org" t])
- (".ciencias.ulisboa.pt"
-  [url-cookie "SSESScfcfd1089f7c206842907e7abe4a1b80" "_YOLPNrIhPU02D29uWsBIgRzjLz0EU5-JyphmJrYOfk" "Thu Dec 03 16:56:24 2020 GMT" "/" ".ciencias.ulisboa.pt" t])
- (".dollars-bbs.org"
-  [url-cookie "__cfduid" "d4852f8e6faac19b7655a73a2d5511c921603536259" "Mon, 23-Nov-20 10:44:19 GMT" "/" ".dollars-bbs.org" t])
+ '((".wikidata.org"
+  [url-cookie "WMF-Last-Access-Global" "20-Nov-2020" "Tue, 22 Dec 2020 00:00:00 GMT" "/" ".wikidata.org" t])
  ("query.wikidata.org"
   [url-cookie "WMF-Last-Access" "20-Nov-2020" "Tue, 22 Dec 2020 00:00:00 GMT" "/" "query.wikidata.org" t])
- (".wikidata.org"
-  [url-cookie "WMF-Last-Access-Global" "20-Nov-2020" "Tue, 22 Dec 2020 00:00:00 GMT" "/" ".wikidata.org" t])
- (".4chan.org"
-  [url-cookie "__cfduid" "df5cbce9dc0134ecbf212d70700c192b51603536140" "Mon, 23-Nov-20 10:42:20 GMT" "/" ".4chan.org" t]))
+ (".ciencias.ulisboa.pt"
+  [url-cookie "SSESScfcfd1089f7c206842907e7abe4a1b80" "_YOLPNrIhPU02D29uWsBIgRzjLz0EU5-JyphmJrYOfk" "Thu Dec 03 16:56:24 2020 GMT" "/" ".ciencias.ulisboa.pt" t])
+ ("en.wikipedia.org"
+  [url-cookie "WMF-Last-Access" "26-Nov-2020" "Mon, 28 Dec 2020 12:00:00 GMT" "/" "en.wikipedia.org" t])
+ (".wikipedia.org"
+  [url-cookie "WMF-Last-Access-Global" "26-Nov-2020" "Mon, 28 Dec 2020 12:00:00 GMT" "/" ".wikipedia.org" t])
+ (".youtube.com"
+  [url-cookie "VISITOR_INFO1_LIVE" "5C8yFXc4zYg" "Tue, 25-May-2021 17:27:01 GMT" "/" ".youtube.com" t]))
 )
 
 ;; Local Variables:

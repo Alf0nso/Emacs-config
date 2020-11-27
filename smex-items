@@ -3,22 +3,22 @@
 (
  start-cmd
  eshell
- pdb
+ ein:stop
+ ein:run
+ customize-group
  load-file
- package-list-packages
- package-refresh-contents
- python-skeleton-if
+ company-mode
 )
 
 ;; ----- smex-data -----
 (
- (eshell . 385)
+ (eshell . 389)
  (package-install . 14)
  (list-packages . 6)
  (pyvenv-workon . 22)
  (pyvenv-menu . 1)
  (pyvenv-create . 12)
- (load-file . 128)
+ (load-file . 133)
  (pyvenv-activate . 7)
  (pyvenv-deactivate . 7)
  (pyvenv-mode . 26)
@@ -34,14 +34,14 @@
  (global-display-line-numbers-mode . 1)
  (org-table-create . 1)
  (load-theme . 11)
- (package-refresh-contents . 19)
- (package-list-packages . 22)
+ (package-refresh-contents . 21)
+ (package-list-packages . 25)
  (customize-themes . 11)
  (ein:notebooklist-open . 1)
- (ein:run . 56)
- (ein:stop . 40)
- (dired . 305)
- (auto-complete-mode . 54)
+ (ein:run . 57)
+ (ein:stop . 41)
+ (dired . 306)
+ (auto-complete-mode . 55)
  (org-toggle-latex-fragment . 27)
  (gdb . 1)
  (recover-file . 2)
@@ -55,7 +55,7 @@
  (recover-this-file . 2)
  (pdf-tools-install . 2)
  (ein:log-pop-to-all-buffer . 1)
- (customize-group . 2)
+ (customize-group . 10)
  (profiler-start . 1)
  (profiler-report . 3)
  (profiler-stop . 1)
@@ -95,9 +95,9 @@
  (el-get-update . 1)
  (describe-face . 1)
  (set-face-foreground . 1)
- (customize-face . 20)
+ (customize-face . 31)
  (package-show-package-list . 1)
- (package-delete . 12)
+ (package-delete . 13)
  (c-mode . 1)
  (butterfly . 4)
  (shell . 2)
@@ -106,7 +106,7 @@
  (term . 3)
  (vterm . 2)
  (open-cmd . 1)
- (start-cmd . 49)
+ (start-cmd . 53)
  (all-the-icons-install-fonts . 2)
  (treemacs-icons-dired-mode . 26)
  (all-the-icons-dired-mode . 2)
@@ -120,7 +120,7 @@
  (icon-mode . 3)
  (eval-defun . 3)
  (treemacs-load-theme . 1)
- (eww . 6)
+ (eww . 8)
  (rename-file . 2)
  (replace-string . 4)
  (eshell-send-input . 1)
@@ -132,7 +132,7 @@
  (rate-sx . 15)
  (rate-sx-calc . 3)
  (rcirc . 1)
- (erc-tls . 44)
+ (erc-tls . 45)
  (ytdl-download-eshell . 2)
  (ytdl-show-list . 2)
  (dired-do-symlink . 6)
@@ -156,7 +156,7 @@
  (run-scheme . 1)
  (org-latex-export-as-latex . 1)
  (org-latex-export-to-pdf . 1)
- (company-mode . 1)
+ (company-mode . 3)
  (flymake-mode . 4)
  (kill-buffer-and-window . 1)
  (kill-buffer . 1)
@@ -166,10 +166,13 @@
  (erc-cmd-AMSG . 1)
  (erc-channel-names . 1)
  (org-agenda . 16)
- (vc-dir . 3)
+ (vc-dir . 4)
  (vc-pull . 2)
  (todo-mode . 3)
  (my-horizontal-recenter . 1)
  (python-skeleton-if . 1)
  (pdb . 1)
+ (center-line . 2)
+ (center-region . 1)
+ (helm-browse-url-uzbl . 1)
 )
