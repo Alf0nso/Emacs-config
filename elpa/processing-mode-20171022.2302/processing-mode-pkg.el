@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/afons/.emacs.d/elpa/processing-mode-20171022.2302/processing-mode.el  -*- no-byte-compile: t -*-
+(define-package "processing-mode" "20171022.2302" "Major mode for Processing 2.0" 'nil :commit "448aba82970c98322629eaf2746e73be6c30c98e" :keywords '("languages" "snippets") :authors '(("Peter Vasil" . "mail@petervasil.net")) :maintainer '("Peter Vasil" . "mail@petervasil.net") :url "https://github.com/ptrv/processing2-emacs")

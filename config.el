@@ -1,61 +1,4 @@
-(setq inhibit-startup-screen t)
-(setq initial-major-mode 'text-mode)
-(setq initial-scratch-message 
-      "Present Day, Present Time...\n")
-
-(scroll-bar-mode 0)
-(menu-bar-mode 0)
-(tool-bar-mode 0)
-(setq visible-bell t)
-
-(setq default-directory (concat (getenv "HOME") "/"))
-
-(add-to-list 'default-frame-alist 
-	     '(fullscreen . fullboth))
-
-(set-face-attribute
- 'default nil
- :font "Consolas 17" )
-
-(set-frame-font
- "Consolas 17" nil t)
-
-(display-time-mode 1)
-(display-battery-mode 1)
-
-(defun custom/kill-this-buffer ()
-  (interactive) (kill-buffer (current-buffer)))
-
-(global-set-key (kbd "C-x k")
-		'kill-buffer-and-window)
-
-(global-set-key (kbd "C-c k")
-		'kill-buffer)
-
-(global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
-(global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
-(global-set-key (kbd "C-S-<down>") 'shrink-window)
-(global-set-key (kbd "C-S-<up>") 'enlarge-window)
-
-(setq utf-translate-cjk-mode nil)
-(set-language-environment "UTF-8")
-(setq locale-coding-system 'utf-8)
-(set-default-coding-systems 'utf-8)
-(set-terminal-coding-system 'utf-8)
-(set-selection-coding-system
- (if (eq system-type 'windows-nt)
-      'utf-16-le
-    'utf-8))
-(prefer-coding-system 'utf-8)
-
-(setq backup-by-copying t
-      backup-directory-alist '(("." . "~/.saves/"))
-      delete-old-versions t
-      kept-new-versions 6
-      kept-old-versions 2
-      version-control t)
-
-(load "~/.emacs.d/elegant-emacs/elegance.el")
+(load "~/.emacs.d/lisp/custom.el")
 
 (load "~/.emacs.d/lisp/iscroll.el")
 
@@ -124,14 +67,15 @@
 (add-to-list 'org-structure-template-alist '("cp" . "src C"))
 (add-to-list 'org-structure-template-alist '("ja" . "src java :results output"))
 (add-to-list 'org-structure-template-alist '("sp" . "src sparql"))
+(add-to-list 'org-structure-template-alist '("dt" . "src dot"))
 
 (defun ck/org-confirm-babel-evaluate (lang body)
-  (not (or (string= lang "latex") (string= lang "python"))))
+  (not (or (string= lang "latex") (string= lang "python")
+	   (string= lang "sparql") (string= lang "emacs-lisp"))))
 (setq org-confirm-babel-evaluate 'ck/org-confirm-babel-evaluate)
 
-(setq org-agenda-files (quote ("~/todo.org")))
+(setq org-agenda-files (quote ("~/Org/todo.org")))
 (global-set-key (kbd "C-c a") 'org-agenda)
-(customize-set-variable 'org-agenda-files "~/todo.org")
 
 (setq org-hide-emphasis-markers t)
 (setq org-image-actual-width nil)
@@ -201,17 +145,19 @@
 	 (if
 	     (= (user-uid) 0) " # " " λ "))))
 
+(defun eshell-other-window ()
+  "Open a `shell' in a new window."
+  (interactive)
+  (let ((buf (eshell)))
+    (switch-to-buffer (other-buffer buf))
+    (switch-to-buffer-other-window buf)))
+
+(global-set-key (kbd "M-s e")
+		'eshell-other-window)
+
 (defun start-cmd ()
   (interactive)
-  (let ((proc
-	 (start-process
-	  "cmd"
-	  nil
-	  "cmd.exe"
-	  "/C"
-	  "start"
-	  "\"---\""
-	  "cmd.exe")))
+  (let ((proc (start-process "cmd" nil "cmd.exe" "/C" "start" "\"---\"" "cmd.exe")))
     (set-process-query-on-exit-flag proc nill)))
 
 (add-hook 'java-mode-hook 'gradle-mode)
@@ -253,3 +199,68 @@
 (add-hook 'text-mode-hook 'flyspell-mode)
 
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+
+(add-to-list 'load-path "~/.emacs.d/freest-mode/")
+(require 'freest-mode)
+(add-to-list 'auto-mode-alist '("\\.fst\\'" . freest-mode))
+
+(setq processing-location "c:/processing-3.5.4/processing-java.exe")
+
+(setq inhibit-startup-screen t)
+(setq initial-major-mode 'text-mode)
+(setq initial-scratch-message 
+      "Present Day, Present Time...\n")
+
+(load "~/.emacs.d/elegant-emacs/elegance.el")
+
+(scroll-bar-mode 0)
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+(setq visible-bell t)
+
+(setq default-directory (concat (getenv "HOME") "/"))
+
+(add-to-list 'default-frame-alist 
+	     '(fullscreen . fullboth))
+
+;;(set-face-attribute
+;; 'default nil
+;; :font "Consolas 17" )
+
+(set-frame-font
+ "Consolas 22" nil t)
+
+(display-time-mode 1)
+(display-battery-mode 1)
+
+(defun custom/kill-this-buffer ()
+  (interactive) (kill-buffer (current-buffer)))
+
+(global-set-key (kbd "C-x k")
+		'kill-buffer-and-window)
+
+(global-set-key (kbd "C-c k")
+		'kill-buffer)
+
+(global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-S-<down>") 'shrink-window)
+(global-set-key (kbd "C-S-<up>") 'enlarge-window)
+
+(setq utf-translate-cjk-mode nil)
+(set-language-environment "UTF-8")
+(setq locale-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-selection-coding-system
+ (if (eq system-type 'windows-nt)
+      'utf-16-le
+    'utf-8))
+(prefer-coding-system 'utf-8)
+
+(setq backup-by-copying t
+      backup-directory-alist '(("." . "~/.saves/"))
+      delete-old-versions t
+      kept-new-versions 6
+      kept-old-versions 2
+      version-control t)

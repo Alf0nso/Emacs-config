@@ -1,176 +1,16 @@
-* General Settings
-
-** Splash Screen & Starting Scratch
-
-*** Splash Screen
-
-   Inhibiting the default splash screen
-   from appearing, and changing the text
-   displayed on the scratch file.
-
-   #+begin_src emacs-lisp
-     (setq inhibit-startup-screen t)
-     (setq initial-major-mode 'text-mode)
-     (setq initial-scratch-message 
-	   "Present Day, Present Time...\n")
-   #+end_src
-
-   
-** Basic Additions & Removing Bars
-   
-*** Removing Bars & Bells
-
-   First we remove unnecessary
-   bars that (in my opinion) take 
-   screen space that I would rather
-   use for other things. Also deactivate
-   bells, which are active by default.
-
-   #+begin_src emacs-lisp
-   (scroll-bar-mode 0)
-   (menu-bar-mode 0)
-   (tool-bar-mode 0)
-   (setq visible-bell t)
-   #+end_src
-
-*** Paths & Loading Files
-
-   Make the default directory the
-   windows %HOME% which has to be
-   defined by the computer user on
-   the windows machine
-      
-   #+begin_src emacs-lisp
-     (setq default-directory (concat (getenv "HOME") "/"))
-   #+end_src
-
-*** Screen & Fonts
-
-   I enjoy when the screen starts
-   full, since I use it like that
-   most of the time.
-
-   #+begin_src emacs-lisp
-     (add-to-list 'default-frame-alist 
-		  '(fullscreen . fullboth))
-   #+end_src
-
-   The font I've been using is the
-   /Consolas/ font, not because I have
-   any particular affection for it,
-   I just happened to find it easy
-   to read.
-
-   #+begin_src emacs-lisp
-     (set-face-attribute
-      'default nil
-      :font "Consolas 17" )
-
-     (set-frame-font
-      "Consolas 17" nil t)
-   #+end_src
-
-*** Time & Battery
-
-    Since I spend so much time inside
-    emacs, I do like to see the battery
-    and the clock as well
-
-    #+begin_src emacs-lisp
-    (display-time-mode 1)
-    (display-battery-mode 1)
-    #+end_src
-
-*** Key Substitution
-
-**** Killing Buffers
-
-    Defining two different ways of
-    deleting buffers, one where we
-    can select what buffer to delete
-    and the other where we just
-    delete the one we are in.
-    The custom function was made in
-    case I ever feel uncomfortable with
-    the way I setup the buffer deletion.
-
-    #+begin_src emacs-lisp
-      (defun custom/kill-this-buffer ()
-	(interactive) (kill-buffer (current-buffer)))
-
-      (global-set-key (kbd "C-x k")
-		      'kill-buffer-and-window)
-
-      (global-set-key (kbd "C-c k")
-		      'kill-buffer)
-
-    #+end_src
-
-**** Window resizing
-
-     key bindings for resizing windows!
-
-     #+begin_src emacs-lisp
-       (global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
-       (global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
-       (global-set-key (kbd "C-S-<down>") 'shrink-window)
-       (global-set-key (kbd "C-S-<up>") 'enlarge-window)
-     #+end_src
-
-*** Emacs Encodings
-
-    I must confess I don't understand
-    much of the following code, but I
-    do think that UTF-8 means good? and
-    other thing that is not UTF-8 means
-    bad? I dunno.... I just know that
-    utf-8 displays all the characters I
-    want and need.
-
-    #+begin_src emacs-lisp
-      (setq utf-translate-cjk-mode nil)
-      (set-language-environment "UTF-8")
-      (setq locale-coding-system 'utf-8)
-      (set-default-coding-systems 'utf-8)
-      (set-terminal-coding-system 'utf-8)
-      (set-selection-coding-system
-       (if (eq system-type 'windows-nt)
-	    'utf-16-le
-	  'utf-8))
-      (prefer-coding-system 'utf-8)
-    #+end_src
-
-*** Backing & File Destiny
-
-    Backing up files on a special
-    directory, so that if something
-    goes horribly wrong I can still
-    have them back.
-
-    #+begin_src emacs-lisp
-      (setq backup-by-copying t
-	    backup-directory-alist '(("." . "~/.saves/"))
-	    delete-old-versions t
-	    kept-new-versions 6
-	    kept-old-versions 2
-	    version-control t)
-    #+end_src
-
-*** Styling Of Emacs
-
-    Emacs style I am currently using.
-    Might be something quite more
-    personalized, or just some random
-    thing I found on the Internet.
-
-    #+begin_src emacs-lisp
-    (load "~/.emacs.d/elegant-emacs/elegance.el")
-    #+end_src
-
-
 * Packages & Terminals
 
 ** Packages & Additions
+
+*** Personal Functions
+    
+    Some functions that I have been
+    building with emacs lisp, that
+    can and do facilitate my life!
+
+    #+begin_src emacs-lisp
+    (load "~/.emacs.d/lisp/custom.el")
+    #+end_src
 
 *** Iscroll
     
@@ -335,6 +175,8 @@
        (add-to-list 'org-structure-template-alist '("cp" . "src C"))
        (add-to-list 'org-structure-template-alist '("ja" . "src java :results output"))
        (add-to-list 'org-structure-template-alist '("sp" . "src sparql"))
+       (add-to-list 'org-structure-template-alist '("dt" . "src dot"))
+
      #+end_src
 
 **** No Evaluation Prompt
@@ -344,7 +186,8 @@
 
      #+begin_src emacs-lisp
        (defun ck/org-confirm-babel-evaluate (lang body)
-	 (not (or (string= lang "latex") (string= lang "python"))))
+	 (not (or (string= lang "latex") (string= lang "python")
+		  (string= lang "sparql") (string= lang "emacs-lisp"))))
        (setq org-confirm-babel-evaluate 'ck/org-confirm-babel-evaluate)
      #+end_src
 
@@ -354,9 +197,8 @@
      settings.
 
      #+begin_src emacs-lisp
-       (setq org-agenda-files (quote ("~/todo.org")))
+       (setq org-agenda-files (quote ("~/Org/todo.org")))
        (global-set-key (kbd "C-c a") 'org-agenda)
-       (customize-set-variable 'org-agenda-files "~/todo.org")
      #+end_src
 
 **** Extra Configurations
@@ -482,7 +324,25 @@
 		(if
 		    (= (user-uid) 0) " # " " λ "))))
      #+end_src
+**** Eshell showing up
+
+     They way eshell pops can be changed
+     #+begin_src emacs-lisp
+       (defun eshell-other-window ()
+	 "Open a `shell' in a new window."
+	 (interactive)
+	 (let ((buf (eshell)))
+	   (switch-to-buffer (other-buffer buf))
+	   (switch-to-buffer-other-window buf)))
+     #+end_src
      
+     Rebind it to key combo
+     #+begin_src emacs-lisp
+       (global-set-key (kbd "M-s e")
+		       'eshell-other-window)
+     #+end_src
+
+
 *** Windows CMD
 
     eshell doesn't always do everything
@@ -559,19 +419,21 @@
 
     #+end_src
 
-*** Pyhton Interpreter
+*** Python Interpreter
 
     #+begin_src emacs-lisp
       (setq python-shell-interpreter "python"
 	    python-shell-interpreter-args "-i")
     #+end_src
 
+    #+RESULTS:
+    : -i
+
 *** Virtual Environments
 
     #+begin_src emacs-lisp
       (setenv "WORKON_HOME" "c:/Users/afons/py_home")
     #+end_src
-
 
 ** Sparql
 
@@ -601,7 +463,6 @@
      (put 'dired-find-alternate-file 'disabled nil)
      (add-hook 'text-mode-hook 'flyspell-mode)
    #+end_src
-
 ** Haskell
 
    After being a Python and C programmer
@@ -614,6 +475,192 @@
    #+begin_src emacs-lisp
    (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
    #+end_src
+** Freest
+   
+  Freest is a programming language developed
+  in my faculty. It's basically haskell but
+  with parallelization in mind.
+
+   #+begin_src emacs-lisp
+     (add-to-list 'load-path "~/.emacs.d/freest-mode/")
+     (require 'freest-mode)
+     (add-to-list 'auto-mode-alist '("\\.fst\\'" . freest-mode))
+   #+end_src
+
+** Processing
+
+   #+begin_src emacs-lisp
+   (setq processing-location "c:/processing-3.5.4/processing-java.exe")
+   #+end_src
 
 
+* General Settings
+
+** Splash Screen & Starting Scratch
+
+*** Splash Screen
+
+   Inhibiting the default splash screen
+   from appearing, and changing the text
+   displayed on the scratch file.
+
+   #+begin_src emacs-lisp
+     (setq inhibit-startup-screen t)
+     (setq initial-major-mode 'text-mode)
+     (setq initial-scratch-message 
+	   "Present Day, Present Time...\n")
+   #+end_src
+
+   
+** Basic Additions & Removing Bars
+   
+*** Styling Of Emacs
+
+    Emacs style I am currently using.
+    Might be something quite more
+    personalized, or just some random
+    thing I found on the Internet.
+
+    #+begin_src emacs-lisp
+    (load "~/.emacs.d/elegant-emacs/elegance.el")
+    #+end_src
+*** Removing Bars & Bells
+
+   First we remove unnecessary
+   bars that (in my opinion) take 
+   screen space that I would rather
+   use for other things. Also deactivate
+   bells, which are active by default.
+
+   #+begin_src emacs-lisp
+   (scroll-bar-mode 0)
+   (menu-bar-mode 0)
+   (tool-bar-mode 0)
+   (setq visible-bell t)
+   #+end_src
+
+*** Paths & Loading Files
+
+   Make the default directory the
+   windows %HOME% which has to be
+   defined by the computer user on
+   the windows machine
+      
+   #+begin_src emacs-lisp
+     (setq default-directory (concat (getenv "HOME") "/"))
+   #+end_src
+
+*** Screen & Fonts
+
+   I enjoy when the screen starts
+   full, since I use it like that
+   most of the time.
+
+   #+begin_src emacs-lisp
+     ;(add-to-list 'default-frame-alist 
+     ;	     '(fullscreen . fullboth))
+   #+end_src
+
+   The font I've been using is the
+   /Consolas/ font, not because I have
+   any particular affection for it,
+   I just happened to find it easy
+   to read.
+
+   #+begin_src emacs-lisp
+     ;;(set-face-attribute
+     ;; 'default nil
+     ;; :font "Consolas 17" )
+
+     (set-frame-font
+      "Consolas 22" nil t)
+   #+end_src
+
+   #+RESULTS:
+
+*** Time & Battery
+
+    Since I spend so much time inside
+    emacs, I do like to see the battery
+    and the clock as well
+
+    #+begin_src emacs-lisp
+    (display-time-mode 1)
+    (display-battery-mode 1)
+    #+end_src
+
+*** Key Substitution
+
+**** Killing Buffers
+
+    Defining two different ways of
+    deleting buffers, one where we
+    can select what buffer to delete
+    and the other where we just
+    delete the one we are in.
+    The custom function was made in
+    case I ever feel uncomfortable with
+    the way I setup the buffer deletion.
+
+    #+begin_src emacs-lisp
+      (defun custom/kill-this-buffer ()
+	(interactive) (kill-buffer (current-buffer)))
+
+      (global-set-key (kbd "C-x k")
+		      'kill-buffer-and-window)
+
+      (global-set-key (kbd "C-c k")
+		      'kill-buffer)
+
+    #+end_src
+
+**** Window resizing
+
+     key bindings for resizing windows!
+
+     #+begin_src emacs-lisp
+       (global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
+       (global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
+       (global-set-key (kbd "C-S-<down>") 'shrink-window)
+       (global-set-key (kbd "C-S-<up>") 'enlarge-window)
+     #+end_src
+
+*** Emacs Encodings
+
+    I must confess I don't understand
+    much of the following code, but I
+    do think that UTF-8 means good? and
+    other thing that is not UTF-8 means
+    bad? I dunno.... I just know that
+    utf-8 displays all the characters I
+    want and need.
+
+    #+begin_src emacs-lisp
+      (setq utf-translate-cjk-mode nil)
+      (set-language-environment "UTF-8")
+      (setq locale-coding-system 'utf-8)
+      (set-default-coding-systems 'utf-8)
+      (set-terminal-coding-system 'utf-8)
+      (set-selection-coding-system
+       (if (eq system-type 'windows-nt)
+	    'utf-16-le
+	  'utf-8))
+      (prefer-coding-system 'utf-8)
+    #+end_src
+
+*** Backing & File Destiny
+
+    Backing up files on a special
+    directory, so that if something
+    goes horribly wrong I can still
+    have them back.
+
+    #+begin_src emacs-lisp
+      (setq backup-by-copying t
+	    backup-directory-alist '(("." . "~/.saves/"))
+	    delete-old-versions t
+	    kept-new-versions 6
+	    kept-old-versions 2
+	    version-control t)
+    #+end_src
 

@@ -1,128 +1,128 @@
-exit
+py stippling.py 
+pip install scipy
+clear
+pip install scipy
+clear
+py stippling.py 
+pip install imageio
+py stippling.py 
 clear
 ls
+vim
 clear
-ls
-clear
-clear
-ls
-exit
-exit
-ls
-clear
-cd __pycache__/
-clear
-ls
-exit
-pwd
-clear
-ls
-dot test.dot 
-clear
-ls
-ls -a
+pip -V
 clear
 exit
-git add *
-git commit -m "altered some functions on the tic-tac-toe, almost finishing implementing the game. The org file serves as documentation of the work being done"
-git push
-git push origin maaster
-git push origin main
-git push origin
-git push --set-upstream origin master
+pip -V
 clear
+pip -V
+clear
+exit
+pip -V
+clear
+exit
+pip -V
+exit
+pip -V
+clear
+exit
+pip -V
+exit
+pip -V
+exit
+explorer .
+exit
+pip -V
+pip -V
+exit
+pip -V
+pyvenv
+exit
+pip -V
+exit
+cc
 clear
 ls
-brave games_neural_net.html 
-ff games_neural_net.org 
-exit
 clear
+exit
+deno
+exit
+pip -V
+pip install ipykernel
+clear
+python -m ipykernel install --user --name="SemanticWeb"
+clear
+exit
+explorer .
+exit
+pip -V
+clear
+pip install PIL
+clear
+exit
+executables/hello_world.exe
+executables/hello_world.exe
+executables/hello_world.exe 
+executables/fahr_cel.exe
+git pull
+git status
+git reset -- hard
+git pull
+clear
+git pull
+:	connect4.pyPlease commit your changes or stash them before you merge.Aborting2020-12-22 λ clear
+clear
+git stash
+git pull
+git stash pop
+git pull --rebase origin master
+git list
+git status
+git reset HEAD connect4.py
+git pull
+clear
+exit
 py main.py 
 clear
-exit
-unzip archive.zip 
-7z x archive.zip 
-clear
-ls
-ff Raw_Data_for_train_test.csv 
 ls
 clear
+clear
 ls
+py main.py 
+clear
+clear
+py main.py
+py main.py 
 exit
-git add *
+exit
+pwd
+cd ~/
 cls
 clear
-git commit -m "Tic tac toe game is playable, needs to add a if full -> draw. The missing part is making a function to generate games and results"
-git push
-clear
 pwd
-clear
-pwd
-cls
-clear
-exit
-git add *
-git commit -m "Tic Tac Toe complete. Random game generator Missing"
-git push
-clear
+cat MISC/ascii_frice/deer_ascii.txt
+pip -V
 exit
 clear
-ls
-test.exe 
-test.
-test.exe 
-rm test.c test.exe 
-clear
-ls
-ls
-clear
-ls
-cd data/
-clear
-ls
-ff Example.py 
-Example.py 
 exit
-git add *
-clear
-git commit -m "minor changes to the emacs config, probably going to remove emacs tree and other tree like packages since I don't really use them"
-git push
-clear
-ls
-Ck
-clear
-unzip FaCTpp-win-v1.6.2.zip 
-clear
-ls
-cd FaCT++-win-v1.6.2/
-clear
-exit
-ls
-clear
-ls
-cd elpy/
-clear
-ls
-exit
-clear
-ls
-clear
-pwd
-clear
-ls
-cd AA
-ls
-cd ..
-clear
-ls
-cd AA/
-cd ..
-clear
-ls
-exit
-clear
-ls
-clear
+pip -V
+pip -V
+pip -V
 pip
 clear
+python -V
 exit
+py -0
+pip -V
+pip -V
+pip install ipykernel
+python -m pip install --upgrade pip
+clear
+python -m ipykernel install --user --name=AI
+pip install jupyter
+clear
+PIP -v
+pip -V
+clear
+python -m ipykernel install --user --name=AI
+clear

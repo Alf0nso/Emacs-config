@@ -2,16 +2,24 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("c:/Users/afons/AppData/Local/Programs/" . "Python/")
+ ("c:/Users/afons/AppData/Local/" . "Programs/")
+ ("c:/Users/afons/AppData/" . "Local/")
+ ("c:/Users/afons/MISC/extra_ana/" . "stippling/")
+ ("c:/Users/afons/Desktop/stippling/" . "data/")
+ ("c:/Users/afons/Desktop/" . "stippling/")
+ ("c:/Users/afons/aulas/CS/Biblio/" . "Books/")
+ ("c:/Users/afons/aulas/CS/" . "Biblio/")
  ("c:/Users/afons/aulas/FW/Project/" . "Project_notbooks/")
  ("c:/Users/afons/aulas/FW/" . "Biblio/")
  ("c:/Users/afons/aulas/FW/Biblio/" . "Books/")
  ("c:/Users/afons/aulas/SA/Entregas/" . "Entrega_4/")
  ("c:/Users/afons/aulas/SA/agents/" . "parallelism/")
- ("c:/Users/afons/MISC/" . "pols/")
+ ("c:/Users/afons/MISC/" . "extra_ana/")
  ("c:/Users/afons/aulas/AI/abstracts/" . "abstract_8/")
- ("c:/Users/afons/aulas/AI/" . "biblio/")
+ ("c:/Users/afons/aulas/AI/" . "project/")
  ("c:/Users/afons/aulas/AA/Biblio_Slides/" . "books/")
- ("c:/Users/afons/aulas/AA/" . "Biblio_Slides/")
+ ("c:/Users/afons/aulas/AA/" . "Project/")
  ("c:/Users/afons/py_home/ML/" . "Scripts/")
  ("c:/Users/afons/py_home/" . "ML/")
  ("c:/Users/afons/aulas/SA/agent/build/classes/java/main/" . "agent/")
@@ -20,34 +28,56 @@
  ("c:/Users/afons/aulas/SA/agent/build/" . "classes/")
  ("c:/Users/afons/aulas/SA/agent/" . "build/")
  ("c:/Users/afons/aulas/SA/" . "Entregas/")
- ("c:/Users/afons/aulas/" . "AI/")
- ("c:/Users/afons/" . "MISC/")
+ ("c:/Users/afons/aulas/" . "AA/")
+ ("c:/Users/afons/" . "aulas/")
  ("c:/Users/" . "afons/")
  ("c:/" . "Users/")
- ("c:/Users/afons/.emacs.d/" . "transient/")
+ ("c:/Users/afons/.emacs.d/" . "elegant-emacs/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "c:/Users/afons/"
- "c:/Users/afons/.emacs.d/"
- "c:/Users/afons/MISC/pols/"
+ "c:/Users/afons/aulas/AA/Project/"
+ "c:/Users/afons/aulas/AA/"
+ "c:/Users/afons/AppData/Local/Programs/Python/"
+ "c:/Users/afons/Org/"
  "c:/Users/afons/aulas/AI/project/"
- "c:/Users/afons/aulas/AI/"
- "c:/Users/afons/MISC/"
- "c:/Users/afons/aulas/SA/"
- "c:/Users/afons/aulas/AI/biblio/books/"
- "c:/Users/afons/Desktop/"
- "c:/Users/afons/aulas/FW/Biblio/Books/"
- "c:/Users/afons/aulas/FW/"
  "c:/Users/afons/aulas/"
+ "c:/Users/afons/.emacs.d/"
+ "c:/Users/afons/aulas/AI/"
+ "c:/Users/afons/MISC/extra_ana/stippling/"
+ "c:/Users/afons/MISC/simple_c/C_prog_language/"
+ "c:/Users/afons/Desktop/"
+ "c:/Users/afons/MISC/lisp_programs/"
+ "c:/Users/afons/aulas/FW/"
+ "c:/Users/afons/MISC/extra_ana/"
+ "c:/Users/afons/aulas/FW/Project/"
+ "c:/Users/afons/"
+ "c:/Users/afons/aulas/SA/"
+ "c:/Users/afons/aulas/CS/"
+ "c:/Users/afons/MISC/pols/"
+ "c:/Users/afons/Videos/"
+ "c:/Users/afons/aulas/CS/apresentação/"
+ "c:/Users/afons/Desktop/stippling/data/"
+ "c:/Users/afons/MISC/genetic/"
+ "c:/Users/afons/MISC/"
+ "c:/Users/afons/.emacs.d/elegant-emacs/"
+ "c:/Users/afons/.emacs.d/lisp/"
+ "c:/Users/afons/Books/"
+ "c:/Users/afons/aulas/CS/Biblio/Books/"
+ "c:/Users/afons/aulas/AI/abstracts/abstract_11/"
+ "c:/Users/afons/aulas/AI/abstracts/"
+ "c:/Users/afons/aulas/AI/abstracts/abstract_10/"
+ "c:/Users/afons/.saves/"
+ "c:/Users/afons/Pictures/"
+ "c:/Users/afons/aulas/AI/biblio/books/"
+ "c:/Users/afons/aulas/FW/Biblio/Books/"
  "c:/Users/afons/aulas/FW/Biblio/"
  "c:/Users/afons/aulas/FW/Biblio/Slides/"
  "c:/Users/afons/aulas/AI/abstracts/abstract_9/"
  "c:/Users/afons/aulas/SA/Entregas/"
  "c:/Users/afons/aulas/SA/Entregas/Entrega_5/"
  "c:/"
- "c:/Users/afons/Books/"
  "c:/Users/afons/MISC/Haskel_learning/"
  "c:/Users/afons/aulas/FW/Project/Project_notbooks/"
  "c:/Users/afons/aulas/AI/abstracts/abstract_8/"
@@ -57,73 +87,125 @@
  "c:/Users/afons/Desktop/java_test/"
  "c:/Users/afons/aulas/CS/project/"
  "c:/Users/afons/MISC/py_aero/"
- "c:/Users/afons/MISC/lisp_programs/"
- "c:/Users/afons/.emacs.d/lisp/"
- "c:/Users/afons/MISC/Assembly/"
- "c:/Users/afons/aulas/FW/test/"
- "c:/Users/afons/Google Drive/"
- "c:/Users/afons/aulas/SA/agents/"
- "c:/Users/afons/aulas/SA/agents/parallelism/"
- "c:/Users/afons/aulas/AI/abstracts/abstract_5/"
- "c:/Users/afons/MISC/test/"
- "c:/Users/afons/aulas/CS/"
- "c:/Users/afons/aulas/AA/Biblio_Slides/books/"
- "c:/Users/afons/aulas/SA/Entregas/Entrega_2/"
- "c:/Users/afons/aulas/FW/Project/projeto_fase1/data_processing/"
- "c:/Users/afons/aulas/SA/agents/messaging_agent/"
- "c:/Users/afons/aulas/AI/abstracts/abstract_4/"
- "c:/Users/afons/aulas/AI/abstracts/abstract_1/"
- "c:/Users/afons/aulas/SA/Entregas/Entrega_1/"
- "c:/Users/afons/aulas/AI/abstracts/abstarct_4/"
- "c:/Users/afons/aulas/AI/abstracts/abstract_3/"
- "c:/Users/afons/MISC/dwarf/Dwarf_OS/"
- "c:/Users/afons/aulas/AI/abstracts/abstract_2/"
- "c:/Users/afons/aulas/AI/abstracts/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  "todo.org"
- "init.el"
- "b_init.el"
- "init.org"
- "main.py"
- "politics_pt.org"
- "test.dot"
- "tic_tac_toe.py"
  "games_neural_net.org"
- "gpfieldguide.pdf"
+ "config.org"
+ "neural_net.py"
+ "fahrenheit-cel.c"
+ "lisp.el"
+ "convert_to_gif.py"
+ "owl_rules.org"
+ "add.ts"
+ "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/afons/" (24512 59504 0 0) "_viminfo" "VirtualBox VMs/" "vimfiles/" "Videos/" "todo.org_archive" "todo.org" "SendTo/" "Searches/" "Saved Games/" "Recent/" "py_home/" "PrintHood/" "politics_pt.html" "Pictures/" "Os Meus Documentos/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "Links/" "IntelGraphicsProfiles/" "img/" "Google Drive/" "games/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "data/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" "3D Objects/" ".VirtualBox/" ".ssh/" ".saves/" ".Protege/" ".matplotlib/" ".jupyter/" ".ipython/" ".gradle/" ".gitconfig" ".emacs.d/" ".config/" ".cache/" ".bash_history" "../" "./")
+ ("c:/Users/afons/aulas/AA/Project/" (24555 37010 0 0) "wealthrating_ses.txt" "teste.csv" "study_columns_donation_type.csv" "study_columns_donation_SES.csv" "study_columns_donation.csv" "Raw_Data_for_train_test.csv" "Predict_donor.csv" "features.ipynb" "donors_prediction.ipynb" "Donors_dataset.csv" "cache/" "archive.zip" "AA_Project_Terca.ipynb" "AA_Project_quase_final.ipynb" "AA_Project_Domingo.ipynb" "AA_Project.ipynb" "AA_202021_Project.ipynb" ".ipynb_checkpoints/" "../" "./")
 
- ("c:/Users/afons/.emacs.d/" (24512 59445 0 0) "url/" "transient/" "todo/" "thumbs/" "snippets/" "smex-items" "showcase.png" "request/" "README.md" "places" "lisp/" "init.el" "image-dired/" "ido.last" "fonts/" "eshell/" "elpy/" "elpa/" "elegant-emacs/" "el-get/" "config.org" "config.el" "backup.el" "auto-save-list/" "ac-comphist.dat" ".org-id-locations" ".git/" ".cache/" "../" "./")
+ ("c:/Users/afons/AppData/Local/Programs/Python/" (24552 40734 0 0) "Python38-32/" "Python38/" "Python36/" "../" "./")
 
- ("c:/Users/afons/Google Drive/" (24511 36106 0 0) "todo.org" "desktop.ini" ".tmp.drivedownload/" "../" "./")
+ ("c:/Users/afons/AppData/Local/Programs/" (24550 29912 0 0) "stack/" "Python/" "MiKTeX 2.9/" "LNV/" "Common/" "../" "./")
+
+ ("c:/Users/afons/AppData/Local/" (24553 55514 0 0) "zenmap.exe.log" "Xamarin/" "Wizards of the Coast/" "VMware/" "VirtualStore/" "UnrealEngine/" "TileDataLayer/" "Temporary Internet Files/" "Temp/" "SquirrelTemp/" "speech/" "Smart Code ltd/" "ServiceHub/" "Safe Software/" "Resmon.ResmonCfg" "recently-used.xbel" "qBittorrent/" "pypa/" "PUTTY.RND" "Publishers/" "Programs/" "PlaceholderTileLogoFolder/" "pip/" "Parso/" "PackageStaging/" "Packages/" "Package Cache/" "OneDrive/" "Oblivion/" "NVIDIA Corporation/" "NVIDIA/" "Notepad++/" "NetworkTiles/" "NASM/" "MusicBrainz/" "MuseScore/" "MiKTeX/" "Microsoft_Corporation/" "MicrosoftEdge/" "Microsoft/" "JxBrowser/" "Jedi/" "IconCache.db.backup" "IconCache.db" "HitFilm Express 2017 Activation/" "Histórico/" "gtk-2.0/" "Google/" "Glyph/" "gegl-0.4/" "FXHOME Helper/" "FXHOME/" "fontconfig/" "Far Manager/" "ElevatedDiagnostics/" "Downloaded Installations/" "Discord/" "Diagnostics/" "Deployment/" "deno/" "DBG/" "D3DSCache/" "Crashpad/" "ContinuumIO/" "ConnectedDevicesPlatform/" "Conexant/" "Comms/" "CKAN/" "Chromium/" "CEF/" "cache/" "BraveSoftware/" "Audacity/" "Apps/" "Application Data/" "Adobe/" "../" "./")
+
+ ("c:/Users/afons/AppData/" (23879 25170 0 0) "Roaming/" "LocalLow/" "Local/" "../" "./")
+
+ ("c:/Users/afons/" (24554 16820 0 0) "_viminfo" "VirtualBox VMs/" "vimfiles/" "Videos/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "py_home/" "PrintHood/" "politics_pt.html" "Pictures/" "Os Meus Documentos/" "Org/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "Links/" "IntelGraphicsProfiles/" "img/" "Google Drive/" "games/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "data/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" "3D Objects/" ".VirtualBox/" ".ssh/" ".saves/" ".Protege/" ".matplotlib/" ".jupyter/" ".ipython/" ".history" ".gradle/" ".gitconfig" ".emacs.d/" ".deno/" ".config/" ".cache/" ".bash_history" "../" "./")
+
+ ("c:/Users/afons/Org/" (24554 10942 0 0) "todo.org_archive" "todo.org" "../" "./")
+
+ ("c:/Users/afons/aulas/AA/" (24552 45222 0 0) "TP/" "Study/" "Project/" "Biblio_Slides/" "Aprendizagem_automatica.org" ".ipynb_checkpoints/" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/project/" (24552 42302 0 0) "__pycache__/" "utils.py" "tic_tac_toe.py" "tic_games" "README.md" "neural_net.py" "neural_net.png" "main.py" "ltximg/" "games_neural_net.org" "games_neural_net.html" "games_generator.py" "connect4_games" "connect4.py" ".idea/" ".git/" "../" "./")
+
+ ("c:/Users/afons/.emacs.d/" (24552 50838 0 0) "url/" "transient/" "todo/" "thumbs/" "snippets/" "smex-items" "showcase.png" "request/" "README.md" "places" "lisp/" "init.el" "image-dired/" "ido.last" "freest-mode/" "fonts/" "eshell/" "elpa/" "elegant-emacs/" "el-get/" "config.org" "config.el" "backup_just_in_case.el" "auto-save-list/" "ac-comphist.dat" ".org-id-locations" ".git/" ".cache/" "../" "./")
+
+ ("c:/Users/afons/3D Objects/" (24529 60439 0 0) "desktop.ini" "../" "./")
+
+ ("c:/Users/afons/MISC/" (24547 31889 0 0) "wetransfer-673788/" "The_Antichrist" "Simulators/" "simple_c/" "semantic/" "QB/" "pols/" "netgarage/" "lisp_programs/" "lisp/" "IMG_20190709_212126.jpg" "HR/" "Haskel_learning/" "genetic/" "frabric/" "extra_ana/" "dwarf/" "comfy_reader/" "chall/" "brainfcomp/" "Assembly/" "ascii_frice/" "../" "./")
+
+ ("c:/Users/afons/MISC/simple_c/C_prog_language/" (24545 25650 0 0) "Makefile" "hello_world.c" "fahrenheit-cel.c" "executables/" "../" "./")
+
+ ("c:/Users/afons/Google Drive/" (24544 35462 0 0) "todo.org" "desktop.ini" ".tmp.drivedownload/" "../" "./")
+
+ ("c:/Users/afons/.saves/" (24545 24683 0 0) "!drive_c!Users!afons!todo.org_archive.~1~" "!drive_c!Users!afons!todo.org.~2~" "!drive_c!Users!afons!todo.org.~1~" "!drive_c!Users!afons!Org!todo.org_archive.~1~" "!drive_c!Users!afons!Org!todo.org.~2~" "!drive_c!Users!afons!Org!todo.org.~21~" "!drive_c!Users!afons!Org!todo.org.~20~" "!drive_c!Users!afons!Org!todo.org.~1~" "!drive_c!Users!afons!Org!todo.org.~19~" "!drive_c!Users!afons!Org!todo.org.~18~" "!drive_c!Users!afons!Org!todo.org.~17~" "!drive_c!Users!afons!Org!todo.org.~16~" "!drive_c!Users!afons!MISC!simple_c!C_prog_language!Makefile.~1~" "!drive_c!Users!afons!MISC!simple_c!C_prog_language!hello_world.c.~4~" "!drive_c!Users!afons!MISC!simple_c!C_prog_language!hello_world.c.~3~" "!drive_c!Users!afons!MISC!simple_c!C_prog_language!hello_world.c.~2~" "!drive_c!Users!afons!MISC!simple_c!C_prog_language!hello_world.c.~1~" "!drive_c!Users!afons!MISC!pols!politics_pt.org.~7~" "!drive_c!Users!afons!MISC!pols!politics_pt.org.~6~" "!drive_c!Users!afons!MISC!pols!politics_pt.org.~5~" "!drive_c!Users!afons!MISC!pols!politics_pt.org.~4~" "!drive_c!Users!afons!MISC!pols!politics_pt.org.~3~" "!drive_c!Users!afons!MISC!pols!politics_pt.org.~2~" "!drive_c!Users!afons!MISC!pols!politics_pt.org.~1~" "!drive_c!Users!afons!MISC!pols!politics_pt.html.~3~" "!drive_c!Users!afons!MISC!pols!politics_pt.html.~2~" "!drive_c!Users!afons!MISC!pols!politics_pt.html.~1~" "!drive_c!Users!afons!MISC!pols!general.org.~1~" "!drive_c!Users!afons!MISC!pols!db_pols_query.rq.~3~" "!drive_c!Users!afons!MISC!pols!db_pols_query.rq.~2~" "!drive_c!Users!afons!MISC!pols!db_pols_query.rq.~1~" "!drive_c!Users!afons!MISC!lisp_programs!lisp.el.~1~" "!drive_c!Users!afons!MISC!lisp!test.c.~1~" "!drive_c!Users!afons!MISC!lisp!lisper.c.~2~" "!drive_c!Users!afons!MISC!lisp!lisper.c.~1~" "!drive_c!Users!afons!MISC!genetic!genetics.py.~1~" "!drive_c!Users!afons!MISC!extra_ana!stippling!convert_to_gif.py.~1~" "!drive_c!Users!afons!Desktop!stippling!data!gray.py.~1~" "!drive_c!Users!afons!Desktop!add.ts.~1~" "!drive_c!Users!afons!aulas!SA!paper_notes.org.~3~" "!drive_c!Users!afons!aulas!SA!paper_notes.org.~2~" "!drive_c!Users!afons!aulas!SA!paper_notes.org.~1~" "!drive_c!Users!afons!aulas!FW!study.org.~9~" "!drive_c!Users!afons!aulas!FW!study.org.~8~" "!drive_c!Users!afons!aulas!FW!study.org.~7~" "!drive_c!Users!afons!aulas!FW!study.org.~6~" "!drive_c!Users!afons!aulas!FW!study.org.~5~" "!drive_c!Users!afons!aulas!FW!study.org.~4~" "!drive_c!Users!afons!aulas!FW!study.org.~2~" "!drive_c!Users!afons!aulas!FW!study.org.~1~" "!drive_c!Users!afons!aulas!FW!Project!owl_rules.org.~1~" "!drive_c!Users!afons!aulas!FW!owl_test.org.~4~" "!drive_c!Users!afons!aulas!FW!owl_test.org.~3~" "!drive_c!Users!afons!aulas!FW!owl_test.org.~2~" "!drive_c!Users!afons!aulas!FW!owl_test.org.~1~" "!drive_c!Users!afons!aulas!FW!fundamentos_websemantica.org.~1~" "!drive_c!Users!afons!aulas!CS!Presentation.org.~2~" "!drive_c!Users!afons!aulas!CS!Presentation.org.~1~" "!drive_c!Users!afons!aulas!CS!DepSky_DSS_Cloud.org.~4~" "!drive_c!Users!afons!aulas!CS!DepSky_DSS_Cloud.org.~3~" "!drive_c!Users!afons!aulas!CS!DepSky_DSS_Cloud.org.~2~" "!drive_c!Users!afons!aulas!CS!DepSky_DSS_Cloud.org.~1~" "!drive_c!Users!afons!aulas!CS!apresentação!Ron_wrong_whit_right.tex.~2~" "!drive_c!Users!afons!aulas!CS!apresentação!Ron_wrong_whit_right.tex.~1~" "!drive_c!Users!afons!aulas!AI!Vida_artificial.org.~1~" "!drive_c!Users!afons!aulas!AI!Study.org.~1~" "!drive_c!Users!afons!aulas!AI!project!games_generator.py.~5~" "!drive_c!Users!afons!aulas!AI!project!games_generator.py.~4~" "!drive_c!Users!afons!aulas!AI!project!games_generator.py.~3~" "!drive_c!Users!afons!aulas!AI!project!games_generator.py.~2~" "!drive_c!Users!afons!aulas!AI!project!games_generator.py.~1~" "!drive_c!Users!afons!aulas!AI!abstracts!abstract_11!environments_and_sim.tex.~2~" "!drive_c!Users!afons!aulas!AI!abstracts!abstract_11!environments_and_sim.tex.~1~" "!drive_c!Users!afons!aulas!AI!abstracts!abstract_10!self_organization.tex.~1~" "!drive_c!Users!afons!aulas!AA!TP!TP01!myfile.csv.~1~" "!drive_c!Users!afons!aulas!AA!Study!Study.org.~2~" "!drive_c!Users!afons!aulas!AA!Study!Study.org.~1~" "!drive_c!Users!afons!.emacs.d!lisp!custom.el.~2~" "!drive_c!Users!afons!.emacs.d!lisp!custom.el.~1~" "!drive_c!Users!afons!.emacs.d!ido.last~" "!drive_c!Users!afons!.emacs.d!ido.last.~3~" "!drive_c!Users!afons!.emacs.d!ido.last.~2~" "!drive_c!Users!afons!.emacs.d!ido.last.~1~" "!drive_c!Users!afons!.emacs.d!config.org.~1~" "../" "./")
+
+ ("c:/Users/afons/MISC/lisp_programs/" (24545 18692 0 0) "lisp.el" "../" "./")
+
+ ("c:/Users/afons/Desktop/" (24545 14445 0 0) "wetransfer-673788/" "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" "../" "./")
+
+ ("c:/Users/afons/MISC/simple_c/" (24517 25013 0 0) "trainer.exe" "tools/" "test.c" "repeater.exe" "repeater.c" "Makefile" "C_prog_language/" "../" "./")
+
+ ("c:/Users/afons/Pictures/" (24544 36764 0 0) "windows_terminal/" "VID-20190924-WA0000.mp4" "transferir.jpg" "Screenshots/" "Saved Pictures/" "ricing_problem.jpg" "rice.jpg" "my_background.jfif" "logo.png" "IMG_20190815_171311_513.jpg" "IMG_20190808_203505_663.jpg" "IMG_20190808_203505_663 (2).jpg" "icon.jpg" "icon (2).jpg" "emacs.png" "desktop.ini" "CommiDev.png" "carta_de_portugal.jpg" "Camera Roll/" "azma_logo2.png" "../" "./")
+
+ ("c:/Users/afons/aulas/FW/Project/" (24545 994 0 0) "update.properties" "test/" "src/" "readme.txt" "Project_notbooks/" "owl_rules.org" "lib/" "lgpl-3.0.txt" "gpl.txt" "getopt/" "examples/" "Data_Files/" "build.xml" ".project" ".classpath" "../" "./")
+
+ ("c:/Users/afons/MISC/extra_ana/stippling/" (24544 44333 0 0) "stippling.pde" "README.md" "particle_system.pde" "particle_cell.pde" "particle.pde" "output.gif" "data/" "convert_to_gif.py" "anocas.gif" "ana.gif" "100.png" "099.png" "098.png" "097.png" "096.png" "095.png" "094.png" "093.png" "092.png" "091.png" "090.png" "089.png" "088.png" "087.png" "086.png" "085.png" "084.png" "083.png" "082.png" "081.png" "080.png" "079.png" "078.png" "077.png" "076.png" "075.png" "074.png" "073.png" "072.png" "071.png" "070.png" "069.png" "068.png" "067.png" "066.png" "065.png" "064.png" "063.png" "062.png" "061.png" "060.png" "059.png" "058.png" "057.png" "056.png" "055.png" "054.png" "053.png" "052.png" "051.png" "050.png" "049.png" "048.png" "047.png" "046.png" "045.png" "044.png" "043.png" "042.png" "041.png" "040.png" "039.png" "038.png" "037.png" "036.png" "035.png" "034.png" "033.png" "032.png" "031.png" "030.png" "029.png" "028.png" "027.png" "026.png" "025.png" "024.png" "023.png" "022.png" "021.png" "020.png" "019.png" "018.png" "017.png" "016.png" "015.png" "014.png" "013.png" "012.png" "011.png" "010.png" "009.png" "008.png" "007.png" "006.png" "005.png" "004.png" "003.png" "002.png" "001.png" ".git/" "../" "./")
+
+ ("c:/Users/afons/aulas/FW/" (24545 10311 0 0) "TP/" "test_sparql.rq" "sudoku.ttl" "study.org" "Relatorio_Projeto_3.ipynb" "Project/" "Product.tsv" "owl_test.org" "fundamentos_websemantica.org" "defining_owl_rules.ipynb" "Capturar2.png" "Capturar.png" "Biblio/" "airBnbOntology.owl" "airBnb.owl" ".ipynb_checkpoints/" "../" "./")
+
+ ("c:/Users/afons/Videos/" (24544 35440 0 0) "desktop.ini" "Captures/" "../" "./")
+
+ ("c:/Users/afons/MISC/extra_ana/" (24536 38112 0 0) "tsp-art-python/" "stippling/" "../" "./")
+
+ ("c:/Users/afons/aulas/CS/" (24540 63936 0 0) "test.py" "project/" "Presentation.org" "os/" "ltximg/" "DepSky_DSS_Cloud.org" "Computer_security.org" "Biblio/" "apresentação/" "../" "./")
+
+ ("c:/Users/afons/aulas/SA/" (24540 62205 0 0) "smart_agent.png" "sistemas_multi-agente.org" "MTPs-Main-Container.txt" "ltximg/" "Entregas/" "Biblio/" "APDescription.txt" "agents/" "../" "./")
+
+ ("c:/Emacs/x86_64/share/info/" (24436 32757 0 0) "woman.info" "wisent.info" "widget.info" "viper.info" "vip.info" "vhdl-mode.info" "url.info" "tramp.info" "todo-mode.info" "srecode.info" "speedbar.info" "smtpmail.info" "sieve.info" "ses.info" "semantic.info" "sc.info" "sasl.info" "remember.info" "reftex.info" "rcirc.info" "pkcs11-vision.png" "pgg.info" "pcl-cvs.info" "org.info" "octave-mode.info" "nxml-mode.info" "newsticker.info" "nettle.info.gz" "mpfr.info.gz" "mpc.info.gz" "mh-e.info" "message.info" "mairix-el.info" "libunistring.info.gz" "libtasn1.info.gz" "libffi.info.gz" "info.info" "ido.info" "idlwave.info" "htmlfontify.info" "gnutls.info-7" "gnutls.info-6" "gnutls.info-5" "gnutls.info-4" "gnutls.info-3" "gnutls.info-2" "gnutls.info-1" "gnutls.info" "gnutls-x509.png" "gnutls-modauth.png" "gnutls-logo.png" "gnutls-layers.png" "gnutls-internals.png" "gnutls-handshake-state.png" "gnutls-handshake-sequence.png" "gnutls-guile.info" "gnutls-client-server-use-case.png" "gnus.info" "gmp.info.gz" "gmp.info-2.gz" "gmp.info-1.gz" "gettext.info.gz" "forms.info" "flymake.info" "eww.info" "eudc.info" "eshell.info" "ert.info" "erc.info" "epa.info" "emacs.info" "emacs-mime.info" "emacs-gnutls.info" "elisp.info" "eintr.info" "eieio.info" "efaq.info" "efaq-w32.info" "edt.info" "ediff.info" "ede.info" "ebrowse.info" "dired-x.info" "dir" "dbus.info" "cl.info" "ccmode.info" "calc.info" "bovine.info" "autotype.info" "autosprintf.info.gz" "auth.info" "../" "./")
+
+ ("c:/Users/afons/MISC/pols/" (24539 59253 0 0) "politics_pt.org" "politics_pt.html" "general.org" "db_pols_query.rq" "../" "./")
+
+ ("c:/Users/afons/aulas/CS/apresentação/" (24535 37038 0 0) "_region_.tex" "Ron_wrong_whit_right.tex" "Ron_wrong_whit_right.pdf" "Ron_wrong_whit_right.log" "Ron_wrong_whit_right.aux" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/" (24537 22516 0 0) "Vida_artificial.org" "Study.org" "project/" "ltximg/" "exercises/" "biblio/" "abstracts/" "../" "./")
+
+ ("c:/Users/afons/aulas/FW/Biblio/Slides/" (24539 33578 0 0) "FWS_2021_T13.pdf" "FWS_2021_T12.pdf" "FWS_2021_T11.pdf" "FWS_2021_T10.pdf" "FWS_2021_T09.pdf" "FWS_2021_T08.pdf" "FWS_2021_T07.pdf" "FWS_2021_T06.pdf" "FWS_2021_T05.pdf" "FWS_2021_T04.pdf" "FWS_2021_T03.pdf" "FWS_2021_T02.pdf" "FWS_2021_T01.pdf" "../" "./")
+
+ ("c:/Users/afons/aulas/FW/Biblio/Books/" (24533 24651 0 0) "Semantic Web for the Working Ontologist, Second Edition.pdf" "Learning SPARQL, 2nd Edition_ Querying and Updating with SPARQL 1.1.pdf" "examples/" "A Semantic Web Primer-The MIT Press.PDF" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/abstract_11/" (24534 20588 0 0) "environments_and_sim.tex" "environments_and_sim.pdf" "environments_and_sim.log" "environments_and_sim.aux" "../" "./")
+
+ ("c:/Users/afons/MISC/genetic/" (24530 27616 0 0) "genetics.py" "../" "./")
+
+ ("c:/Users/afons/Desktop/stippling/data/" (24532 54783 0 0) "out.png" "gray.py" "face.jpg" "ana4.jpg" "ana3.jpg" "ana2.jpg" "ana.jpg" "../" "./")
+
+ ("c:/Users/afons/Desktop/stippling/" (24532 52621 0 0) "stippling.pde" "README.md" "particle_system.pde" "particle_cell.pde" "particle.pde" "example.gif" "data/" "300.png" "299.png" "298.png" "297.png" "296.png" "295.png" "294.png" "293.png" "292.png" "291.png" "290.png" "289.png" "288.png" "287.png" "286.png" "285.png" "284.png" "283.png" "282.png" "281.png" "280.png" "279.png" "278.png" "277.png" "276.png" "275.png" "274.png" "273.png" "272.png" "271.png" "270.png" "269.png" "268.png" "267.png" "266.png" "265.png" "264.png" "263.png" "262.png" "261.png" "260.png" "259.png" "258.png" "257.png" "256.png" "255.png" "254.png" "253.png" "252.png" "251.png" "250.png" "249.png" "248.png" "247.png" "246.png" "245.png" "244.png" "243.png" "242.png" "241.png" "240.png" "239.png" "238.png" "237.png" "236.png" "235.png" "234.png" "233.png" "232.png" "231.png" "230.png" "229.png" "228.png" "227.png" "226.png" "225.png" "224.png" "223.png" "222.png" "221.png" "220.png" "219.png" "218.png" "217.png" "216.png" "215.png" "214.png" "213.png" "212.png" "211.png" "210.png" "209.png" "208.png" "207.png" "206.png" "205.png" "204.png" "203.png" "202.png" "201.png" "200.png" "199.png" "198.png" "197.png" "196.png" "195.png" "194.png" "193.png" "192.png" "191.png" "190.png" "189.png" "188.png" "187.png" "186.png" "185.png" "184.png" "183.png" "182.png" "181.png" "180.png" "179.png" "178.png" "177.png" "176.png" "175.png" "174.png" "173.png" "172.png" "171.png" "170.png" "169.png" "168.png" "167.png" "166.png" "165.png" "164.png" "163.png" "162.png" "161.png" "160.png" "159.png" "158.png" "157.png" "156.png" "155.png" "154.png" "153.png" "152.png" "151.png" "150.png" "149.png" "148.png" "147.png" "146.png" "145.png" "144.png" "143.png" "142.png" "141.png" "140.png" "139.png" "138.png" "137.png" "136.png" "135.png" "134.png" "133.png" "132.png" "131.png" "130.png" "129.png" "128.png" "127.png" "126.png" "125.png" "124.png" "123.png" "122.png" "121.png" "120.png" "119.png" "118.png" "117.png" "116.png" "115.png" "114.png" "113.png" "112.png" "111.png" "110.png" "109.png" "108.png" "107.png" "106.png" "105.png" "104.png" "103.png" "102.png" "101.png" "100.png" "099.png" "098.png" "097.png" "096.png" "095.png" "094.png" "093.png" "092.png" "091.png" "090.png" "089.png" "088.png" "087.png" "086.png" "085.png" "084.png" "083.png" "082.png" "081.png" "080.png" "079.png" "078.png" "077.png" "076.png" "075.png" "074.png" "073.png" "072.png" "071.png" "070.png" "069.png" "068.png" "067.png" "066.png" "065.png" "064.png" "063.png" "062.png" "061.png" "060.png" "059.png" "058.png" "057.png" "056.png" "055.png" "054.png" "053.png" "052.png" "051.png" "050.png" "049.png" "048.png" "047.png" "046.png" "045.png" "044.png" "043.png" "042.png" "041.png" "040.png" "039.png" "038.png" "037.png" "036.png" "035.png" "034.png" "033.png" "032.png" "031.png" "030.png" "029.png" "028.png" "027.png" "026.png" "025.png" "024.png" "023.png" "022.png" "021.png" "020.png" "019.png" "018.png" "017.png" "016.png" "015.png" "014.png" "013.png" "012.png" "011.png" "010.png" "009.png" "008.png" "007.png" "006.png" "005.png" "004.png" "003.png" "002.png" "001.png" "000.png" ".git/" "../" "./")
+
+ ("c:/Users/afons/.emacs.d/lisp/" (24525 31511 0 0) "iscroll.el" "custom.el" "../" "./")
+
+ ("c:/Users/afons/.emacs.d/elegant-emacs/" (24525 39163 0 0) "sanity.el" "README.md" "LICENSE" "elegant.el" "elegant-light-theme.el" "elegant-dark-theme.el" "elegance.el" ".git/" "../" "./")
+
+ ("c:/Users/afons/aulas/CS/Biblio/" (24524 6388 0 0) "tos13-depsky.pdf" "Slides/" "Books/" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/abstract_10/" (24521 41896 0 0) "self_organization.tex" "self_organization.pdf" "self_organization.log" "self_organization.aux" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/" (24522 9563 0 0) "abstract_9/" "abstract_8/" "abstract_7/" "abstract_6/" "abstract_5/" "abstract_4/" "abstract_3/" "abstract_2/" "abstract_11/" "abstract_10/" "abstract_1/" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/abstract_9/" (24520 60958 0 0) "AIS.tex" "AIS.pdf" "AIS.aux" "../" "./")
+
+ ("c:/Users/afons/Books/" (24517 39061 0 0) "Write_Yourself_a_Scheme_in_48_Hours.pdf" "WriteYouASchemeVersion2.pdf" "The_C_Programming_Language.pdf" "The Rise and Fall of the The Soviet Economy_ An Economic History of the USSR from 1945.pdf" "The neoliberal mind - Madsen Pirie.pdf" "the economics book.pdf" "The Boglehead’s Guide To Investing.pdf" "The art of computer programming. Vol.2. Seminumerical algorithms.pdf" "The Art of Computer Programming, Vol. 1_ Fundamental Algorithms, 3rd Edition.pdf" "TComp.v05.pdf" "Relativity_ The Special and the General Theory.pdf" "relativity.pdf" "recursive.pdf" "personal/" "Neoliberalism_ The Genesis of a Political Swearword - Oliver Marc Hartwich.pdf" "Modern Compiler Implementation in C.pdf" "Modern Compiler Implementation in C ( PDFDrive.com ).pdf" "Modeling & Reasoning with Bayesian Networks.pdf" "Kalman1960.pdf" "Introduction to Rocket Science and Engineering.pdf" "HR_SOL.pdf" "HR.pdf" "haskell-98-tutorial.pdf" "Groen O., Hervik S. Einstein's general theory of relativity (book draft, 2004)(538s)_PGr_.pdf" "Global Positioning System_ Theory and Applications Volume  I ( PDFDrive.com ).pdf" "Geometric_Geodes_part_1.pdf" "Geometric_Geodesy_part_2.pdf" "geokniga-seeber-g-satellite-geodesy-2003.pdf" "Geodesy The Concepts ( PDFDrive.com ).pdf" "EconomistPhilosophyBriefs.pdf" "databook.pdf" "Compilers_ Principles_Techniques_Tools.pdf" "Chess Openings for Black, Explained.pdf" "C.pdf" "Art Of Intel x86 Assembly.pdf" "advanced-problems-mathematics.pdf" "../" "./")
+
+ ("c:/Emacs/" (24513 31257 0 0) "x86_64/" "Uninstall.exe" ".saves/" ".emacs.d/" "../" "./")
+
+ ("c:/Users/afons/aulas/CS/Biblio/Books/" (24518 53059 0 0) "Computer Security_ Principles and Practice.pdf" "Computer networking _ a top-down approach.pdf" "../" "./")
+
+ ("c:/Users/afons/aulas/AA/TP/" (24509 9740 0 0) "TP11/" "TP10/" "TP09/" "TP08/" "TP07/" "TP06/" "TP05/" "TP04/" "TP01/" "TP00/" "../" "./")
+
+ ("c:/Users/afons/aulas/AA/Study/" (24513 42247 0 0) "Study.org" "ltximg/" "img/" "../" "./")
+
+ ("c:/Users/afons/aulas/AI/abstracts/abstract_4/" (24512 61107 0 0) "Evol_Alg.lisp" "Evolutionary_Alg.tex" "Evolutionary_Alg.pdf" "Evolutionary_Alg.log" "Evolutionary_Alg.aux" "EA.png" "../" "./")
 
  ("c:/Users/afons/aulas/CS/project/" (24505 20424 0 0) "Project_2/" "Project_1/" "../" "./")
 
  ("c:/Users/afons/aulas/AI/abstracts/abstract_8/" (24510 44376 0 0) "SOM.tex" "SOM.pdf" "SOM.log" "SOM.aux" "../" "./")
 
- ("c:/Users/afons/Books/" (24512 7872 0 0) "Write_Yourself_a_Scheme_in_48_Hours.pdf" "WriteYouASchemeVersion2.pdf" "The_C_Programming_Language.pdf" "The Rise and Fall of the The Soviet Economy_ An Economic History of the USSR from 1945.pdf" "The neoliberal mind - Madsen Pirie.pdf" "the economics book.pdf" "The Boglehead’s Guide To Investing.pdf" "The art of computer programming. Vol.2. Seminumerical algorithms.pdf" "The Art of Computer Programming, Vol. 1_ Fundamental Algorithms, 3rd Edition.pdf" "TComp.v05.pdf" "Relativity_ The Special and the General Theory.pdf" "relativity.pdf" "recursive.pdf" "personal/" "Neoliberalism_ The Genesis of a Political Swearword - Oliver Marc Hartwich.pdf" "Modern Compiler Implementation in C ( PDFDrive.com ).pdf" "Modeling & Reasoning with Bayesian Networks.pdf" "Kalman1960.pdf" "Introduction to Rocket Science and Engineering.pdf" "HR_SOL.pdf" "HR.pdf" "haskell-98-tutorial.pdf" "Groen O., Hervik S. Einstein's general theory of relativity (book draft, 2004)(538s)_PGr_.pdf" "Global Positioning System_ Theory and Applications Volume  I ( PDFDrive.com ).pdf" "Geometric_Geodes_part_1.pdf" "Geometric_Geodesy_part_2.pdf" "geokniga-seeber-g-satellite-geodesy-2003.pdf" "Geodesy The Concepts ( PDFDrive.com ).pdf" "EconomistPhilosophyBriefs.pdf" "databook.pdf" "Compilers_ Principles_Techniques_Tools.pdf" "Chess Openings for Black, Explained.pdf" "C.pdf" "Art Of Intel x86 Assembly.pdf" "advanced-problems-mathematics.pdf" "../" "./")
-
- ("c:/Users/afons/aulas/AI/abstracts/abstract_9/" (24505 19454 0 0) "_region_.tex" "AIS.tex" "AIS.pdf" "AIS.log" "AIS.aux" "../" "./")
-
- ("c:/Users/afons/aulas/FW/" (24512 7826 0 0) "TP/" "test_sparql.rq" "sudoku.ttl" "study.org" "Project/" "HermiT/" "fundamentos_websemantica.org" "Biblio/" "../" "./")
-
- ("c:/Users/afons/Desktop/" (24512 7872 0 0) "freest-1.0.2/" "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" "../" "./")
-
- ("c:/Users/afons/aulas/AI/project/" (24509 29731 0 0) "__pycache__/" "utils.py" "tic_tac_toe.py" "README.md" "main.py" "games_neural_net.org" "games_neural_net.html" "games_generator.py" ".git/" "../" "./")
-
- ("c:/Users/afons/.emacs.d/elegant-emacs/" (24511 48851 0 0) "Welcome.org" "Splash.org" "screenshots/" "sanity.el" "README.md" "LICENSE" "elegant.el" "elegant-light-theme.el" "elegant-dark-theme.el" "elegance.el" "data/" ".git/" "../" "./")
-
- ("c:/Users/afons/MISC/pols/" (24508 16791 0 0) "politics_pt.org" "politics_pt.html" "general.org" "../" "./")
-
  ("c:/Users/" (24506 34677 0 0) "Public/" "MSSQL$SQLEXPRESS/" "desktop.ini" "defaultuser100000/" "Default User/" "Default/" "All Users/" "afons/" "../" "./")
-
- ("c:/Users/afons/MISC/" (24507 64164 0 0) "The_Antichrist" "Simulators/" "simple_c/" "QB/" "py_aero/" "pols/" "netgarage/" "lisp_programs/" "lisp/" "IMG_20190709_212126.jpg" "HR/" "Haskel_learning/" "frabric/" "dwarf/" "comfy_reader/" "chall/" "brainfcomp/" "Assembly/" "ascii_frice/" "../" "./")
 
  ("c:/Users/afons/aulas/" (24420 42253 0 0) "SA/" "FW/" "CS/" "AI/" "AA/" "../" "./")
 
@@ -132,10 +214,6 @@
  ("c:/Users/afons/aulas/AI/biblio/" (24428 36839 0 0) "slides/" "books/" "../" "./")
 
  ("c:/Users/afons/aulas/FW/Project/Project_notbooks/" (24501 53443 0 0) "Sparql_Dbpedia.ipynb" "reviews_summary.csv" "README.md" "names_foaf_person.rq" "listings_summary.csv" "Graph_Building.ipynb" "graph.png" "FWS_2021_Projecto1.pdf" "Data_Processing.ipynb" "conf.ttl" "Backup_airBnb_data.ttl" "airBnb_data.ttl" "airBnb_data.csv" "airBnb_after_dbpedia.ttl" ".ipynb_checkpoints/" ".git/" "../" "./")
-
- ("c:/Users/afons/aulas/FW/Biblio/Slides/" (24481 60638 0 0) "FWS_2021_T07.pdf" "FWS_2021_T06.pdf" "FWS_2021_T05.pdf" "FWS_2021_T04.pdf" "FWS_2021_T03.pdf" "FWS_2021_T02.pdf" "FWS_2021_T01.pdf" "../" "./")
-
- ("c:/Users/afons/aulas/AI/abstracts/" (24500 10713 0 0) "abstract_9/" "abstract_8/" "abstract_7/" "abstract_6/" "abstract_5/" "abstract_4/" "abstract_3/" "abstract_2/" "abstract_1/" "../" "./")
 
  ("c:/Users/afons/aulas/SA/Entregas/Entrega_5/" (24500 9405 0 0) "MTPs-Main-Container.txt" "commands.org" "calcAgent.java" "APDescription.txt" "../" "./")
 
@@ -155,10 +233,6 @@
 
  ("c:/Users/afons/MISC/Haskel_learning/" (24499 13045 0 0) "haskel_intro.hs" "../" "./")
 
- ("c:/Users/afons/aulas/FW/Project/" (24497 27604 0 0) "Project_notbooks/" "Data_Files/" "../" "./")
-
- ("c:/Users/afons/aulas/AI/" (24496 36467 0 0) "Vida_artificial.org" "project/" "ltximg/" "exercises/" "biblio/" "abstracts/" "../" "./")
-
  ("c:/Users/afons/tralha/" (24495 44379 0 0) "Resumo_Aula_05-11.pdf" "Aula8.pdf" "../" "./")
 
  ("c:/Users/afons/aulas/FW/Project/projeto_fase1/" (24496 17635 0 0) "Tentativa Projeto.ipynb" "README.md" "query1.rq" "Listings_head_5.csv" "graph.png" "FWS_2021_Projecto1.pdf" "data_processing.ipynb" "airBnb_data.ttl" ".ipynb_checkpoints/" ".git/" "../" "./")
@@ -173,29 +247,13 @@
 
  ("c:/Users/afons/MISC/py_aero/" (24491 3716 0 0) "aeroporto.py" "../" "./")
 
- ("c:/Users/afons/aulas/SA/" (24486 51333 0 0) "Test.java" "Test.class" "smart_agent.png" "sistemas_multi-agente.org" "MTPs-Main-Container.txt" "ltximg/" "Entregas/" "Biblio/" "APDescription.txt" "agents/" "../" "./")
-
  ("c:/Users/afons/.emacs.d/transient/" (24484 46433 0 0) "history.el" "../" "./")
-
- ("c:/Users/afons/aulas/AA/" (24481 22723 0 0) "TP/" "Study/" "Biblio_Slides/" "Aprendizagem_automatica.org" "../" "./")
-
- ("c:/Users/afons/aulas/FW/Biblio/Books/" (24481 61224 0 0) "Semantic Web for the Working Ontologist, Second Edition.pdf" "Learning SPARQL, 2nd Edition_ Querying and Updating with SPARQL 1.1.pdf" "examples/" "A Semantic Web Primer-The MIT Press.PDF" "../" "./")
 
  ("c:/Users/afons/Desktop/java_test/" (24481 34949 0 0) "../" "./")
 
- ("c:/Users/afons/aulas/CS/" (24478 7921 0 0) "Wireshark-win64-3.4.0.exe" "test.py" "project.zip" "project/" "os/" "Computer_security.org" "Biblio/" "../" "./")
-
- ("c:/Users/afons/MISC/lisp_programs/" (24480 4936 0 0) "test.lisp" "../" "./")
-
  ("c:/Users/afons/MISC/brainfcomp/" (24479 19600 0 0) "readme.txt" "Makefile" "brainfuck.c" "bf.exe" ".git/" "../" "./")
 
- ("c:/Users/afons/aulas/AI/abstracts/abstract_4/" (24477 24383 0 0) "Evol_Alg.lisp" "Evolutionary_Alg.tex" "Evolutionary_Alg.pdf" "Evolutionary_Alg.log" "Evolutionary_Alg.aux" "EA.png" "../" "./")
-
- ("c:/Emacs/" (24473 63545 0 0) "x86_64/" "Uninstall.exe" "../" "./")
-
  ("c:/Users/afons/aulas/AI/abstracts/abstract_6/" (24476 51268 0 0) "Evolutionary_Alg_2.tex" "Evolutionary_Alg_2.pdf" "Evolutionary_Alg_2.log" "Evolutionary_Alg_2.aux" "../" "./")
-
- ("c:/Users/afons/.emacs.d/lisp/" (24476 36064 0 0) "rate-sx.el" "iscroll.el" "../" "./")
 
  ("c:/Users/afons/aulas/SA/agents/" (24476 11673 0 0) "parallelism/" "messaging_agent/" "contractNet/" "../" "./")
 
@@ -223,11 +281,7 @@
 
  ("c:/Users/afons/MISC/test/" (24463 36701 0 0) "../" "./")
 
- ("c:/Users/afons/aulas/AA/Study/" (24463 33857 0 0) "Study.org" "ltximg/" "img/" "../" "./")
-
  ("c:/Users/afons/MISC/lisp/" (24463 24395 0 0) "test.exe" "test.c" "README" "mpc.h" "mpc.c" "makefile.win" "makefile.nix" "Makefile" "lisper.exe" "lisper.c" "../" "./")
-
- ("c:/Users/afons/3D Objects/" (24456 14215 0 0) "desktop.ini" "../" "./")
 
  ("c:/Users/afons/aulas/SA/agents/messaging_agent/" (24458 1181 0 0) "Receiver.java" "Receiver.class" "Receiver$1.class" "Pong.java" "Pong.class" "Pong$1.class" "MTPs-Main-Container.txt" "Makefile" "Comm1.java" "APDescription.txt" "AMSDump.java" "AMSDump.class" "../" "./")
 
@@ -250,52 +304,6 @@
  ("c:/Users/afons/aulas/AI/exercises/TP02/" (24440 39211 0 0) "CAS.jar" "../" "./")
 
  ("c:/Users/afons/aulas/AI/abstracts/abstract_2/" (24442 63482 0 0) "fractal_triangle.py" "Fractal_triangle.png" "fractals.tex" "fractals.pdf" "auto/" "../" "./")
-
- ("c:/Users/afons/Pictures/windows_terminal/" (24431 10365 0 0) "romantic_1.jpg" "rightway.png" "not_everything.gif" "minus.png" "lain_gif.gif" "lain_confused.png" "lain.jpg" "lain.gif" "globe.gif" "giger.jpg" "col.png" "../" "./")
-
- ("c:/Users/afons/MISC/frabric/src/test/" (24439 12936 0 0) "resources/" "java/" "../" "./")
-
- ("c:/Users/afons/aulas/AA/TP01/" (24435 19593 0 0) "myfile.csv" "AA_202021_TP02_TP03_WithOutput.html" "AA_202021_TP02_TP03.ipynb" "AA_202021_TP02_TP03.html" ".ipynb_checkpoints/" "../" "./")
-
- ("c:/Users/afons/img/" (24434 10442 0 0) "schedule.png" "my_background.jfif" "../" "./")
-
- ("c:/Users/afons/Desktop/emax64-bin-26.3/" (24435 6594 0 0) "emax64/" "../" "./")
-
- ("c:/Users/afons/Desktop/emax64-bin-26.3/emax64/" (24067 32172 0 0) "share/" "libexec/" "lib/" "include/" "etc/" "bin/" "../" "./")
-
- ("c:/Users/afons/Desktop/emax64-bin-26.3/emax64/bin/" (24067 42166 0 0) "zlib1.dll" "viewflif.exe" "trietool.exe" "trietool-0.2.exe" "stream.exe" "smime3.dll" "runemacs.exe" "rsvg-convert.exe" "nssutil3.dll" "nss3.dll" "montage.exe" "mogrify.exe" "MagickWand-config" "MagickCore-config" "magick.exe" "magick-script.exe" "Magick++-config" "libzstd.dll" "libxml2-2.dll" "libwinpthread-1.dll" "libunistring-2.dll" "libtiffxx-5.dll" "libtiff-5.dll" "libthai-0.dll" "libtasn1-6.dll" "libstdc++-6.dll" "libssh2-1.dll" "librsvg-2-2.dll" "libraqm-0.dll" "libpoppler-qt5-1.dll" "libpoppler-glib-8.dll" "libpoppler-cpp-0.dll" "libpoppler-93.dll" "libpng16-16.dll" "libplds4.dll" "libplc4.dll" "libpixman-1-0.dll" "libpcreposix-0.dll" "libpcrecpp-0.dll" "libpcre32-0.dll" "libpcre16-0.dll" "libpcre-1.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libopenjpwl-7.dll" "libopenjpip-7.dll" "libopenjp3d-7.dll" "libopenjp2-7.dll" "libnspr4.dll" "libnghttp2-14.dll" "libnettle-7.dll" "libMagickWand-7.Q16HDRI-7.dll" "libMagickCore-7.Q16HDRI-7.dll" "libMagick++-7.Q16HDRI-4.dll" "liblzma-5.dll" "libltdl-7.dll" "liblqr-1-0.dll" "liblcms2-2.dll" "libjpeg-8.dll" "libjbig-0.dll" "libjasper-4.dll" "libintl-8.dll" "libidn2-0.dll" "libiconv-2.dll" "libhogweed-5.dll" "libharfbuzz-subset-0.dll" "libharfbuzz-icu-0.dll" "libharfbuzz-gobject-0.dll" "libharfbuzz-0.dll" "libgraphite2.dll" "libgomp-1.dll" "libgobject-2.0-0.dll" "libgnutlsxx-28.dll" "libgnutls-30.dll" "libgmpxx-4.dll" "libgmp-10.dll" "libgmodule-2.0-0.dll" "libglib-2.0-0.dll" "libgio-2.0-0.dll" "libgif-7.dll" "libgdk_pixbuf-2.0-0.dll" "libgdiplus-0.dll" "libgcc_s_seh-1.dll" "libfribidi-0.dll" "libfreetype-6.dll" "libfontconfig-1.dll" "libflif_dec.dll" "libflif.dll" "libfftw3l-3.dll" "libfftw3f-3.dll" "libfftw3-3.dll" "libffi-6.dll" "libexpat-1.dll" "libdjvulibre-21.dll" "libdatrie-1.dll" "libcurl-4.dll" "libcroco-0.6-3.dll" "libcairo-script-interpreter-2.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "libbrotlienc.dll" "libbrotlidec.dll" "libbrotlicommon.dll" "import.exe" "identify.exe" "gif2flif" "flif.exe" "etags.exe" "epdfinfo.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-26.3.exe" "ebrowse.exe" "display.exe" "dflif.exe" "ctags.exe" "convert.exe" "conjure.exe" "composite.exe" "compare.exe" "apng2flif" "animate.exe" "addpm.exe" "../" "./")
-
- ("c:/Users/afons/aulas/AA/TP00/.ipynb_checkpoints/" (24425 5494 0 0) "AA_201920_TP01-checkpoint.ipynb" "../" "./")
-
- ("c:/Users/afons/aulas/AA/TP00/" (24425 8974 0 0) "AA_201920_TP01_withOutput.html" "AA_201920_TP01.ipynb" "AA_201920_TP01.html" ".ipynb_checkpoints/" "../" "./")
-
- ("c:/Users/afons/aulas/AA/Biblio_Slides/" (24424 31660 0 0) "slides/" "books/" "../" "./")
-
- ("c:/Users/afons/aulas/AA/Biblio_Slides/books/" (24424 31763 0 0) "Machine_Learning_PP.pdf" "Machine_Learning.pdf" "../" "./")
-
- ("c:/Users/afons/py_home/ML/Scripts/" (24425 4979 0 0) "_tkinter.pyd" "_testmultiphase.pyd" "_testimportmultiple.pyd" "_testconsole.pyd" "_testcapi.pyd" "_testbuffer.pyd" "_ssl.pyd" "_sqlite3.pyd" "_socket.pyd" "_queue.pyd" "_overlapped.pyd" "_multiprocessing.pyd" "_msi.pyd" "_lzma.pyd" "_hashlib.pyd" "_elementtree.pyd" "_decimal.pyd" "_ctypes_test.pyd" "_ctypes.pyd" "_bz2.pyd" "_asyncio.pyd" "winsound.pyd" "wheel3.exe" "wheel.exe" "wheel-3.8.exe" "vcruntime140.dll" "unicodedata.pyd" "tk86t.dll" "tcl86t.dll" "sqlite3.dll" "select.pyd" "pythonw.exe" "python38.dll" "python3.dll" "python.exe" "pyexpat.pyd" "pydoc.bat" "pip3.exe" "pip3.8.exe" "pip.exe" "pip-3.8.exe" "libssl-1_1.dll" "libffi-7.dll" "libcrypto-1_1.dll" "easy_install3.exe" "easy_install.exe" "easy_install-3.8.exe" "deactivate.bat" "activate_this.py" "activate.xsh" "activate.ps1" "activate.fish" "activate.bat" "activate" "../" "./")
-
- ("c:/Users/afons/py_home/ML/" (24425 4975 0 0) "Scripts/" "pyvenv.cfg" "Lib/" "../" "./")
-
- ("c:/Users/afons/py_home/" (24425 4975 0 0) "ML/" "../" "./")
-
- ("c:/Users/afons/AppData/Local/Programs/Python/Python38-32/" (24269 22081 0 0) "vcruntime140.dll" "Tools/" "tcl/" "share/" "Scripts/" "pythonw.exe" "python38.dll" "python3.dll" "python.exe" "NEWS.txt" "LICENSE.txt" "libs/" "Lib/" "include/" "etc/" "Doc/" "DLLs/" "../" "./")
-
- ("c:/Users/afons/.emacs.d/auto-save-list/" (24421 63825 0 0) ".saves-8180-PORTATIL-AR~" ".saves-3720-PORTATIL-AR~" ".saves-11300-PORTATIL-AR~" "../" "./")
-
- ("c:/Users/afons/Desktop/demo/" (24421 56920 0 0) "src/" "settings.gradle" "gradlew.bat" "gradlew" "gradle/" "build.gradle" "build/" ".gradle/" ".gitignore" ".gitattributes" "../" "./")
-
- ("c:/Users/afons/Desktop/demo/src/" (24421 21507 0 0) "test/" "main/" "../" "./")
-
- ("c:/Users/afons/Desktop/demo/src/main/" (24421 21507 0 0) "resources/" "java/" "../" "./")
-
- ("c:/Users/afons/Desktop/demo/src/main/java/" (24421 21507 0 0) "demo/" "../" "./")
-
- ("c:/Users/afons/Desktop/demo/src/main/java/demo/" (24421 58892 0 0) "App.java" "../" "./")
-
- ("c:/Users/afons/aulas/SA/agent/build/classes/java/main/agent/" (24420 65473 0 0) "App.class" "../" "./")
-
- ("c:/Users/afons/aulas/SA/agent/build/classes/java/main/" (24420 65473 0 0) "agent/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

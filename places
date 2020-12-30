@@ -1,5 +1,7 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/afons/.emacs.d/elegant-emacs/"
+(("c:/Users/afons/"
+  (dired-filename . "c:/Users/afons/aulas"))
+ ("c:/Users/afons/.emacs.d/elegant-emacs/"
   (dired-filename . "c:/Users/afons/.emacs.d/elegant-emacs/sanity.el"))
  ("c:/Users/afons/.emacs.d/elegant-emacs/sanity.el" . 1227)
  ("c:/Users/afons/.emacs.d/elegant-emacs/elegance.el" . 2178)
@@ -8,8 +10,6 @@
   (dired-filename . "c:/Users/afons/.emacs.d/elegant-emacs"))
  ("c:/Users/afons/Books/"
   (dired-filename . "c:/Users/afons/Books/Global Positioning System_ Theory and Applications Volume  I ( PDFDrive.com ).pdf"))
- ("c:/Users/afons/"
-  (dired-filename . "c:/Users/afons/Books"))
  ("c:/Users/afons/Desktop/"
   (dired-filename . "c:/Users/afons/Desktop/.."))
  ("c:/Users/afons/.emacs.d/init.el" . 4544))
