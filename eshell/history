@@ -1,33 +1,3 @@
-py stippling.py 
-pip install scipy
-clear
-pip install scipy
-clear
-py stippling.py 
-pip install imageio
-py stippling.py 
-clear
-ls
-vim
-clear
-pip -V
-clear
-exit
-pip -V
-clear
-pip -V
-clear
-exit
-pip -V
-clear
-exit
-pip -V
-exit
-pip -V
-clear
-exit
-pip -V
-exit
 pip -V
 exit
 explorer .
@@ -126,3 +96,33 @@ pip -V
 clear
 python -m ipykernel install --user --name=AI
 clear
+git init
+cls
+clear
+git add *
+clear
+git commit -m "Changed a good amount of thins. Styling is no longer what it used to be!"
+clear
+git push
+clear
+exit
+clear
+(display "heyy")
+(print "heyy")
+clear
+(display "hey")
+clear
+("hey")
+clear
+(+ 1 1)
+clear
+(+ 21 21)
+(message "hey")
+pwd
+clear
+(message "heyyyy")
+(+ 21 21)
+exit
+git add *
+clear
+exit
