@@ -1,0 +1,6 @@
+# State when last error occurred on 2020-10-02 14:46:28
+# Error was (error Command attempted to use minibuffer while in minibuffer)
+
+* Default
+** agent
+ - path :: ~/aulas/SA/agent

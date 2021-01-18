@@ -140,9 +140,8 @@
 	 :init
 	 (setq org-bullets-bullet-list
 	       '("◉" "∴" "➞" "➵" "➾"))
-	 (setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "✔ DONE(d)" "|")
-				   (sequence "∞ WAITING(w)" "|")
-				   (sequence "|" "✘ CANCELED(c)")))
+	 (setq org-todo-keywords '((sequence "☛ TODO(t)" "➤ NEXT(n)" "|" "✔ DONE(d)" "|")
+				   (sequence "∞ WAITING(w)" "|"  "✘ CANCELED(c)")))
 	 :config (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
      #+end_src
 
@@ -196,10 +195,29 @@
      Set org agenda related
      settings.
 
+***** Org Agenda
+      
+      Org agenda files, and key rebinding
+
      #+begin_src emacs-lisp
-       (setq org-agenda-files (quote ("~/Org/todo.org")))
+       (setq org-agenda-files '("~/Org/todo.org"
+				"~/Org/Tasks.org"
+				"~/Org/Birthdays.org"))
        (global-set-key (kbd "C-c a") 'org-agenda)
      #+end_src
+
+***** Important Behaviors
+
+      toggling extra functionalities that
+      are not on by default
+
+      #+begin_src emacs-lisp
+	(setq org-agenda-start-with-log-mode t)
+	(setq org-log-done 'time)
+	(setq org-ellipsis "⤵")
+	(setq org-log-done t)
+	(setq org-log-into-drawer t)
+      #+end_src
 
 **** Extra Configurations
 
@@ -209,8 +227,6 @@
      #+begin_src emacs-lisp
        (setq org-hide-emphasis-markers t)
        (setq org-image-actual-width nil)
-       (setq org-ellipsis "⤵")
-       (setq org-log-done t)
        (eval-after-load 'org
 	 (add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images))
        (setq org-comfim-babel-evaluate nil)
@@ -359,8 +375,6 @@
 	  (set-process-query-on-exit-flag proc nill)))
     #+end_src
 
-
-
 * Programming Languages
 
 ** Java
@@ -493,7 +507,6 @@
    (setq processing-location "c:/processing-3.5.4/processing-java.exe")
    #+end_src
 
-
 * General Settings
 
 ** Splash Screen & Starting Scratch
@@ -623,6 +636,12 @@
        (global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
        (global-set-key (kbd "C-S-<down>") 'shrink-window)
        (global-set-key (kbd "C-S-<up>") 'enlarge-window)
+     #+end_src
+
+**** White Space
+     
+     #+begin_src emacs-lisp
+     (global-set-key (kbd "<f6>") 'whitespace-mode)
      #+end_src
 
 *** Emacs Encodings

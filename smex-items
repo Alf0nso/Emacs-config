@@ -1,28 +1,28 @@
 
 ;; ----- smex-history -----
 (
- auto-complete-mode
- autoconf-mode
- insert-char
- ein:run
- ein:stop
+ start-cmd
+ vc-pull
  pyvenv-workon
- ein:notebook-restart-session-command-km
+ scad-preview-mode
+ emacs-version
+ scad-mode
+ package-list-packages
 )
 
 ;; ----- smex-data -----
 (
- (eshell . 426)
- (package-install . 17)
+ (eshell . 433)
+ (package-install . 18)
  (list-packages . 7)
- (pyvenv-workon . 50)
+ (pyvenv-workon . 74)
  (pyvenv-menu . 2)
  (pyvenv-create . 13)
  (load-file . 134)
  (pyvenv-activate . 7)
  (pyvenv-deactivate . 8)
  (pyvenv-mode . 26)
- (org-time-stamp . 33)
+ (org-time-stamp . 35)
  (org-create-math-formula . 2)
  (org-latex-convert-region-to-latex . 3)
  (org-preview-latex-fragment . 6)
@@ -34,13 +34,13 @@
  (global-display-line-numbers-mode . 1)
  (org-table-create . 1)
  (load-theme . 11)
- (package-refresh-contents . 27)
- (package-list-packages . 31)
+ (package-refresh-contents . 29)
+ (package-list-packages . 32)
  (customize-themes . 11)
  (ein:notebooklist-open . 3)
- (ein:run . 93)
- (ein:stop . 61)
- (dired . 306)
+ (ein:run . 94)
+ (ein:stop . 62)
+ (dired . 307)
  (auto-complete-mode . 64)
  (org-toggle-latex-fragment . 66)
  (gdb . 1)
@@ -51,7 +51,7 @@
  (byte-recompile-directory . 1)
  (message-tab . 2)
  (cd . 2)
- (emacs-version . 2)
+ (emacs-version . 3)
  (recover-this-file . 2)
  (pdf-tools-install . 2)
  (ein:log-pop-to-all-buffer . 1)
@@ -84,9 +84,9 @@
  (erc . 43)
  (ein:dev-bug-report-template . 1)
  (package-autoremove . 1)
- (compile . 563)
+ (compile . 574)
  (doctor . 1)
- (linum-mode . 14)
+ (linum-mode . 26)
  (dired-omit-mode . 3)
  (dired-hide-details-mode . 2)
  (speedbar . 1)
@@ -95,7 +95,7 @@
  (el-get-update . 1)
  (describe-face . 1)
  (set-face-foreground . 1)
- (customize-face . 32)
+ (customize-face . 36)
  (package-show-package-list . 1)
  (package-delete . 16)
  (c-mode . 1)
@@ -106,7 +106,7 @@
  (term . 3)
  (vterm . 2)
  (open-cmd . 1)
- (start-cmd . 81)
+ (start-cmd . 152)
  (all-the-icons-install-fonts . 2)
  (treemacs-icons-dired-mode . 26)
  (all-the-icons-dired-mode . 2)
@@ -128,7 +128,7 @@
  (ytdl-download-playlist . 6)
  (global-prettify-symbols-mode . 6)
  (org-agenda-list . 1)
- (insert-char . 62)
+ (insert-char . 63)
  (rate-sx . 15)
  (rate-sx-calc . 3)
  (rcirc . 1)
@@ -166,8 +166,8 @@
  (erc-cmd-AMSG . 1)
  (erc-channel-names . 1)
  (org-agenda . 17)
- (vc-dir . 4)
- (vc-pull . 2)
+ (vc-dir . 5)
+ (vc-pull . 5)
  (todo-mode . 3)
  (my-horizontal-recenter . 1)
  (python-skeleton-if . 1)
@@ -198,4 +198,14 @@
  (shell-other-window . 1)
  (org-redisplay-inline-images . 2)
  (autoconf-mode . 1)
+ (chess . 3)
+ (chess-images-decrease-size . 6)
+ (chess-display-resign . 1)
+ (whitespace-mode . 2)
+ (visual-line-mode . 3)
+ (dash-fontify-mode . 2)
+ (magit-clone . 1)
+ (scad-preview-mode . 56)
+ (scad-mode . 3)
+ (scad-preview--image-mode . 20)
 )

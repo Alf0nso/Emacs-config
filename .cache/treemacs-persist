@@ -1,3 +1,7 @@
 * Default
-** agent
- - path :: ~/aulas/SA/agent
+** .emacs.d
+ - path :: ~/.emacs.d
+** frabric
+ - path :: ~/MISC/frabric
+** messaging_agent
+ - path :: ~/aulas/SA/agents/messaging_agent

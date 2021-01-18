@@ -1,128 +1,128 @@
+clear
+py nn_tic_tac_toe.py
+clear
+py nn_tic_tac_toe.py
+py nn_tic_tac_toe.py
+py nn_tic_tac_toe.py
+py nn_tic_tac_toe.py
+py nn_tic_tac_toe.py
+py nn_tic_tac_toe.py
+clear
+py nn_tic_tac_toe.py
+clear
+py nn_tic_tac_toe.py
+git pull
+clear
+exity
 exit
-pip -V
-pyvenv
+py game_test.py 
+pip install keras
+clear
+pip install keras
+clear
+py game_test.py 
+pip install tensorflow
+clear
+py game_test.py 
+clear
+pip pull
+git pull
+git reseat head~
+git reset head~
+git reset head~1
+clear
+git pull
+git fetch origin
+git rebase origin/master
+fit status
+git status
+git stash
+git stash list
+git stash pop
+git pull
+git stash drop
+git pull
+git reset --hard
+git pull
+git clean -fd
+git pull
+cleatr
+clear
+py game_test.py 
+git pull
+clear
+py nn_tic_tac_toe.py 
+py nn_tic_tac_toe.py 
+cls
 exit
-pip -V
-exit
-cc
+git add *
+clear
+git commit -m "neural network working!!!!"
+git push
+git pull
 clear
 ls
+cryp.
+cryp
 clear
-exit
-deno
-exit
-pip -V
-pip install ipykernel
 clear
-python -m ipykernel install --user --name="SemanticWeb"
 clear
-exit
-explorer .
-exit
-pip -V
+cryp
 clear
-pip install PIL
+py main.py 
+py main.py 
 clear
-exit
-executables/hello_world.exe
-executables/hello_world.exe
-executables/hello_world.exe 
-executables/fahr_cel.exe
+py main.py 
+clear
+size tic_games 
+py main.py 
 git pull
-git status
-git reset -- hard
 git pull
 clear
 git pull
-:	connect4.pyPlease commit your changes or stash them before you merge.Aborting2020-12-22 λ clear
-clear
 git stash
 git pull
+git stash list
 git stash pop
-git pull --rebase origin master
-git list
-git status
-git reset HEAD connect4.py
+git stash list
+git stash clear
+git stash list
 git pull
-clear
-exit
-py main.py 
-clear
-ls
-clear
-clear
-ls
-py main.py 
-clear
-clear
-py main.py
-py main.py 
-exit
-exit
-pwd
-cd ~/
+py connect4.py 
+py connect4.py 
+cat ls
 cls
 clear
-pwd
-cat MISC/ascii_frice/deer_ascii.txt
-pip -V
-exit
-clear
-exit
-pip -V
-pip -V
-pip -V
-pip
-clear
-python -V
-exit
-py -0
-pip -V
-pip -V
-pip install ipykernel
-python -m pip install --upgrade pip
-clear
-python -m ipykernel install --user --name=AI
-pip install jupyter
-clear
-PIP -v
-pip -V
-clear
-python -m ipykernel install --user --name=AI
-clear
-git init
-cls
-clear
+ls
+cat Makefile 
+cat Makefile 
+ls
+executables/fahr_2.exe
+executables/fahr_2.exe
+executables/fahr_2.exe
+executables/fahr_2.exe
+executables/fahr_2.exe
+executables/fahr_2.exe
 git add *
 clear
-git commit -m "Changed a good amount of thins. Styling is no longer what it used to be!"
+git add *
+git commit -m "changing the readme to the org file"
+git push
+git pull
+git pull
+git add *
+git commit -m "deleting files"
+git push
+git pull
+git rm ltximg/
+git rm -r ltximg/
+git add *
+clear
+git commit -m "deleting unecessary fotos"
 clear
 git push
+git rm -r .idea/
 clear
-exit
-clear
-(display "heyy")
-(print "heyy")
-clear
-(display "hey")
-clear
-("hey")
-clear
-(+ 1 1)
-clear
-(+ 21 21)
-(message "hey")
-pwd
-clear
-(message "heyyyy")
-(+ 21 21)
-exit
-git add *
-clear
-exit
-git add *
-clear
-git commit -m "changed the showcase picture!!"
+git commit -m "removed inteli J .idea folder"
 git push
-clear
-exit
+git pull

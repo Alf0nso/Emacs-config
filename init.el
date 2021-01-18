@@ -33,7 +33,7 @@
  '(erc-modules
    '(autojoin button completion fill irccontrols list match menu move-to-prompt netsplit networks noncommands readonly ring smiley stamp spelling track))
  '(package-selected-packages
-   '(elpy ein processing-mode s-buffer let-alist graphviz-dot-mode live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ sparql-mode pdf-tools auto-complete auctex use-package smex pyvenv org-bullets gradle-mode which-key helm gnu-elpa-keyring-update)))
+   '(scad-mode scad-preview chess elpy ein processing-mode s-buffer let-alist graphviz-dot-mode live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ sparql-mode pdf-tools auto-complete auctex use-package smex pyvenv org-bullets gradle-mode which-key helm gnu-elpa-keyring-update)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

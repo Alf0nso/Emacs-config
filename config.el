@@ -46,9 +46,8 @@
   :init
   (setq org-bullets-bullet-list
 	'("◉" "∴" "➞" "➵" "➾"))
-  (setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "✔ DONE(d)" "|")
-			    (sequence "∞ WAITING(w)" "|")
-			    (sequence "|" "✘ CANCELED(c)")))
+  (setq org-todo-keywords '((sequence "☛ TODO(t)" "➤ NEXT(n)" "|" "✔ DONE(d)" "|")
+			    (sequence "∞ WAITING(w)" "|"  "✘ CANCELED(c)")))
   :config (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
 (org-babel-do-load-languages
@@ -74,13 +73,19 @@
 	   (string= lang "sparql") (string= lang "emacs-lisp"))))
 (setq org-confirm-babel-evaluate 'ck/org-confirm-babel-evaluate)
 
-(setq org-agenda-files (quote ("~/Org/todo.org")))
+(setq org-agenda-files '("~/Org/todo.org"
+			 "~/Org/Tasks.org"
+			 "~/Org/Birthdays.org"))
 (global-set-key (kbd "C-c a") 'org-agenda)
+
+(setq org-agenda-start-with-log-mode t)
+(setq org-log-done 'time)
+(setq org-ellipsis "⤵")
+(setq org-log-done t)
+(setq org-log-into-drawer t)
 
 (setq org-hide-emphasis-markers t)
 (setq org-image-actual-width nil)
-(setq org-ellipsis "⤵")
-(setq org-log-done t)
 (eval-after-load 'org
   (add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images))
 (setq org-comfim-babel-evaluate nil)
@@ -220,8 +225,8 @@
 
 (setq default-directory (concat (getenv "HOME") "/"))
 
-(add-to-list 'default-frame-alist 
-	     '(fullscreen . fullboth))
+;(add-to-list 'default-frame-alist 
+;	     '(fullscreen . fullboth))
 
 ;;(set-face-attribute
 ;; 'default nil
@@ -246,6 +251,8 @@
 (global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "C-S-<down>") 'shrink-window)
 (global-set-key (kbd "C-S-<up>") 'enlarge-window)
+
+(global-set-key (kbd "<f6>") 'whitespace-mode)
 
 (setq utf-translate-cjk-mode nil)
 (set-language-environment "UTF-8")
