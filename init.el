@@ -30,15 +30,25 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ediprolog-program "swipl")
+ '(ediprolog-system 'swi)
  '(erc-modules
    '(autojoin button completion fill irccontrols list match menu move-to-prompt netsplit networks noncommands readonly ring smiley stamp spelling track))
+ '(jde-jdk-registry '(("14.0.2" . "c:/Program Files/Java/jdk-14.0.2")))
+ '(jdee-jdk-registry '(("1.4.0.2" . "C:\\Program Files\\Java\\jdk-14.0.2\\")))
+ '(jdee-server-dir "~\\.emacs.d\\jdee-server")
+ '(olivetti-body-width 70)
+ '(org-agenda-files
+   '("~/.emacs.d/config.org" "~/Org/todo.org" "~/Org/Tasks.org" "~/Org/Birthdays.org"))
  '(package-selected-packages
-   '(scad-mode scad-preview chess elpy ein processing-mode s-buffer let-alist graphviz-dot-mode live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ sparql-mode pdf-tools auto-complete auctex use-package smex pyvenv org-bullets gradle-mode which-key helm gnu-elpa-keyring-update)))
+   '(go-autocomplete common-lisp-snippets go-mode ox-hugo ein jdee lsp-java java-snippets yasnippet-classic-snippets elfeed slime ediprolog paredit cider clojure-mode transmission tide js2-mode nodejs-repl auto-complete-c-headers aggressive-indent yasnippet-snippets proof-general writeroom-mode olivetti scad-mode scad-preview chess elpy processing-mode s-buffer let-alist graphviz-dot-mode live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ sparql-mode pdf-tools auto-complete auctex use-package smex pyvenv org-bullets gradle-mode which-key helm gnu-elpa-keyring-update))
+ '(writeroom-border-width 70))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-tooltip ((t (:background "AntiqueWhite4" :foreground "pink1"))))
  '(dired-subtree-depth-1-face ((t nil)))
  '(dired-subtree-depth-2-face ((t nil)))
  '(dired-subtree-depth-3-face ((t nil)))

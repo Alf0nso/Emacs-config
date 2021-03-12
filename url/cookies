@@ -2,20 +2,16 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- '(("fenix.ciencias.ulisboa.pt"
-  [url-cookie "i18n.locale" "pt-PT" "Thu Dec 10 13:23:50 2020 GMT" "/" "fenix.ciencias.ulisboa.pt" nil]))
+ '((".indiehackers.com"
+  [url-cookie "__cfduid" "d61cd1130c1bf613e86657d89fff3c9551615481300" "Sat, 10-Apr-21 16:48:20 GMT" "/" ".indiehackers.com" nil]))
 )
 (setq url-cookie-secure-storage
- '((".wikidata.org"
-  [url-cookie "WMF-Last-Access-Global" "20-Nov-2020" "Tue, 22 Dec 2020 00:00:00 GMT" "/" ".wikidata.org" t])
- ("query.wikidata.org"
-  [url-cookie "WMF-Last-Access" "20-Nov-2020" "Tue, 22 Dec 2020 00:00:00 GMT" "/" "query.wikidata.org" t])
- (".ciencias.ulisboa.pt"
-  [url-cookie "SSESScfcfd1089f7c206842907e7abe4a1b80" "_YOLPNrIhPU02D29uWsBIgRzjLz0EU5-JyphmJrYOfk" "Thu Dec 03 16:56:24 2020 GMT" "/" ".ciencias.ulisboa.pt" t])
+ '((".thehackernews.com"
+  [url-cookie "__cfduid" "dc3d87e36b19e8cf93bcfdfec2e3275341615481176" "Sat, 10-Apr-21 16:46:16 GMT" "/" ".thehackernews.com" t])
  ("en.wikipedia.org"
-  [url-cookie "WMF-Last-Access" "26-Nov-2020" "Mon, 28 Dec 2020 12:00:00 GMT" "/" "en.wikipedia.org" t])
+  [url-cookie "WMF-Last-Access" "11-Mar-2021" "Mon, 12 Apr 2021 12:00:00 GMT" "/" "en.wikipedia.org" t])
  (".wikipedia.org"
-  [url-cookie "WMF-Last-Access-Global" "26-Nov-2020" "Mon, 28 Dec 2020 12:00:00 GMT" "/" ".wikipedia.org" t])
+  [url-cookie "WMF-Last-Access-Global" "11-Mar-2021" "Mon, 12 Apr 2021 12:00:00 GMT" "/" ".wikipedia.org" t])
  (".youtube.com"
   [url-cookie "VISITOR_INFO1_LIVE" "5C8yFXc4zYg" "Tue, 25-May-2021 17:27:01 GMT" "/" ".youtube.com" t]))
 )

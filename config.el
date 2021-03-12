@@ -1,5 +1,15 @@
 (load "~/.emacs.d/lisp/custom.el")
 
+(defun EmacsOff ()
+  (interactive)
+  (let ((last-nonmenu-event nil))(save-buffers-kill-emacs)))
+
+(defun EmacsRestart ()
+  "Kills and Restarts Emacs Server"
+  (interactive)
+  (let ((proc (start-process "StartEmacsServer.bat" nil "StartEmacsServer"))))
+  (EmacsOff))
+
 (load "~/.emacs.d/lisp/iscroll.el")
 
 (ido-mode t)
@@ -23,15 +33,35 @@
 
 (use-package auto-complete
   :ensure t
-  :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)))
+  )
+
+(yas-global-mode 1)
 
 ;; Company-mode
-(use-package company
-  :ensure t
-  :init (add-hook 'after-init-hook 'global-company-mode))
+; No delay in showing suggestions.
+(setq company-idle-delay 0)
+
+; Show suggestions after entering one character.
+(setq company-minimum-prefix-length 1)
+
+; go back up in the end
+(setq company-selection-wrap-around t)
+
+; Use tab key to cycle through suggestions.
+; ('tng' means 'tab and go')
+(company-tng-configure-default)
+
+(defun tab-indent-or-complete ()
+  (interactive)
+  (if (minibufferp)
+      (minibuffer-complete)
+    (if (or (not yas-minor-mode)
+	    (null (do-yas-expand)))
+	(if (check-expansion)
+	    (company-complete-common)
+	  (indent-for-tab-command)))))
+
+(global-set-key [backtab] 'tab-indent-or-complete)
 
 (use-package dired-subtree
   :ensure t
@@ -46,8 +76,10 @@
   :init
   (setq org-bullets-bullet-list
 	'("◉" "∴" "➞" "➵" "➾"))
-  (setq org-todo-keywords '((sequence "☛ TODO(t)" "➤ NEXT(n)" "|" "✔ DONE(d)" "|")
-			    (sequence "∞ WAITING(w)" "|"  "✘ CANCELED(c)")))
+  (setq org-todo-keywords 
+  '((sequence "☛ TODO(t)" "➤ NEXT(n)" "|" "✔ DONE(d)")
+  (sequence "∞ WAITING(w)" "|"  "✘ CANCELED(c)")
+  (sequence "∞ READING(r)" "∞ VIEWING(v)" "|"  "◤ FINISHED(f)")))
   :config (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
 (org-babel-do-load-languages
@@ -57,7 +89,9 @@
    (python . t)
    (C . t)
    (dot . t)
-   (java . t)))
+   (java . t)
+   (lisp . t)
+   (shell . t)))
 
 (require 'org-tempo)
 (add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
@@ -67,14 +101,31 @@
 (add-to-list 'org-structure-template-alist '("ja" . "src java :results output"))
 (add-to-list 'org-structure-template-alist '("sp" . "src sparql"))
 (add-to-list 'org-structure-template-alist '("dt" . "src dot"))
+(add-to-list 'org-structure-template-alist '("cl" . "src lisp"))
+
+(setq org-tag-alist '((:startgroup . nil)
+		      ("@University" . ?u) ("@Personal" . ?p)
+		      ("@Band" . ?m)
+		      (:endgroup . nil)
+		      (:startgroup . nil)
+		      ("Study" . ?s) ("Leisure" . ?l)
+		      ("Work" . ?w)
+		      (:endgroup . nil)
+		      (:startgroup . nil)
+		      ("Books" . ?B) ("Films" . ?F)
+		      ("Series" . ?S) ("Anime" . ?A)
+		      ("Music" . ?m)
+		      (:endgroup . nil)
+		      ))
 
 (defun ck/org-confirm-babel-evaluate (lang body)
   (not (or (string= lang "latex") (string= lang "python")
-	   (string= lang "sparql") (string= lang "emacs-lisp"))))
+	   (string= lang "sparql") (string= lang "emacs-lisp")
+	   (string= lang "lisp") (string= lang "dot"))))
 (setq org-confirm-babel-evaluate 'ck/org-confirm-babel-evaluate)
 
-(setq org-agenda-files '("~/Org/todo.org"
-			 "~/Org/Tasks.org"
+(setq org-agenda-files '("~/Org/University.org"
+			 "~/Org/Personal.org"
 			 "~/Org/Birthdays.org"))
 (global-set-key (kbd "C-c a") 'org-agenda)
 
@@ -110,7 +161,6 @@
   (setq prettify-symbols-alist
 	'(
 	  ("lambda" . 955)
-	  ("delta" . 120517)
 	  ("epsilon" . 120518)
 	  ("->" . 8594)
 	  ("Wking" . 9812)
@@ -119,9 +169,10 @@
 	  ("WBishop" . 9815)
 	  ("WKnight" . 9816)
 	  ("WPawn" . 9817)
-	  ("&Sum" . ∑)
+	  ("!sum" . ?∑)
 	  ("<=" . 8804)
 	  (">=" . 8805)
+	  ("=>" . ?➡)
 	  ("#+BEGIN_SRC"     . "λ")
 	  ("#+END_SRC"       . "λ")
 	  ("#+begin_src"     . "λ")
@@ -135,6 +186,19 @@
 				      "m"
 				      (expand-file-name "~/Music")
 				      nil)
+
+(setq elfeed-feeds
+      '(("https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ" Adam Neely YT)
+	("https://www.youtube.com/feeds/videos.xml?channel_id=UC-lHJZR3Gqxm24_Vd_AJ5Yw" Pewdiepie YT)
+	("https://videos.lukesmith.xyz/feeds/videos.xml?sort=-publishedAt&filter=local" Luke Smith TB))
+      )
+
+(require 'olivetti)
+(olivetti-set-width 60)
+(olivetti-mode 1)
+
+(global-set-key (kbd "C-c o") 'olivetti-mode)
+(global-set-key (kbd "C-c r") 'writeroom-mode)
 
 (defalias 'ff 'find-file)
 (defalias 'ffo 'find-file-other-window)
@@ -165,9 +229,19 @@
   (let ((proc (start-process "cmd" nil "cmd.exe" "/C" "start" "\"---\"" "cmd.exe")))
     (set-process-query-on-exit-flag proc nill)))
 
+(defun start-wt ()
+  (interactive)
+  (let ((proc (start-process "windows terminal" nil "wt.exe" "-f" "-d" ".")))
+    (set-process-query-on-exit-flag proc nill)))
+
 (add-hook 'java-mode-hook 'gradle-mode)
 
-(setq inferior-lisp-program "clisp -I")
+(custom-set-variables
+ '(jdee-server-dir "~\\.emacs.d\\jdee-server"))
+
+(setq inferior-lisp-program "sbcl")
+(add-hook 'lisp-mode-hook #'enable-paredit-mode)
+(add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
 
 (use-package elpy
   :ensure t
@@ -199,7 +273,7 @@
       TeX-source-correlate-start-server t)
 (add-hook 'TeX-after-compilation-finished-functions
 	   #'TeX-revert-document-buffer)
-(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.3))
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.9))
 (put 'dired-find-alternate-file 'disabled nil)
 (add-hook 'text-mode-hook 'flyspell-mode)
 
@@ -211,10 +285,57 @@
 
 (setq processing-location "c:/processing-3.5.4/processing-java.exe")
 
-(setq inhibit-startup-screen t)
-(setq initial-major-mode 'text-mode)
-(setq initial-scratch-message 
-      "Present Day, Present Time...\n")
+(setq company-clang-arguments . ("-IC:\\MinGW\\include"))
+
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+(add-hook 'js-mode-hook
+	  (lambda ()
+	    (define-key js-mode-map (kbd "C-x C-e") 'nodejs-repl-send-last-expression)
+	    (define-key js-mode-map (kbd "C-c C-j") 'nodejs-repl-send-line)
+	    (define-key js-mode-map (kbd "C-c C-r") 'nodejs-repl-send-region)
+	    (define-key js-mode-map (kbd "C-c C-c") 'nodejs-repl-send-buffer)
+	    (define-key js-mode-map (kbd "C-c C-l") 'nodejs-repl-load-file)
+	    (define-key js-mode-map (kbd "C-c C-z") 'nodejs-repl-switch-to-repl)))
+
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1)
+  (setq company-idle-delay 0))
+
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
+
+;; formats the buffer before saving
+(add-hook 'before-save-hook 'tide-format-before-save)
+
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
+(require 'ediprolog)
+(autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
+(autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
+(setq prolog-program-name "C:/swipl/bin/swipl.exe")
+(setq ediprolog-program "C:\\swipl\\bin\\swipl.exe")
+;(setq ediprolog-program-switches '("-g" "set_prolog_flag(tty_control, false)"))
+;(setq ediprolog-program-switches '("-g" "set_prolog_flag(readline, false)"))
+(setq prolog-system 'swi)
+(add-to-list 'auto-mode-alist '("\\.pl\\'" . prolog-mode))
+(global-set-key [f10] 'ediprolog-dwim)
+
+(use-package go-mode
+  :mode "\\.go$"
+  :interpreter "go"
+  :init
+  (add-hook 'go-mode-hook 'auto-complete-mode)
+  )
 
 (load "~/.emacs.d/elegant-emacs/elegance.el")
 
@@ -225,15 +346,12 @@
 
 (setq default-directory (concat (getenv "HOME") "/"))
 
-;(add-to-list 'default-frame-alist 
-;	     '(fullscreen . fullboth))
+(add-to-list 'default-frame-alist 
+	     '(fullscreen . fullboth))
 
-;;(set-face-attribute
-;; 'default nil
-;; :font "Consolas 17" )
-
-(set-frame-font
- "Consolas 22" nil t)
+(set-face-attribute
+ 'default nil
+ :font "Consolas 17" )
 
 (display-time-mode 1)
 (display-battery-mode 1)
@@ -271,3 +389,8 @@
       kept-new-versions 6
       kept-old-versions 2
       version-control t)
+
+(setq inhibit-startup-screen t)
+(setq initial-major-mode 'text-mode)
+(setq initial-scratch-message 
+      "Present Day, Present Time...\n")

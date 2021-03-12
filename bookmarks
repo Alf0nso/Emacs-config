@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-refile-last-stored"
+ (filename . "~/aulas/2_Sem/CompQuantica/notes.org")
+ (front-context-string . "** 2nd Quantum m")
+ (rear-context-string . "called *qubit*.\n")
+ (position . 1009))
+)

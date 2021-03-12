@@ -1,9 +1,6 @@
 * Packages & Terminals
-
 ** Packages & Additions
-
 *** Personal Functions
-    
     Some functions that I have been
     building with emacs lisp, that
     can and do facilitate my life!
@@ -11,9 +8,25 @@
     #+begin_src emacs-lisp
     (load "~/.emacs.d/lisp/custom.el")
     #+end_src
+*** Turn Off Emacs
+
+    #+begin_src emacs-lisp
+      (defun EmacsOff ()
+	(interactive)
+	(let ((last-nonmenu-event nil))(save-buffers-kill-emacs)))
+    #+end_src
+
+*** Restart Emacs
+
+    #+begin_src emacs-lisp
+      (defun EmacsRestart ()
+	"Kills and Restarts Emacs Server"
+	(interactive)
+	(let ((proc (start-process "StartEmacsServer.bat" nil "StartEmacsServer"))))
+	(EmacsOff))
+    #+end_src
 
 *** Iscroll
-    
     Smooth scrolling for images on files
     and other places.
 
@@ -22,7 +35,6 @@
     #+end_src
 
 *** Ido
-    
     Ido is a better finder for commands
     like 'C-c k' (which in my config is
     the deleting combo), or for 'C-x b'.
@@ -33,7 +45,6 @@
       (setq ido-enable-flex-matching t)
     #+end_src
 *** Smex
-    
     Smex is just like Ido, but
     specific for the 'M-x (...)'
     command.
@@ -45,7 +56,6 @@
     #+end_src
 
 *** Which Key Package
-
     Which Key allows me to know
     the commands available after
     I press any key.
@@ -57,7 +67,6 @@
     #+end_src
 
 *** Pdf Tools
-
     Package which is still not
     very well integrated with
     windows. But it's possible
@@ -70,7 +79,6 @@
     #+end_src
 
 *** Spell Check
-
     Spell Check here on Emacs for windows
     is done with an external program called
     'hunspell'. I had to find and get the
@@ -86,26 +94,50 @@
     #+end_src
 
 *** Auto Complete
-
     Auto complete tool, very good
     one.
 
     #+begin_src emacs-lisp
       (use-package auto-complete
 	:ensure t
-	:init
-	(progn
-	  (ac-config-default)
-	  (global-auto-complete-mode t)))
+	)
+    #+end_src
+
+*** Yasnippet
+    
+    #+begin_src emacs-lisp
+    (yas-global-mode 1)
     #+end_src
 
 *** Company Mode
     #+begin_src emacs-lisp
       ;; Company-mode
-      (use-package company
-	:ensure t
-	:init (add-hook 'after-init-hook 'global-company-mode))
+      ; No delay in showing suggestions.
+      (setq company-idle-delay 0)
+
+      ; Show suggestions after entering one character.
+      (setq company-minimum-prefix-length 1)
+
+      ; go back up in the end
+      (setq company-selection-wrap-around t)
+
+      ; Use tab key to cycle through suggestions.
+      ; ('tng' means 'tab and go')
+      (company-tng-configure-default)
+
+      (defun tab-indent-or-complete ()
+	(interactive)
+	(if (minibufferp)
+	    (minibuffer-complete)
+	  (if (or (not yas-minor-mode)
+		  (null (do-yas-expand)))
+	      (if (check-expansion)
+		  (company-complete-common)
+		(indent-for-tab-command)))))
+
+      (global-set-key [backtab] 'tab-indent-or-complete)
     #+end_src
+
 *** Subtree
 
     Subtree package for folding and
@@ -140,8 +172,10 @@
 	 :init
 	 (setq org-bullets-bullet-list
 	       '("◉" "∴" "➞" "➵" "➾"))
-	 (setq org-todo-keywords '((sequence "☛ TODO(t)" "➤ NEXT(n)" "|" "✔ DONE(d)" "|")
-				   (sequence "∞ WAITING(w)" "|"  "✘ CANCELED(c)")))
+	 (setq org-todo-keywords 
+	 '((sequence "☛ TODO(t)" "➤ NEXT(n)" "|" "✔ DONE(d)")
+	 (sequence "∞ WAITING(w)" "|"  "✘ CANCELED(c)")
+	 (sequence "∞ READING(r)" "∞ VIEWING(v)" "|"  "◤ FINISHED(f)")))
 	 :config (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
      #+end_src
 
@@ -158,7 +192,9 @@
 	  (python . t)
 	  (C . t)
 	  (dot . t)
-	  (java . t)))
+	  (java . t)
+	  (lisp . t)
+	  (shell . t)))
      #+end_src
 
 **** Org Tempo
@@ -175,7 +211,27 @@
        (add-to-list 'org-structure-template-alist '("ja" . "src java :results output"))
        (add-to-list 'org-structure-template-alist '("sp" . "src sparql"))
        (add-to-list 'org-structure-template-alist '("dt" . "src dot"))
+       (add-to-list 'org-structure-template-alist '("cl" . "src lisp"))
 
+     #+end_src
+
+**** Org Tags
+
+     #+begin_src emacs-lisp
+       (setq org-tag-alist '((:startgroup . nil)
+			     ("@University" . ?u) ("@Personal" . ?p)
+			     ("@Band" . ?m)
+			     (:endgroup . nil)
+			     (:startgroup . nil)
+			     ("Study" . ?s) ("Leisure" . ?l)
+			     ("Work" . ?w)
+			     (:endgroup . nil)
+			     (:startgroup . nil)
+			     ("Books" . ?B) ("Films" . ?F)
+			     ("Series" . ?S) ("Anime" . ?A)
+			     ("Music" . ?m)
+			     (:endgroup . nil)
+			     ))
      #+end_src
 
 **** No Evaluation Prompt
@@ -186,7 +242,8 @@
      #+begin_src emacs-lisp
        (defun ck/org-confirm-babel-evaluate (lang body)
 	 (not (or (string= lang "latex") (string= lang "python")
-		  (string= lang "sparql") (string= lang "emacs-lisp"))))
+		  (string= lang "sparql") (string= lang "emacs-lisp")
+		  (string= lang "lisp") (string= lang "dot"))))
        (setq org-confirm-babel-evaluate 'ck/org-confirm-babel-evaluate)
      #+end_src
 
@@ -200,8 +257,8 @@
       Org agenda files, and key rebinding
 
      #+begin_src emacs-lisp
-       (setq org-agenda-files '("~/Org/todo.org"
-				"~/Org/Tasks.org"
+       (setq org-agenda-files '("~/Org/University.org"
+				"~/Org/Personal.org"
 				"~/Org/Birthdays.org"))
        (global-set-key (kbd "C-c a") 'org-agenda)
      #+end_src
@@ -219,18 +276,18 @@
 	(setq org-log-into-drawer t)
       #+end_src
 
-**** Extra Configurations
+***** Extra Configurations
 
-     Things I changed probably because 
-     did not like that much.
+      Things I changed probably because 
+      did not like that much.
 
-     #+begin_src emacs-lisp
-       (setq org-hide-emphasis-markers t)
-       (setq org-image-actual-width nil)
-       (eval-after-load 'org
-	 (add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images))
-       (setq org-comfim-babel-evaluate nil)
-     #+end_src
+      #+begin_src emacs-lisp
+	(setq org-hide-emphasis-markers t)
+	(setq org-image-actual-width nil)
+	(eval-after-load 'org
+	  (add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images))
+	(setq org-comfim-babel-evaluate nil)
+      #+end_src
 
 *** Dired
 
@@ -272,7 +329,6 @@
 	(setq prettify-symbols-alist
 	      '(
 		("lambda" . 955)
-		("delta" . 120517)
 		("epsilon" . 120518)
 		("->" . 8594)
 		("Wking" . 9812)
@@ -281,9 +337,10 @@
 		("WBishop" . 9815)
 		("WKnight" . 9816)
 		("WPawn" . 9817)
-		("&Sum" . ∑)
+		("!sum" . ?∑)
 		("<=" . 8804)
 		(">=" . 8805)
+		("=>" . ?➡)
 		("#+BEGIN_SRC"     . "λ")
 		("#+END_SRC"       . "λ")
 		("#+begin_src"     . "λ")
@@ -308,11 +365,32 @@
 					    nil)
     #+end_src
 
+*** Elfeed
+    Need to change some stuff (put things on a org file)
+    #+begin_src emacs-lisp
+      (setq elfeed-feeds
+	    '(("https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ" Adam Neely YT)
+	      ("https://www.youtube.com/feeds/videos.xml?channel_id=UC-lHJZR3Gqxm24_Vd_AJ5Yw" Pewdiepie YT)
+	      ("https://videos.lukesmith.xyz/feeds/videos.xml?sort=-publishedAt&filter=local" Luke Smith TB))
+	    )
+    #+end_src
 
+*** Writing Mode
+    
+    To write files and general text, including
+    code, I prefer to have my text centered on
+    one only buffer.
+
+    #+begin_src emacs-lisp
+      (require 'olivetti)
+      (olivetti-set-width 60)
+      (olivetti-mode 1)
+
+      (global-set-key (kbd "C-c o") 'olivetti-mode)
+      (global-set-key (kbd "C-c r") 'writeroom-mode)
+    #+end_src
 ** Terminals
-
 *** Eshell Configurations
-
 **** Alias
      
      making find file, and find-
@@ -358,7 +436,6 @@
 		       'eshell-other-window)
      #+end_src
 
-
 *** Windows CMD
 
     eshell doesn't always do everything
@@ -375,8 +452,18 @@
 	  (set-process-query-on-exit-flag proc nill)))
     #+end_src
 
-* Programming Languages
+*** Windows Terminal
 
+    Start the windows terminal from anywhere!
+
+    #+begin_src emacs-lisp
+      (defun start-wt ()
+	(interactive)
+	(let ((proc (start-process "windows terminal" nil "wt.exe" "-f" "-d" ".")))
+	  (set-process-query-on-exit-flag proc nill)))
+    #+end_src
+
+* Programming Languages
 ** Java
 
    For Java I am currently making
@@ -387,14 +474,25 @@
    #+begin_src emacs-lisp
    (add-hook 'java-mode-hook 'gradle-mode)
    #+end_src
+   
+   #+begin_src emacs-lisp
+     (custom-set-variables
+      '(jdee-server-dir "~\\.emacs.d\\jdee-server"))
+   #+end_src
 
-** CLips
+   #+RESULTS:
 
-   Using the CLisp compiler, 
-   gnu compiler for Common lisp.
+** Common Lisp
+
+   I currently have both gnu Clisp and
+   SBCL installed on my computer. SBCL
+   seems to have a better integration, so
+   I choose to go with it
 
    #+begin_src emacs-lisp
-   (setq inferior-lisp-program "clisp -I")
+     (setq inferior-lisp-program "sbcl")
+     (add-hook 'lisp-mode-hook #'enable-paredit-mode)
+     (add-hook 'emacs-lisp-mode-hook #'enable-paredit-mode)
    #+end_src
 
 ** Python
@@ -448,7 +546,6 @@
     #+begin_src emacs-lisp
       (setenv "WORKON_HOME" "c:/Users/afons/py_home")
     #+end_src
-
 ** Sparql
 
    Sparql is quite a very interesting
@@ -473,7 +570,7 @@
 	   TeX-source-correlate-start-server t)
      (add-hook 'TeX-after-compilation-finished-functions
 		#'TeX-revert-document-buffer)
-     (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.3))
+     (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.9))
      (put 'dired-find-alternate-file 'disabled nil)
      (add-hook 'text-mode-hook 'flyspell-mode)
    #+end_src
@@ -506,27 +603,84 @@
    #+begin_src emacs-lisp
    (setq processing-location "c:/processing-3.5.4/processing-java.exe")
    #+end_src
-
-* General Settings
-
-** Splash Screen & Starting Scratch
-
-*** Splash Screen
-
-   Inhibiting the default splash screen
-   from appearing, and changing the text
-   displayed on the scratch file.
-
+   
+** C Programming
+   Clang variables to find the MinGW
+   header files.
    #+begin_src emacs-lisp
-     (setq inhibit-startup-screen t)
-     (setq initial-major-mode 'text-mode)
-     (setq initial-scratch-message 
-	   "Present Day, Present Time...\n")
+     (setq company-clang-arguments . ("-IC:\\MinGW\\include"))
    #+end_src
 
+** JavaScript
+*** Better JavaScript
+   #+begin_src emacs-lisp
+   (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+   #+end_src
+*** JavaScript REPL
+    #+begin_src emacs-lisp
+      (add-hook 'js-mode-hook
+		(lambda ()
+		  (define-key js-mode-map (kbd "C-x C-e") 'nodejs-repl-send-last-expression)
+		  (define-key js-mode-map (kbd "C-c C-j") 'nodejs-repl-send-line)
+		  (define-key js-mode-map (kbd "C-c C-r") 'nodejs-repl-send-region)
+		  (define-key js-mode-map (kbd "C-c C-c") 'nodejs-repl-send-buffer)
+		  (define-key js-mode-map (kbd "C-c C-l") 'nodejs-repl-load-file)
+		  (define-key js-mode-map (kbd "C-c C-z") 'nodejs-repl-switch-to-repl)))
+    #+end_src
+** TypeScript
+   #+begin_src emacs-lisp
+     (defun setup-tide-mode ()
+       (interactive)
+       (tide-setup)
+       (flycheck-mode +1)
+       (setq flycheck-check-syntax-automatically '(save mode-enabled))
+       (eldoc-mode +1)
+       (tide-hl-identifier-mode +1)
+       ;; company is an optional dependency. You have to
+       ;; install it separately via package-install
+       ;; `M-x package-install [ret] company`
+       (company-mode +1)
+       (setq company-idle-delay 0))
+
+     ;; aligns annotation to the right hand side
+     (setq company-tooltip-align-annotations t)
+
+     ;; formats the buffer before saving
+     (add-hook 'before-save-hook 'tide-format-before-save)
+
+     (add-hook 'typescript-mode-hook #'setup-tide-mode)
+   #+end_src
+
+** Prolog
    
+   #+begin_src emacs-lisp
+     (require 'ediprolog)
+     (autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
+     (autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
+     (setq prolog-program-name "C:/swipl/bin/swipl.exe")
+     (setq ediprolog-program "C:\\swipl\\bin\\swipl.exe")
+     ;(setq ediprolog-program-switches '("-g" "set_prolog_flag(tty_control, false)"))
+     ;(setq ediprolog-program-switches '("-g" "set_prolog_flag(readline, false)"))
+     (setq prolog-system 'swi)
+     (add-to-list 'auto-mode-alist '("\\.pl\\'" . prolog-mode))
+     (global-set-key [f10] 'ediprolog-dwim)
+   #+end_src
+
+** Golang
+   Stuff to program in golang in a more
+   comfortable manner.
+
+   #+begin_src emacs-lisp
+     (use-package go-mode
+       :mode "\\.go$"
+       :interpreter "go"
+       :init
+       (add-hook 'go-mode-hook 'auto-complete-mode)
+       )
+   #+end_src
+
+* General Settings
 ** Basic Additions & Removing Bars
-   
 *** Styling Of Emacs
 
     Emacs style I am currently using.
@@ -564,14 +718,13 @@
    #+end_src
 
 *** Screen & Fonts
-
    I enjoy when the screen starts
    full, since I use it like that
    most of the time.
 
    #+begin_src emacs-lisp
-     ;(add-to-list 'default-frame-alist 
-     ;	     '(fullscreen . fullboth))
+     (add-to-list 'default-frame-alist 
+		  '(fullscreen . fullboth))
    #+end_src
 
    The font I've been using is the
@@ -581,12 +734,9 @@
    to read.
 
    #+begin_src emacs-lisp
-     ;;(set-face-attribute
-     ;; 'default nil
-     ;; :font "Consolas 17" )
-
-     (set-frame-font
-      "Consolas 22" nil t)
+     (set-face-attribute
+      'default nil
+      :font "Consolas 17" )
    #+end_src
 
    #+RESULTS:
@@ -603,7 +753,6 @@
     #+end_src
 
 *** Key Substitution
-
 **** Killing Buffers
 
     Defining two different ways of
@@ -682,4 +831,16 @@
 	    kept-old-versions 2
 	    version-control t)
     #+end_src
+** Splash Screen & Starting Scratch
+*** Splash Screen
 
+   Inhibiting the default splash screen
+   from appearing, and changing the text
+   displayed on the scratch file.
+
+   #+begin_src emacs-lisp
+     (setq inhibit-startup-screen t)
+     (setq initial-major-mode 'text-mode)
+     (setq initial-scratch-message 
+	   "Present Day, Present Time...\n")
+   #+end_src
