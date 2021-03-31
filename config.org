@@ -503,14 +503,45 @@
 
 *** Windows Terminal
 
-    Start the windows terminal from anywhere!
+    Start the windows terminal from anywhere! this is generally very
+    helpful to me since eshell has quite a lot of laking features.
+    (laking features supported by default, and since I already spent
+    time configuring my terminal, might as well just use it).
 
     #+begin_src emacs-lisp
       (defun start-wt ()
 	(interactive)
-	(let ((proc (start-process "windows terminal" nil "wt.exe" "-f" "-d" ".")))
-	  (set-process-query-on-exit-flag proc nill)))
+	(let ((proc (start-process "windows terminal" nil "wt.exe" "-f" "-d" ".")))))
     #+end_src
+
+*** Explorer
+
+    Sometimes I need to check things with something other than dired.
+    Although I basically don't use it, it's still okay If I need to
+    upload files.
+
+    #+begin_src emacs-lisp
+      (defun Explorer ()
+	(interactive)
+	(let ((proc (start-process "Windows Explorer" nil "explorer.exe" ".")))))
+    #+end_src
+
+*** VS Code
+
+    I don't use VS code at all. A friend of mine convinced me to
+    install it, and I did. This was and is mainly for a simple
+    reason. If I ever need to help someone with debugging, and that
+    someone uses VS code, (due to it's popularity), I might as well
+    take advantage of live sharing.
+
+    #+begin_src emacs-lisp
+      (defun VScode ()
+	(interactive)
+	(let ((proc (start-process "VS Code" nil "code" (buffer-file-name))))))
+    #+end_src
+
+    #+RESULTS:
+    : VScode
 
 * Programming Languages
 ** Java
