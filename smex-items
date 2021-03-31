@@ -1,24 +1,24 @@
 
 ;; ----- smex-history -----
 (
- prettify-symbols-mode
- ytdl-download
  package-install
- eww
- org-latex-preview
- start-wt
- pyvenv-workon
+ diff-buffers
+ org-mode
+ writeroom-mode
+ prettify-symbols-mode
+ treemacs-icons-dired-mode
+ load-file
 )
 
 ;; ----- smex-data -----
 (
  (eshell . 433)
- (package-install . 44)
- (list-packages . 7)
- (pyvenv-workon . 116)
+ (package-install . 51)
+ (list-packages . 8)
+ (pyvenv-workon . 119)
  (pyvenv-menu . 2)
  (pyvenv-create . 19)
- (load-file . 137)
+ (load-file . 142)
  (pyvenv-activate . 8)
  (pyvenv-deactivate . 10)
  (pyvenv-mode . 26)
@@ -38,10 +38,10 @@
  (package-list-packages . 41)
  (customize-themes . 11)
  (ein:notebooklist-open . 4)
- (ein:run . 112)
- (ein:stop . 69)
+ (ein:run . 123)
+ (ein:stop . 74)
  (dired . 307)
- (auto-complete-mode . 73)
+ (auto-complete-mode . 75)
  (org-toggle-latex-fragment . 238)
  (gdb . 1)
  (recover-file . 5)
@@ -66,7 +66,7 @@
  (gradle-execute . 9)
  (executable-interpret . 1)
  (image-dired . 3)
- (org-latex-preview . 35)
+ (org-latex-preview . 56)
  (global-semantic-idle-completions-mode . 1)
  (ac-fuzzy-complete . 2)
  (line-number-mode . 5)
@@ -108,13 +108,13 @@
  (open-cmd . 1)
  (start-cmd . 324)
  (all-the-icons-install-fonts . 2)
- (treemacs-icons-dired-mode . 28)
+ (treemacs-icons-dired-mode . 29)
  (all-the-icons-dired-mode . 2)
  (all-the-icons-insert-faicon . 1)
  (haskell-mode . 1)
  (hs-minor-mode . 1)
  (interactive-haskell-mode . 4)
- (prettify-symbols-mode . 29)
+ (prettify-symbols-mode . 40)
  (ibuffer . 1)
  (subword-mode . 3)
  (icon-mode . 3)
@@ -178,7 +178,7 @@
  (elpy-goto-definition . 1)
  (org-archive-done-tasks . 2)
  (org-remove-file . 3)
- (ein:login . 1)
+ (ein:login . 2)
  (ein:notebooklist-menu . 1)
  (ein:notebooklist-login . 6)
  (eval-buffer . 4)
@@ -186,7 +186,7 @@
  (doc-view-toggle-display . 1)
  (elpy-enable . 2)
  (elpy-rpc-restart . 6)
- (ein:notebook-switch-kernel . 2)
+ (ein:notebook-switch-kernel . 3)
  (tab-list . 1)
  (tab-bar-mode . 7)
  (tab-switcher . 1)
@@ -209,7 +209,7 @@
  (scad-mode . 3)
  (scad-preview--image-mode . 20)
  (olivetti-mode . 28)
- (writeroom-mode . 37)
+ (writeroom-mode . 41)
  (writeroom-adjust-width . 2)
  (writeroom-toggle-mode-line . 6)
  (mastodon . 3)
@@ -233,7 +233,7 @@
  (tabify . 1)
  (display-time . 4)
  (time-stamp . 2)
- (start-wt . 69)
+ (start-wt . 90)
  (org-display-inline-images . 1)
  (cider-jack-in . 4)
  (cider-quit . 3)
@@ -244,7 +244,7 @@
  (run-prolog . 8)
  (ediprolog-dwim . 1)
  (ediprolog-toplevel . 1)
- (org-mode . 7)
+ (org-mode . 9)
  (slime . 4)
  (elfeed . 8)
  (elfeed-update . 2)
@@ -260,4 +260,12 @@
  (yas-describe-tables . 1)
  (yas-insert-snippet . 1)
  (yas-new-snippet . 1)
+ (vscode . 11)
+ (org-roam-mode . 2)
+ (explorer . 3)
+ (org-mark-ring-goto . 1)
+ (org-roam-jump-to-index . 1)
+ (org-roam . 2)
+ (vc-mode-line . 1)
+ (diff-buffers . 3)
 )

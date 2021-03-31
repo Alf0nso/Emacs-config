@@ -15,10 +15,20 @@
 (ido-mode t)
 (setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
+(setq ido-separator "\n")
 
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;; (helm-mode 1)
+;; (global-set-key (kbd "M-x") #'helm-M-x)
+;; (global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
+;; (global-set-key (kbd "C-x C-f") #'helm-find-files)
+;; 
+;; (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
+;; (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
+;; (define-key helm-map (kbd "C-z")  'helm-select-action)
 
 (use-package which-key
   :ensure t
@@ -91,7 +101,8 @@
    (dot . t)
    (java . t)
    (lisp . t)
-   (shell . t)))
+   (shell . t)
+   (prolog . t)))
 
 (require 'org-tempo)
 (add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp"))
@@ -102,6 +113,7 @@
 (add-to-list 'org-structure-template-alist '("sp" . "src sparql"))
 (add-to-list 'org-structure-template-alist '("dt" . "src dot"))
 (add-to-list 'org-structure-template-alist '("cl" . "src lisp"))
+(add-to-list 'org-structure-template-alist '("pr" . "src prolog"))
 
 (setq org-tag-alist '((:startgroup . nil)
 		      ("@University" . ?u) ("@Personal" . ?p)
@@ -128,6 +140,12 @@
 			 "~/Org/Personal.org"
 			 "~/Org/Birthdays.org"))
 (global-set-key (kbd "C-c a") 'org-agenda)
+(setq org-refile-targets
+      '(("~/Org/University.org" :maxlevel . 2)
+	("~/Org/Personal.org" :maxlevel . 1)))
+
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-agenda-start-with-log-mode t)
 (setq org-log-done 'time)
@@ -140,6 +158,19 @@
 (eval-after-load 'org
   (add-hook 'org-babel-after-execute-hook 'org-redisplay-inline-images))
 (setq org-comfim-babel-evaluate nil)
+
+(setq org-agenda-custom-commands
+      '(("U" "Agenda & University"
+	 ((agenda "")
+	  (tags-todo "@University+Study-DONE")
+	  (tags "+Level=4+Projects-DONE")))
+	("P" "Agenda & Personal"
+	 ((agenda "")
+	  (tags-todo "@Personal-DONE")
+	  (tags "+Level=3+Books")
+	  (tags "+Level=3+Series")
+	  (tags "+Level=3+Anime")
+	  ))))
 
 (require 'dired+)
 (use-package treemacs-icons-dired
@@ -157,41 +188,41 @@
 (customize-set-variable 'diredp-file-suffix t nil)
 
 (global-prettify-symbols-mode 1)
-(defun add-pretty-lambda ()
-  (setq prettify-symbols-alist
-	'(
-	  ("lambda" . 955)
-	  ("epsilon" . 120518)
-	  ("->" . 8594)
-	  ("Wking" . 9812)
-	  ("WQueen" . 9813)
-	  ("WRook" . 9814)
-	  ("WBishop" . 9815)
-	  ("WKnight" . 9816)
-	  ("WPawn" . 9817)
-	  ("!sum" . ?∑)
-	  ("<=" . 8804)
-	  (">=" . 8805)
-	  ("=>" . ?➡)
-	  ("#+BEGIN_SRC"     . "λ")
-	  ("#+END_SRC"       . "λ")
-	  ("#+begin_src"     . "λ")
-	  ("#+end_src"       . "λ")
-	  )))
-(add-hook 'prog-mode-hook 'add-pretty-lambda)
-(add-hook 'org-mode-hook 'add-pretty-lambda)
+     (defun add-pretty-lambda ()
+	(setq prettify-symbols-alist
+	      '(
+		("lambda" . 955)
+		("epsilon" . 120518)
+		("->" . 8594)
+		("Wking" . 9812)
+		("WQueen" . 9813)
+		("WRook" . 9814)
+		("WBishop" . 9815)
+		("WKnight" . 9816)
+		("WPawn" . 9817)
+		("!sum" . ?∑)
+		("<=" . 8804)
+		(">=" . 8805)
+		("=>" . ?➡)
+		("#+BEGIN_SRC"     . "λ")
+		("#+END_SRC"       . "λ")
+		("#+begin_src"     . "λ")
+		("#+end_src"       . "λ")
+		)))
+     (add-hook 'prog-mode-hook 'add-pretty-lambda)
+     (add-hook 'org-mode-hook 'add-pretty-lambda)
 
 (require 'ytdl)
 (ytdl-add-field-in-download-type-list "Music"
-				      "m"
-				      (expand-file-name "~/Music")
-				      nil)
+					    "m"
+					    (expand-file-name "~/Music")
+					    nil)
 
 (setq elfeed-feeds
-      '(("https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ" Adam Neely YT)
-	("https://www.youtube.com/feeds/videos.xml?channel_id=UC-lHJZR3Gqxm24_Vd_AJ5Yw" Pewdiepie YT)
-	("https://videos.lukesmith.xyz/feeds/videos.xml?sort=-publishedAt&filter=local" Luke Smith TB))
-      )
+	   '(("https://www.youtube.com/feeds/videos.xml?channel_id=UCnkp4xDOwqqJD7sSM3xdUiQ" Adam Neely YT)
+	     ("https://www.youtube.com/feeds/videos.xml?channel_id=UC-lHJZR3Gqxm24_Vd_AJ5Yw" Pewdiepie YT)
+	     ("https://videos.lukesmith.xyz/feeds/videos.xml?sort=-publishedAt&filter=local" Luke Smith TB))
+	   )
 
 (require 'olivetti)
 (olivetti-set-width 60)
@@ -305,9 +336,6 @@
   (setq flycheck-check-syntax-automatically '(save mode-enabled))
   (eldoc-mode +1)
   (tide-hl-identifier-mode +1)
-  ;; company is an optional dependency. You have to
-  ;; install it separately via package-install
-  ;; `M-x package-install [ret] company`
   (company-mode +1)
   (setq company-idle-delay 0))
 
@@ -371,6 +399,8 @@
 (global-set-key (kbd "C-S-<up>") 'enlarge-window)
 
 (global-set-key (kbd "<f6>") 'whitespace-mode)
+
+(global-set-key (kbd "C-d") 'delete-region)
 
 (setq utf-translate-cjk-mode nil)
 (set-language-environment "UTF-8")

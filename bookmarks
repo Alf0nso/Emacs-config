@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-refile-last-stored"
+(("org-capture-last-stored"
+ (filename . "~/Org/roam/20210318010252-normal_people.org")
+ (front-context-string . "#+title: Normal_")
+ (rear-context-string)
+ (position . 1))
+("org-refile-last-stored"
  (filename . "~/aulas/2_Sem/CompQuantica/notes.org")
  (front-context-string . "** 2nd Quantum m")
  (rear-context-string . "called *qubit*.\n")

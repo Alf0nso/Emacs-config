@@ -40,9 +40,14 @@
  '(olivetti-body-width 70)
  '(org-agenda-files
    '("~/.emacs.d/config.org" "~/Org/todo.org" "~/Org/Tasks.org" "~/Org/Birthdays.org"))
+ '(org-fontify-quote-and-verse-blocks t)
  '(package-selected-packages
-   '(go-autocomplete common-lisp-snippets go-mode ox-hugo ein jdee lsp-java java-snippets yasnippet-classic-snippets elfeed slime ediprolog paredit cider clojure-mode transmission tide js2-mode nodejs-repl auto-complete-c-headers aggressive-indent yasnippet-snippets proof-general writeroom-mode olivetti scad-mode scad-preview chess elpy processing-mode s-buffer let-alist graphviz-dot-mode live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ sparql-mode pdf-tools auto-complete auctex use-package smex pyvenv org-bullets gradle-mode which-key helm gnu-elpa-keyring-update))
- '(writeroom-border-width 70))
+   '(ivy deft org-roam-server forth-mode fira-code-mode pretty-mode ob-prolog connection calfw-org calfw org-roam go-autocomplete common-lisp-snippets go-mode ox-hugo ein jdee lsp-java java-snippets yasnippet-classic-snippets elfeed slime ediprolog paredit cider clojure-mode transmission tide js2-mode nodejs-repl auto-complete-c-headers aggressive-indent yasnippet-snippets proof-general writeroom-mode olivetti scad-mode scad-preview chess elpy processing-mode s-buffer let-alist graphviz-dot-mode live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ sparql-mode pdf-tools auto-complete auctex use-package smex pyvenv org-bullets gradle-mode which-key helm gnu-elpa-keyring-update))
+ '(writeroom-added-width-left 5)
+ '(writeroom-border-width 20)
+ '(writeroom-fringes-outside-margins t)
+ '(writeroom-global-effects
+   '(writeroom-set-fullscreen writeroom-set-alpha writeroom-set-menu-bar-lines writeroom-set-tool-bar-lines writeroom-set-vertical-scroll-bars writeroom-set-bottom-divider-width writeroom-set-internal-border-width)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -54,7 +59,12 @@
  '(dired-subtree-depth-3-face ((t nil)))
  '(dired-subtree-depth-4-face ((t nil)))
  '(dired-subtree-depth-5-face ((t nil)))
- '(dired-subtree-depth-6-face ((t nil))))
+ '(dired-subtree-depth-6-face ((t nil)))
+ '(helm-M-x-key ((t (:extend t :foreground "sky blue" :underline t))))
+ '(helm-ff-directory ((t (:extend t :foreground "MistyRose3"))))
+ '(helm-match ((t (:extend t :foreground "NavajoWhite1"))))
+ '(org-quote ((t (:inherit face-faded :extend t :background "gray30" :slant italic))))
+ '(tab-bar ((t (:inherit variable-pitch :background "#3f3f3f" :foreground "MistyRose1")))))
 ;;;;;;;
 
 ;;; Making sure use package is working

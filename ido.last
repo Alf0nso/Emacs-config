@@ -2,9 +2,11 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("c:/Users/afons/Org/" . "roam/")
+ ("c:/Users/afons/aulas/2_Sem/ProspDados/" . "Project/")
  ("c:/Users/afons/aulas/2_Sem/SecTec/Biblio/" . "papers_resume/")
- ("c:/Users/afons/aulas/2_Sem/SecTec/" . "Biblio/")
- ("c:/Users/afons/aulas/2_Sem/" . "ProspDados/")
+ ("c:/Users/afons/aulas/2_Sem/SecTec/" . "Securelog-BIBIFI/")
+ ("c:/Users/afons/aulas/2_Sem/" . "TecComp/")
  ("c:/Users/afons/.emacs.d/elpa/irony-20201018.1707/server/" . "build/")
  ("c:/Users/afons/.emacs.d/elpa/irony-20201018.1707/" . "server/")
  ("c:/Users/afons/.emacs.d/elpa/" . "irony-20201018.1707/")
@@ -49,37 +51,40 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "c:/Users/afons/Org/"
+ "c:/Users/afons/aulas/2_Sem/SecTec/Securelog-BIBIFI/"
  "c:/Users/afons/.emacs.d/"
- "c:/Users/afons/Desktop/"
+ "c:/Users/afons/"
+ "c:/Users/afons/aulas/"
+ "c:/Users/afons/aulas/2_Sem/TecComp/"
+ "c:/Users/afons/Org/"
+ "c:/Users/afons/aulas/2_Sem/ProspDados/Project/"
  "c:/Users/afons/aulas/2_Sem/ProspDados/"
- "c:/Users/afons/aulas/2_Sem/SecTec/"
+ "c:/Users/afons/Desktop/"
  "c:/Users/afons/aulas/2_Sem/CompQuantica/"
+ "c:/Users/afons/MISC/"
+ "c:/Users/afons/MISC/lisp_programs/"
+ "/localhost:"
+ "c:/Users/afons/aulas/2_Sem/SecTec/"
  "c:/Users/afons/aulas/2_Sem/SecTec/Biblio/"
  "c:/Users/afons/.emacs.d/jdee-server/"
- "c:/Users/afons/MISC/"
  "c:/Users/afons/.elfeed/"
  "c:/Users/afons/aulas/2_Sem/SecTec/Biblio/papers_resume/"
  "c:/Users/afons/.emacs.d/lisp/"
  "c:/Users/afons/aulas/2_Sem/CompQuantica/TP/"
  "c:/Users/afons/aulas/2_Sem/TecComp/TP/"
- "c:/Users/afons/aulas/2_Sem/TecComp/"
  "c:/Users/afons/aulas/2_Sem/"
  "c:/Users/afons/aulas/2_Sem/AppWeb/"
- "c:/Users/afons/MISC/lisp_programs/"
  "c:/Users/afons/MISC/pols_econs_sos/"
  "c:/Users/afons/Desktop/web_server/"
  "c:/Users/afons/img/"
  "c:/hunspell/"
  "c:/Users/afons/aulas/2_Sem/CompQuantica/TP/resolução/"
  "c:/Users/afons/Books/"
- "c:/Users/afons/"
  "c:/Users/afons/MISC/crypto/"
  "c:/Users/afons/MISC/lisp/"
  "c:/Users/afons/MISC/crypto/chal1/"
  "c:/Users/afons/MISC/AL/NN-Games/"
  "c:/Users/afons/MISC/AL/"
- "c:/Users/afons/aulas/"
  "c:/Users/afons/MISC/AL/NN-Games/NN/"
  "c:/Users/afons/MISC/lisp/prompt/"
  "c:/Users/afons/.emacs.d/elpa/irony-20201018.1707/server/"
@@ -96,46 +101,69 @@
  "c:/Users/afons/aulas/AI/"
  "c:/Users/afons/py_home/"
  "c:/Users/afons/MISC/pols_econs_sos/graphs/"
- "c:/Users/afons/aulas/SA/project/Taffic_Simulation_FCUL/Exemplos/"
- "c:/Users/afons/MISC/extra_ana/stippling/"
- "c:/Users/afons/aulas/CS/notes/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "University.org"
+ ".gitignore"
  "config.org"
+ "hey.lisp"
+ "test.hs"
+ "5050"
+ "University.org"
  "db.pl"
  "notes.org"
  "test.go"
  "presentation.org"
- "test.cl"
- "test.cpp"
- "test.clj"
- "init.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/afons/Org/" (24650 32709 0 0) "University.org_archive" "University.org" "series_reviews/" "Personal.org_archive" "Personal.org" "Birthdays.org" "../" "./")
+ ("c:/Users/afons/.emacs.d/" (24676 23200 0 0) "url/" "transient/" "thumbs/" "snippets/" "smex-items" "showcase.png" "server/" "request/" "recentf" "README.md" "places" "org-roam.db" "lisp/" "jdee-server/" "init.el" "image-dired/" "ido.last" "idlwave/" "freest-mode/" "fonts/" "eshell/" "emacsclientw.exe.lnk" "elpy/" "elpa/" "elegant-emacs/" "el-get/" "data/" "config.org" "config.el" "bookmarks" "backup_just_in_case.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".org-id-locations" ".git/" ".cache/" "../" "./")
+
+ ("c:/Users/afons/MISC/AL/NN-Games/" (24646 52470 0 0) "__pycache__/" "Trained_NN/" "README.org" "NN/" "main.py" "GamesG/" "Games/" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/afons/Books/" (24666 13833 0 0) "writing-an-interpreter-in-go.pdf" "Write_Yourself_a_Scheme_in_48_Hours.pdf" "WriteYouASchemeVersion2.pdf" "tsfmt.json" "The_C_Programming_Language.pdf" "The Rise and Fall of the The Soviet Economy_ An Economic History of the USSR from 1945.pdf" "The neoliberal mind - Madsen Pirie.pdf" "the economics book.pdf" "The Boglehead’s Guide To Investing.pdf" "The art of computer programming. Vol.2. Seminumerical algorithms.pdf" "The Art of Computer Programming, Vol. 1_ Fundamental Algorithms, 3rd Edition.pdf" "TComp.v05.pdf" "Relativity_ The Special and the General Theory.pdf" "relativity.pdf" "recursive.pdf" "Quantum Computing since Democritus .pdf" "personal/" "notes.org" "Neural Networks and Learning Machines by Simon O. Haykin (z-lib.org).pdf" "Neoliberalism_ The Genesis of a Political Swearword - Oliver Marc Hartwich.pdf" "Music by the Numbers_ From Pythagoras to Schoenberg.pdf" "Modern Compiler Implementation in C.pdf" "Modeling & Reasoning with Bayesian Networks.pdf" "Machine Learning A Probabilistic Perspective by Kevin P. Murphy (z-lib.org).pdf" "Kalman1960.pdf" "Introduction to Rocket Science and Engineering.pdf" "HR_SOL.pdf" "HR.pdf" "haskell-98-tutorial.pdf" "Groen O., Hervik S. Einstein's general theory of relativity.pdf" "Global Positioning System_ Theory and Applications Volume  I.pdf" "Geometric_Geodes_part_1.pdf" "Geometric_Geodesy_part_2.pdf" "geokniga-seeber-g-satellite-geodesy-2003.pdf" "Geodesy The Concepts ( PDFDrive.com ).pdf" "EconomistPhilosophyBriefs.pdf" "databook.pdf" "Cryptography and Network Security Principles and Practice.pdf" "Crafting a Compiler with C.pdf" "Compilers_ Principles_Techniques_Tools.pdf" "Chess Openings for Black, Explained.pdf" "C.pdf" "Build_your_own_lisp.pdf" "Art Of Intel x86 Assembly.pdf" "advanced-problems-mathematics.pdf" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/CompQuantica/TP/resolução/" (24672 59189 0 0) "ex6/" "ex4/" "ex3/" "ex2/" "ex1/" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/AppWeb/" (24661 23342 0 0) "project_test/" "project/" "classes.org" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/TecComp/TP/" (24655 11972 0 0) "lexical_anal/" "Análise_Gramatical/" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/CompQuantica/TP/" (24646 5855 0 0) "resolução/" "qiskit_examples/" "ex_sheet/" "../" "./")
+
+ ("c:/Users/afons/.elfeed/" (24676 20805 0 0) "index" "data/" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/SecTec/" (24673 61748 0 0) "Securelog-BIBIFI/" "prototype_C/" "notes.org" "ltximg/" "img/" "encptest/" "classes.org" "Biblio/" "../" "./")
+
+ ("c:/Users/afons/MISC/lisp_programs/" (24659 56339 0 0) "sbcl-2.1.1/" "lisp.el" "hey.lisp" "common-lisp-cookbook.pdf" "../" "./")
+
+ ("c:/Users/afons/MISC/" (24673 6905 0 0) "wetransfer-673788/" "waiig_code_1.3/" "typescript/" "tutorial/" "The_Antichrist" "Simulators/" "simple_c/" "proof/" "pols_econs_sos/" "pi_mc.f90" "netgarage/" "lisp_programs/" "lisp/" "IMG_20190709_212126.jpg" "Haskel_learning/" "extra_ana/" "ecl/" "dwarf/" "crypto/" "comfy_reader/" "cicada/" "brainfcomp/" "Assembly/" "ascii_frice/" "aoe2/" "AL/" "../" "./")
+
+ ("c:/Users/afons/Desktop/" (24675 17068 0 0) "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/ProspDados/" (24663 33274 0 0) "TP/" "Project/" "classes.org" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/ProspDados/Project/" (24671 47647 0 0) "Tasks_0__1.ipynb" "store-clicks.h5" "store-clicks.dat" "store-buys.h5" "store-buys.dat" "products.h5" "products.csv" "PD_project1_v6_renata.ipynb" "PD_project1_v6.ipynb" "PD_project1_v5.ipynb" "PD_project1_v3.ipynb" "PD_202021_P1.html" "PD1_T3.ipynb" "PD1_Joana_v7_1.ipynb" "mydask.png" ".ipynb_checkpoints/" ".DS_Store" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/SecTec/Securelog-BIBIFI/" (24674 22164 0 0) "test" "README.org" "project.pdf" "makefile.bat" "Makefie" "logread.java" "logread.class" "logappend.java" "logappend.class" "log2" "log1" "LICENSE" "guest.java" "Guest.class" "Encryption.java" "Encryption.class" "EM_FALTA.txt" "employee.java" "Employee.class" "commands.bat" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/afons/Org/roam/" (24675 38630 0 0) "20210324125847-series.org" "20210323094426-literature.org" "20210323093253-books.org" "20210321175010-hikikomori.org" "20210318030932-ensaio_sobre_a_cegueira.org" "20210318010252-normal_people.org" "20210317100731-words.org" "../" "./")
+
+ ("c:/Users/afons/Org/" (24675 50269 0 0) "University.org_archive" "University.org" "series_reviews/" "roam/" "Personal.org_archive" "Personal.org" "MediaArchive.org" "Birthdays.org" "../" "./")
+
+ ("c:/Users/afons/" (24674 21805 0 0) "_viminfo" "yarn.lock" "VirtualBox VMs/" "vimfiles/" "Videos/" "SendTo/" "Searches/" "save_here_for_now" "Saved Games/" "Recent/" "quicklisp/" "py_home/" "PrintHood/" "Pictures/" "Os Meus Documentos/" "Org/" "ntuser.ini" "NTUSER.DAT{5089a8c2-8f74-11eb-ae28-c6ecd44537ad}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{5089a8c2-8f74-11eb-ae28-c6ecd44537ad}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{5089a8c2-8f74-11eb-ae28-c6ecd44537ad}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "node_modules/" "NetHood/" "Music/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "Links/" "IntelGraphicsProfiles/" "img/" "hunspell_default" "Google Drive/" "games/" "Favorites/" "Exercism/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "data/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" "3D Objects/" ".yarnrc" ".vscode/" ".viminfo" ".thumbnails/" ".ssh/" ".sqlite_history" ".slime-history.eld" ".slime/" ".sbclrc" ".saves/" ".rediscli_history" ".qiskit/" ".Protege/" ".node_repl_history" ".minttyrc" ".matplotlib/" ".m2/" ".local/" ".lein/" ".keras/" ".jupyter/" ".ipython/" ".history" ".gradle/" ".gitconfig" ".emacs.d/" ".elfeed/" ".deps.clj/" ".deno/" ".dbus-keyrings/" ".config/" ".cache/" ".bash_history" ".backups/" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/TecComp/" (24657 13891 0 0) "TP/" "compiler/" "classes.org" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/TecComp/compiler/" (24661 20517 0 0) "casualTest.py" "casualGrammar.lark" "Casual.org" ".git/" "../" "./")
 
  ("c:/Users/afons/aulas/2_Sem/CompQuantica/biblio/" (24646 4982 0 0) "slides/" "extra/" "../" "./")
 
  ("c:/Users/afons/aulas/2_Sem/CompQuantica/biblio/slides/" (24648 5881 0 0) "2021Aula4_notated.pdf" "2021Aula4.pdf" "2021Aula3_notated.pdf" "2021Aula3.pdf" "2021Aula2_notated.pdf" "2021Aula2.pdf" "2021Aula1_notated.pdf" "2021Aula1.pdf" "../" "./")
 
- ("c:/Users/afons/Desktop/" (24650 18095 0 0) "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" "db.pl" "../" "./")
-
- ("c:/Users/afons/.elfeed/" (24649 29774 0 0) "index" "data/" "../" "./")
-
- ("c:/Users/afons/MISC/" (24648 4207 0 0) "wetransfer-673788/" "waiig_code_1.3/" "tutorial/" "The_Antichrist" "Simulators/" "simple_c/" "proof/" "pols_econs_sos/" "pi_mc.f90" "netgarage/" "lisp_programs/" "lisp/" "IMG_20190709_212126.jpg" "Haskel_learning/" "extra_ana/" "ecl/" "dwarf/" "crypto/" "comfy_reader/" "brainfcomp/" "Assembly/" "ascii_frice/" "aoe2/" "AL/" "../" "./")
-
- ("c:/Users/afons/.emacs.d/" (24649 64419 0 0) "url/" "transient/" "thumbs/" "snippets/" "smex-items" "showcase.png" "server/" "request/" "README.md" "places" "lisp/" "jdee-server/" "init.el" "image-dired/" "ido.last" "idlwave/" "freest-mode/" "fonts/" "eshell/" "emacsclientw.exe.lnk" "elpy/" "elpa/" "elegant-emacs/" "el-get/" "data/" "config.org" "config.el" "bookmarks" "backup_just_in_case.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".org-id-locations" ".git/" ".cache/" "../" "./")
-
- ("c:/Users/afons/" (24650 12537 0 0) "_viminfo" "VirtualBox VMs/" "vimfiles/" "Videos/" "SendTo/" "Searches/" "save_here_for_now" "Saved Games/" "Recent/" "py_home/" "PrintHood/" "Pictures/" "Os Meus Documentos/" "Org/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "Links/" "IntelGraphicsProfiles/" "img/" "Google Drive/" "games/" "FileOptimizer.ini" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "data/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" "3D Objects/" ".VirtualBox/" ".thumbnails/" ".ssh/" ".slime-history.eld" ".slime/" ".saves/" ".qiskit/" ".Protege/" ".node_repl_history" ".matplotlib/" ".m2/" ".lein/" ".keras/" ".jupyter/" ".ipython/" ".history" ".gradle/" ".gitconfig" ".emacs.d/" ".elfeed/" ".deps.clj/" ".deno/" ".dbus-keyrings/" ".config/" ".cache/" ".bash_history" "../" "./")
-
  ("c:/Users/afons/aulas/2_Sem/CompQuantica/study/" (24650 17590 0 0) "qiskit.org" "notes.org" "notes.html" "ltximg/" "img/" "export/" "../" "./")
-
- ("c:/Users/afons/aulas/2_Sem/ProspDados/" (24649 64379 0 0) "Project/" "classes.org" "../" "./")
 
  ("c:/Users/afons/aulas/2_Sem/SecTec/Biblio/" (24645 4946 0 0) "presentation.org" "papers_resume/" "papers/" "Cryptography and Network Security Principles and Practice.pdf" "biblio/" "../" "./")
 
@@ -145,33 +173,17 @@
 
  ("c:/Users/afons/py_home/" (24642 30244 0 0) "SM/" "SemanticWeb/" "Quantum/" "Comp/" "AI/" "../" "./")
 
- ("c:/Users/afons/Books/" (24642 3645 0 0) "writing-an-interpreter-in-go.pdf" "Write_Yourself_a_Scheme_in_48_Hours.pdf" "WriteYouASchemeVersion2.pdf" "tsfmt.json" "The_C_Programming_Language.pdf" "The Rise and Fall of the The Soviet Economy_ An Economic History of the USSR from 1945.pdf" "The neoliberal mind - Madsen Pirie.pdf" "the economics book.pdf" "The Boglehead’s Guide To Investing.pdf" "The art of computer programming. Vol.2. Seminumerical algorithms.pdf" "The Art of Computer Programming, Vol. 1_ Fundamental Algorithms, 3rd Edition.pdf" "TComp.v05.pdf" "Relativity_ The Special and the General Theory.pdf" "relativity.pdf" "recursive.pdf" "personal/" "notes.org" "Neural Networks and Learning Machines by Simon O. Haykin (z-lib.org).pdf" "Neoliberalism_ The Genesis of a Political Swearword - Oliver Marc Hartwich.pdf" "Modern Compiler Implementation in C.pdf" "Modern Compiler Implementation in C ( PDFDrive.com ).pdf" "Modeling & Reasoning with Bayesian Networks.pdf" "Machine Learning A Probabilistic Perspective by Kevin P. Murphy (z-lib.org).pdf" "Kalman1960.pdf" "Introduction to Rocket Science and Engineering.pdf" "HR_SOL.pdf" "HR.pdf" "haskell-98-tutorial.pdf" "Groen O., Hervik S. Einstein's general theory of relativity.pdf" "Global Positioning System_ Theory and Applications Volume  I.pdf" "Geometric_Geodes_part_1.pdf" "Geometric_Geodesy_part_2.pdf" "geokniga-seeber-g-satellite-geodesy-2003.pdf" "Geodesy The Concepts ( PDFDrive.com ).pdf" "EconomistPhilosophyBriefs.pdf" "databook.pdf" "Cryptography and Network Security Principles and Practice.pdf" "Crafting a Compiler with C.pdf" "Compilers_ Principles_Techniques_Tools.pdf" "Chess Openings for Black, Explained.pdf" "C.pdf" "Build_your_own_lisp.pdf" "Art Of Intel x86 Assembly.pdf" "advanced-problems-mathematics.pdf" "../" "./")
-
- ("c:/Users/afons/aulas/2_Sem/TecComp/" (24642 31990 0 0) "TP/" "classes.org" "../" "./")
-
- ("c:/Users/afons/aulas/2_Sem/TecComp/TP/" (24642 33663 0 0) "regexc.txt" "NFA.png" "ltximg/" "LexicalAnalysis.org" "file_test" "DFA.png" "Assignment.tex" "Assignment.pdf" "Assignment.org" "Análise_Gramatical/" "3_test" "2_test" "1_test" "../" "./")
-
  ("c:/Users/afons/.emacs.d/lisp/" (24639 43185 0 0) "iscroll.el" "custom.el" "../" "./")
 
  ("c:/Users/afons/aulas/2_Sem/SecTec/Biblio/papers_resume/" (24643 19990 0 0) "ltximg/" "CCS20_Resume.org" "../" "./")
 
- ("c:/Users/afons/aulas/2_Sem/SecTec/Securelog-BIBIFI/" (24643 37237 0 0) "README.md" "project.pdf" "logread.java" "logappend.java" "LICENSE" ".gitignore" ".git/" "../" "./")
-
  ("c:/Users/afons/.emacs.d/jdee-server/" (24634 17907 0 0) "maven-status/" "maven-archiver/" "jdee-bundle-1.1-SNAPSHOT.jar.jar" "jdee-1.1-SNAPSHOT.jar" "generated-sources/" "classes/" "archive-tmp/" "../" "./")
-
- ("c:/Users/afons/aulas/2_Sem/CompQuantica/TP/resolução/" (24636 14809 0 0) "mission_impossible.tex" "mission_impossible.pdf" "mission_impossible.org" "mission_impossible.ipynb" "ltximg/" "exercicio_2.zip" "exercicio.zip" "ex1.tex" "ex1.pdf" "E-V_bomb-testing_2.png" ".ipynb_checkpoints/" "../" "./")
-
- ("c:/Users/afons/aulas/2_Sem/SecTec/" (24638 27942 0 0) "Securelog-BIBIFI/" "prototype_C/" "notes.org" "ltximg/" "img/" "classes.org" "Biblio/" "../" "./")
-
- ("c:/Users/afons/aulas/2_Sem/AppWeb/" (24631 30760 0 0) "project_test/" "project/" "hash.ts" "family.pl" "classes.org" "../" "./")
 
  ("c:/Users/afons/aulas/2_Sem/SecTec/project/" (24632 6277 0 0) "project.pdf" "../" "./")
 
  ("c:/Emacs/x86_64/" (24436 32739 0 0) "share/" "libexec/" "lib/" "include/" "etc/" "bin/" "../" "./")
 
  ("c:/Emacs/x86_64/bin/" (24630 18217 0 0) "zstd.exe" "zlib1.dll" "xzmore" "xzless" "xzgrep" "xzfgrep" "xzegrep" "xzdiff" "xzdec.exe" "xzcmp" "xzcat.exe" "xz.exe" "xmlwf.exe" "xmllint.exe" "xmlcatalog.exe" "xml2-config" "xgettext.exe" "x86_64-w64-mingw32-agrep.exe" "wrjpgcom.exe" "unxz.exe" "trust.exe" "trietool.exe" "trietool-0.2.exe" "transicc.exe" "tjbench.exe" "tificc.exe" "tiffsplit.exe" "tiffset.exe" "tiffmedian.exe" "tiffinfo.exe" "tiffdump.exe" "tiffdither.exe" "tiffcrop.exe" "tiffcp.exe" "tiffcmp.exe" "tiff2rgba.exe" "tiff2ps.exe" "tiff2pdf.exe" "tiff2bw.exe" "srptool.exe" "sexp-conv.exe" "runemacs.exe" "rsvg-convert.exe" "recode-sr-latin.exe" "rdjpgcom.exe" "raw2tiff.exe" "pzstd.exe" "psktool.exe" "psicc.exe" "ppm2tiff.exe" "pnm2png.exe" "pnm2png-static.exe" "pngfix.exe" "png2pnm.exe" "png2pnm-static.exe" "png-fix-itxt.exe" "pkcs1-conv.exe" "pcretest.exe" "pcregrep.exe" "pcre-config" "pango-view.exe" "pango-list.exe" "pal2rgb.exe" "p11tool.exe" "p11-kit.exe" "ocsptool.exe" "ngettext.exe" "nettle-pbkdf2.exe" "nettle-lfib-stream.exe" "nettle-hash.exe" "msguniq.exe" "msgunfmt.exe" "msgmerge.exe" "msginit.exe" "msggrep.exe" "msgfmt.exe" "msgfilter.exe" "msgexec.exe" "msgen.exe" "msgconv.exe" "msgcomm.exe" "msgcmp.exe" "msgcat.exe" "msgattrib.exe" "me32.exe" "lzmainfo.exe" "lzmadec.exe" "linkicc.exe" "libzstd.dll" "libXpm-noX4.dll" "libxml2-2.dll" "libwinpthread-1.dll" "libunistring-2.dll" "libturbojpeg.dll" "libtre-5.dll" "libtiffxx-5.dll" "libtiff-5.dll" "libthai-0.dll" "libtasn1-6.dll" "libsystre-0.dll" "libstdc++-6.dll" "libssp-0.dll" "librsvg-2-2.dll" "libquadmath-0.dll" "libpng16-config" "libpng16-16.dll" "libpng-config" "libpixman-1-0.dll" "libpcreposix-0.dll" "libpcrecpp-0.dll" "libpcre32-0.dll" "libpcre16-0.dll" "libpcre-1.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libnettle-7.dll" "liblzo2-2.dll" "liblzma-5.dll" "liblcms2-2.dll" "libjpeg-8.dll" "libjasper-4.dll" "libjansson-4.dll" "libintl-8.dll" "libidn2-0.dll" "libiconv-2.dll" "libhogweed-5.dll" "libharfbuzz-subset-0.dll" "libharfbuzz-icu-0.dll" "libharfbuzz-gobject-0.dll" "libharfbuzz-0.dll" "libgthread-2.0-0.dll" "libgraphite2.dll" "libgomp-1.dll" "libgobject-2.0-0.dll" "libgnutlsxx-28.dll" "libgnutls-30.dll" "libgmpxx-4.dll" "libgmp-10.dll" "libgmodule-2.0-0.dll" "libglib-2.0-0.dll" "libgio-2.0-0.dll" "libgif-7.dll" "libgettextsrc-0-19-8-1.dll" "libgettextpo-0.dll" "libgettextlib-0-19-8-1.dll" "libgdk_pixbuf-2.0-0.dll" "libgcc_s_seh-1.dll" "libfribidi-0.dll" "libfreetype-6.dll" "libfreeglut.dll" "libfontconfig-1.dll" "libffi-6.dll" "libexpat-1.dll" "libdatrie-1.dll" "libcroco-0.6-3.dll" "libcharset-1.dll" "libcairo-script-interpreter-2.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "libatomic-1.dll" "libasprintf-0.dll" "jpgicc.exe" "jpegtran.exe" "jasper.exe" "imginfo.exe" "imgcmp.exe" "idn2.exe" "hb-view.exe" "hb-subset.exe" "hb-shape.exe" "hb-ot-shape-closure.exe" "gtester-report.exe" "gtester-report-script.py" "gspawn-win64-helper.exe" "gspawn-win64-helper-console.exe" "gsettings.exe" "gresource.exe" "gr2fonttest.exe" "gobject-query.exe" "gnutls-serv.exe" "gnutls-cli.exe" "gnutls-cli-debug.exe" "glib-mkenums.exe" "glib-mkenums-script.py" "glib-gettextize" "glib-genmarshal.exe" "glib-genmarshal-script.py" "glib-compile-schemas.exe" "glib-compile-resources.exe" "gio.exe" "gio-querymodules.exe" "giftool.exe" "giftext.exe" "giffix.exe" "gifclrmp.exe" "gifbuild.exe" "gif2rgb.exe" "gettextize" "gettext.sh" "gettext.exe" "gdk-pixbuf-thumbnailer.exe" "gdk-pixbuf-query-loaders.exe" "gdk-pixbuf-pixdata.exe" "gdk-pixbuf-csource.exe" "gdbus.exe" "gdbus-codegen.exe" "gdbus-codegen-script.py" "fribidi.exe" "freetype-config" "fc-validate.exe" "fc-scan.exe" "fc-query.exe" "fc-pattern.exe" "fc-match.exe" "fc-list.exe" "fc-conflist.exe" "fc-cat.exe" "fc-cache.exe" "fax2tiff.exe" "fax2ps.exe" "etags.exe" "envsubst.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-27.1.exe" "edit_test_dll.exe" "edit_test.exe" "edit.dll" "ebrowse.exe" "djpeg.exe" "cxpm-noX.exe" "ctags.exe" "csslint-0.6.exe" "croco-0.6-config" "cjpeg.exe" "certtool.exe" "bzmore" "bzless" "bzip2recover.exe" "bzip2.exe" "bzgrep" "bzfgrep" "bzegrep" "bzdiff" "bzcmp" "bzcat.exe" "bunzip2.exe" "autopoint" "asn1Parser.exe" "asn1Decoding.exe" "asn1Coding.exe" "addpm.exe" "../" "./")
-
- ("c:/Users/afons/MISC/lisp_programs/" (24630 12946 0 0) "sbcl-2.1.1/" "lisp.el" "hey.lisp" "common-lisp-cookbook.pdf" "../" "./")
 
  ("c:/Users/afons/Desktop/web_server/" (24623 50096 0 0) "index.ts" "../" "./")
 
@@ -190,8 +202,6 @@
  ("c:/Users/afons/MISC/Haskel_learning/" (24610 47099 0 0) "haskel_intro.hs" "../" "./")
 
  ("c:/Users/afons/MISC/lisp/prompt/" (24610 47068 0 0) "w_prompt.c" "prompt" "l_prompt.c" "../" "./")
-
- ("c:/Users/afons/MISC/AL/NN-Games/" (24610 47040 0 0) "__pycache__/" "Trained_NN/" "README.org" "NN/" "main.py" "GamesG/" "Games/" ".gitignore" ".git/" "../" "./")
 
  ("c:/Users/afons/aulas/2_Sem/AppWeb/project/trader/src/" (24610 45801 0 0) "test.ts" "styles.css" "polyfills.ts" "main.ts" "index.html" "favicon.ico" "environments/" "assets/" "app/" "../" "./")
 
@@ -308,14 +318,6 @@
  ("c:/Users/afons/aulas/FW/Biblio/Books/" (24533 24651 0 0) "Semantic Web for the Working Ontologist, Second Edition.pdf" "Learning SPARQL, 2nd Edition_ Querying and Updating with SPARQL 1.1.pdf" "examples/" "A Semantic Web Primer-The MIT Press.PDF" "../" "./")
 
  ("c:/Users/afons/aulas/AI/abstracts/abstract_11/" (24534 20588 0 0) "environments_and_sim.tex" "environments_and_sim.pdf" "environments_and_sim.log" "environments_and_sim.aux" "../" "./")
-
- ("c:/Users/afons/MISC/genetic/" (24530 27616 0 0) "genetics.py" "../" "./")
-
- ("c:/Users/afons/Desktop/stippling/data/" (24532 54783 0 0) "out.png" "gray.py" "face.jpg" "ana4.jpg" "ana3.jpg" "ana2.jpg" "ana.jpg" "../" "./")
-
- ("c:/Users/afons/Desktop/stippling/" (24532 52621 0 0) "stippling.pde" "README.md" "particle_system.pde" "particle_cell.pde" "particle.pde" "example.gif" "data/" "300.png" "299.png" "298.png" "297.png" "296.png" "295.png" "294.png" "293.png" "292.png" "291.png" "290.png" "289.png" "288.png" "287.png" "286.png" "285.png" "284.png" "283.png" "282.png" "281.png" "280.png" "279.png" "278.png" "277.png" "276.png" "275.png" "274.png" "273.png" "272.png" "271.png" "270.png" "269.png" "268.png" "267.png" "266.png" "265.png" "264.png" "263.png" "262.png" "261.png" "260.png" "259.png" "258.png" "257.png" "256.png" "255.png" "254.png" "253.png" "252.png" "251.png" "250.png" "249.png" "248.png" "247.png" "246.png" "245.png" "244.png" "243.png" "242.png" "241.png" "240.png" "239.png" "238.png" "237.png" "236.png" "235.png" "234.png" "233.png" "232.png" "231.png" "230.png" "229.png" "228.png" "227.png" "226.png" "225.png" "224.png" "223.png" "222.png" "221.png" "220.png" "219.png" "218.png" "217.png" "216.png" "215.png" "214.png" "213.png" "212.png" "211.png" "210.png" "209.png" "208.png" "207.png" "206.png" "205.png" "204.png" "203.png" "202.png" "201.png" "200.png" "199.png" "198.png" "197.png" "196.png" "195.png" "194.png" "193.png" "192.png" "191.png" "190.png" "189.png" "188.png" "187.png" "186.png" "185.png" "184.png" "183.png" "182.png" "181.png" "180.png" "179.png" "178.png" "177.png" "176.png" "175.png" "174.png" "173.png" "172.png" "171.png" "170.png" "169.png" "168.png" "167.png" "166.png" "165.png" "164.png" "163.png" "162.png" "161.png" "160.png" "159.png" "158.png" "157.png" "156.png" "155.png" "154.png" "153.png" "152.png" "151.png" "150.png" "149.png" "148.png" "147.png" "146.png" "145.png" "144.png" "143.png" "142.png" "141.png" "140.png" "139.png" "138.png" "137.png" "136.png" "135.png" "134.png" "133.png" "132.png" "131.png" "130.png" "129.png" "128.png" "127.png" "126.png" "125.png" "124.png" "123.png" "122.png" "121.png" "120.png" "119.png" "118.png" "117.png" "116.png" "115.png" "114.png" "113.png" "112.png" "111.png" "110.png" "109.png" "108.png" "107.png" "106.png" "105.png" "104.png" "103.png" "102.png" "101.png" "100.png" "099.png" "098.png" "097.png" "096.png" "095.png" "094.png" "093.png" "092.png" "091.png" "090.png" "089.png" "088.png" "087.png" "086.png" "085.png" "084.png" "083.png" "082.png" "081.png" "080.png" "079.png" "078.png" "077.png" "076.png" "075.png" "074.png" "073.png" "072.png" "071.png" "070.png" "069.png" "068.png" "067.png" "066.png" "065.png" "064.png" "063.png" "062.png" "061.png" "060.png" "059.png" "058.png" "057.png" "056.png" "055.png" "054.png" "053.png" "052.png" "051.png" "050.png" "049.png" "048.png" "047.png" "046.png" "045.png" "044.png" "043.png" "042.png" "041.png" "040.png" "039.png" "038.png" "037.png" "036.png" "035.png" "034.png" "033.png" "032.png" "031.png" "030.png" "029.png" "028.png" "027.png" "026.png" "025.png" "024.png" "023.png" "022.png" "021.png" "020.png" "019.png" "018.png" "017.png" "016.png" "015.png" "014.png" "013.png" "012.png" "011.png" "010.png" "009.png" "008.png" "007.png" "006.png" "005.png" "004.png" "003.png" "002.png" "001.png" "000.png" ".git/" "../" "./")
-
- ("c:/Users/afons/aulas/CS/Biblio/" (24524 6388 0 0) "tos13-depsky.pdf" "Slides/" "Books/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
