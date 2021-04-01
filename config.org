@@ -344,6 +344,16 @@
 		  ))))
       #+end_src
 
+**** Org-Roam
+     
+     Org Roam is the best way to contain notes, journals,
+     diaries, and generally speaking have a big personal 
+     database of knowledge.
+
+     #+begin_src emacs-lisp
+     
+     #+end_src
+
 *** Dired
     
     Using Dired+ instead of regular dired, with the addition 

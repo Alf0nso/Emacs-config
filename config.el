@@ -172,6 +172,8 @@
 	  (tags "+Level=3+Anime")
 	  ))))
 
+
+
 (require 'dired+)
 (use-package treemacs-icons-dired
   :after treemacs dired
@@ -262,8 +264,17 @@
 
 (defun start-wt ()
   (interactive)
-  (let ((proc (start-process "windows terminal" nil "wt.exe" "-f" "-d" ".")))
-    (set-process-query-on-exit-flag proc nill)))
+  (let ((proc (start-process "windows terminal" nil "wt.exe" "-f" "-d" ".")))))
+
+(global-set-key [f5] 'start-wt)
+
+(defun Explorer ()
+  (interactive)
+  (let ((proc (start-process "Windows Explorer" nil "explorer.exe" ".")))))
+
+(defun VScode ()
+  (interactive)
+  (let ((proc (start-process "VS Code" nil "code" (buffer-file-name))))))
 
 (add-hook 'java-mode-hook 'gradle-mode)
 

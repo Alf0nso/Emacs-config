@@ -1,5 +1,3 @@
-ls
-prompt.exe
 clear
 cc -std=c99 -Wall w_prompt.c -o prompt
 clear
@@ -126,3 +124,5 @@ Makefile build
 make build
 clear
 ls
+run.sh 
+./run.sh
