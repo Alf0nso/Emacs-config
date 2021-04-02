@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ linum-mode
+ writeroom-mode
+ pyvenv-workon
  package-install
  diff-buffers
  org-mode
- writeroom-mode
  prettify-symbols-mode
- treemacs-icons-dired-mode
- load-file
 )
 
 ;; ----- smex-data -----
@@ -15,7 +15,7 @@
  (eshell . 433)
  (package-install . 51)
  (list-packages . 8)
- (pyvenv-workon . 119)
+ (pyvenv-workon . 120)
  (pyvenv-menu . 2)
  (pyvenv-create . 19)
  (load-file . 142)
@@ -86,7 +86,7 @@
  (package-autoremove . 2)
  (compile . 581)
  (doctor . 1)
- (linum-mode . 29)
+ (linum-mode . 30)
  (dired-omit-mode . 3)
  (dired-hide-details-mode . 2)
  (speedbar . 1)
@@ -209,7 +209,7 @@
  (scad-mode . 3)
  (scad-preview--image-mode . 20)
  (olivetti-mode . 28)
- (writeroom-mode . 41)
+ (writeroom-mode . 42)
  (writeroom-adjust-width . 2)
  (writeroom-toggle-mode-line . 6)
  (mastodon . 3)

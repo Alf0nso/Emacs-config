@@ -6,7 +6,7 @@
  ("c:/Users/afons/aulas/2_Sem/ProspDados/" . "Project/")
  ("c:/Users/afons/aulas/2_Sem/SecTec/Biblio/" . "papers_resume/")
  ("c:/Users/afons/aulas/2_Sem/SecTec/" . "Securelog-BIBIFI/")
- ("c:/Users/afons/aulas/2_Sem/" . "TecComp/")
+ ("c:/Users/afons/aulas/2_Sem/" . "SecTec/")
  ("c:/Users/afons/.emacs.d/elpa/irony-20201018.1707/server/" . "build/")
  ("c:/Users/afons/.emacs.d/elpa/irony-20201018.1707/" . "server/")
  ("c:/Users/afons/.emacs.d/elpa/" . "irony-20201018.1707/")
@@ -51,12 +51,15 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "c:/Users/afons/aulas/2_Sem/SecTec/Securelog-BIBIFI/"
  "c:/Users/afons/.emacs.d/"
+ "c:/Users/afons/aulas/2_Sem/SecTec/"
+ "c:/Users/afons/Org/"
+ "c:/Users/afons/aulas/2_Sem/TecComp/compiler/"
+ "c:/Users/afons/Books/"
+ "c:/Users/afons/aulas/2_Sem/TecComp/"
+ "c:/Users/afons/aulas/2_Sem/SecTec/Securelog-BIBIFI/"
  "c:/Users/afons/"
  "c:/Users/afons/aulas/"
- "c:/Users/afons/aulas/2_Sem/TecComp/"
- "c:/Users/afons/Org/"
  "c:/Users/afons/aulas/2_Sem/ProspDados/Project/"
  "c:/Users/afons/aulas/2_Sem/ProspDados/"
  "c:/Users/afons/Desktop/"
@@ -64,7 +67,6 @@
  "c:/Users/afons/MISC/"
  "c:/Users/afons/MISC/lisp_programs/"
  "/localhost:"
- "c:/Users/afons/aulas/2_Sem/SecTec/"
  "c:/Users/afons/aulas/2_Sem/SecTec/Biblio/"
  "c:/Users/afons/.emacs.d/jdee-server/"
  "c:/Users/afons/.elfeed/"
@@ -79,7 +81,6 @@
  "c:/Users/afons/img/"
  "c:/hunspell/"
  "c:/Users/afons/aulas/2_Sem/CompQuantica/TP/resolução/"
- "c:/Users/afons/Books/"
  "c:/Users/afons/MISC/crypto/"
  "c:/Users/afons/MISC/lisp/"
  "c:/Users/afons/MISC/crypto/chal1/"
@@ -100,26 +101,35 @@
  "c:/Users/afons/aulas/AI/project/"
  "c:/Users/afons/aulas/AI/"
  "c:/Users/afons/py_home/"
- "c:/Users/afons/MISC/pols_econs_sos/graphs/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- ".gitignore"
  "config.org"
- "hey.lisp"
- "test.hs"
- "5050"
- "University.org"
- "db.pl"
  "notes.org"
- "test.go"
- "presentation.org"
+ "run.sh"
+ "The art of computer programming. Vol.2. Seminumerical algorithms.pdf"
+ "setup.sh"
+ "CasualProgram_2.csl"
+ "CasualProgram_1.csl"
+ "CGDebug.lark"
+ ".gitignore"
+ "hey.lisp"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/afons/.emacs.d/" (24676 23200 0 0) "url/" "transient/" "thumbs/" "snippets/" "smex-items" "showcase.png" "server/" "request/" "recentf" "README.md" "places" "org-roam.db" "lisp/" "jdee-server/" "init.el" "image-dired/" "ido.last" "idlwave/" "freest-mode/" "fonts/" "eshell/" "emacsclientw.exe.lnk" "elpy/" "elpa/" "elegant-emacs/" "el-get/" "data/" "config.org" "config.el" "bookmarks" "backup_just_in_case.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".org-id-locations" ".git/" ".cache/" "../" "./")
+ ("c:/Users/afons/.emacs.d/" (24678 36057 0 0) "url/" "transient/" "thumbs/" "snippets/" "smex-items" "showcase.png" "server/" "request/" "recentf" "README.md" "places" "org-roam.db" "lisp/" "jdee-server/" "init.el" "image-dired/" "ido.last" "idlwave/" "freest-mode/" "fonts/" "eshell/" "emacsclientw.exe.lnk" "elpy/" "elpa/" "elegant-emacs/" "el-get/" "data/" "config.org" "config.el" "bookmarks" "backup_just_in_case.el" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".org-id-locations" ".git/" ".cache/" "../" "./")
+
+ ("c:/Users/afons/Org/" (24678 35055 0 0) "University.org_archive" "University.org" "series_reviews/" "roam/" "Personal.org_archive" "Personal.org" "MediaArchive.org" "Birthdays.org" "../" "./")
+
+ ("c:/Users/afons/Desktop/" (24677 59827 0 0) "Plano de trabalhos.pdf" "FP_Ficha de dados pessoais_Bolseiros.pdf" "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" "Declaração exclusividade_Bolseira AS.pdf" "Contrato Bolsa_Projeto.pdf" "../" "./")
+
+ ("c:/Users/afons/aulas/2_Sem/TecComp/compiler/" (24678 17812 0 0) "setup.sh" "README.org" "CasualProgram_2.csl" "CasualProgram_1.csl" "casualGrammar.lark" "casualCompiler.py" ".git/" "../" "./")
+
+ ("c:/Users/afons/.elfeed/" (24676 23639 0 0) "index" "data/" "../" "./")
+
+ ("c:/Users/afons/" (24676 59522 0 0) "_viminfo" "yarn.lock" "VirtualBox VMs/" "vimfiles/" "Videos/" "SendTo/" "Searches/" "save_here_for_now" "Saved Games/" "Recent/" "quicklisp/" "py_home/" "PrintHood/" "Pictures/" "Os Meus Documentos/" "Org/" "ntuser.ini" "NTUSER.DAT{5089a8c2-8f74-11eb-ae28-c6ecd44537ad}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{5089a8c2-8f74-11eb-ae28-c6ecd44537ad}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{5089a8c2-8f74-11eb-ae28-c6ecd44537ad}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "node_modules/" "NetHood/" "Music/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "Links/" "IntelGraphicsProfiles/" "img/" "hunspell_default" "Google Drive/" "games/" "Favorites/" "Exercism/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "data/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" "3D Objects/" ".yarnrc" ".vscode/" ".viminfo" ".thumbnails/" ".ssh/" ".sqlite_history" ".slime-history.eld" ".slime/" ".sbclrc" ".saves/" ".rediscli_history" ".qiskit/" ".Protege/" ".node_repl_history" ".minttyrc" ".matplotlib/" ".m2/" ".local/" ".lein/" ".keras/" ".jupyter/" ".ipython/" ".history" ".gradle/" ".gitconfig" ".emacs.d/" ".elfeed/" ".deps.clj/" ".deno/" ".dbus-keyrings/" ".config/" ".cache/" ".bash_history" ".backups/" "../" "./")
 
  ("c:/Users/afons/MISC/AL/NN-Games/" (24646 52470 0 0) "__pycache__/" "Trained_NN/" "README.org" "NN/" "main.py" "GamesG/" "Games/" ".gitignore" ".git/" "../" "./")
 
@@ -133,15 +143,11 @@
 
  ("c:/Users/afons/aulas/2_Sem/CompQuantica/TP/" (24646 5855 0 0) "resolução/" "qiskit_examples/" "ex_sheet/" "../" "./")
 
- ("c:/Users/afons/.elfeed/" (24676 20805 0 0) "index" "data/" "../" "./")
-
  ("c:/Users/afons/aulas/2_Sem/SecTec/" (24673 61748 0 0) "Securelog-BIBIFI/" "prototype_C/" "notes.org" "ltximg/" "img/" "encptest/" "classes.org" "Biblio/" "../" "./")
 
  ("c:/Users/afons/MISC/lisp_programs/" (24659 56339 0 0) "sbcl-2.1.1/" "lisp.el" "hey.lisp" "common-lisp-cookbook.pdf" "../" "./")
 
  ("c:/Users/afons/MISC/" (24673 6905 0 0) "wetransfer-673788/" "waiig_code_1.3/" "typescript/" "tutorial/" "The_Antichrist" "Simulators/" "simple_c/" "proof/" "pols_econs_sos/" "pi_mc.f90" "netgarage/" "lisp_programs/" "lisp/" "IMG_20190709_212126.jpg" "Haskel_learning/" "extra_ana/" "ecl/" "dwarf/" "crypto/" "comfy_reader/" "cicada/" "brainfcomp/" "Assembly/" "ascii_frice/" "aoe2/" "AL/" "../" "./")
-
- ("c:/Users/afons/Desktop/" (24675 17068 0 0) "Drawing1.dwl2" "Drawing1.dwl" "desktop.ini" "../" "./")
 
  ("c:/Users/afons/aulas/2_Sem/ProspDados/" (24663 33274 0 0) "TP/" "Project/" "classes.org" "../" "./")
 
@@ -151,13 +157,7 @@
 
  ("c:/Users/afons/Org/roam/" (24675 38630 0 0) "20210324125847-series.org" "20210323094426-literature.org" "20210323093253-books.org" "20210321175010-hikikomori.org" "20210318030932-ensaio_sobre_a_cegueira.org" "20210318010252-normal_people.org" "20210317100731-words.org" "../" "./")
 
- ("c:/Users/afons/Org/" (24675 50269 0 0) "University.org_archive" "University.org" "series_reviews/" "roam/" "Personal.org_archive" "Personal.org" "MediaArchive.org" "Birthdays.org" "../" "./")
-
- ("c:/Users/afons/" (24674 21805 0 0) "_viminfo" "yarn.lock" "VirtualBox VMs/" "vimfiles/" "Videos/" "SendTo/" "Searches/" "save_here_for_now" "Saved Games/" "Recent/" "quicklisp/" "py_home/" "PrintHood/" "Pictures/" "Os Meus Documentos/" "Org/" "ntuser.ini" "NTUSER.DAT{5089a8c2-8f74-11eb-ae28-c6ecd44537ad}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{5089a8c2-8f74-11eb-ae28-c6ecd44537ad}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{5089a8c2-8f74-11eb-ae28-c6ecd44537ad}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "node_modules/" "NetHood/" "Music/" "Modelos/" "MISC/" "MicrosoftEdgeBackups/" "Menu Iniciar/" "Links/" "IntelGraphicsProfiles/" "img/" "hunspell_default" "Google Drive/" "games/" "Favorites/" "Exercism/" "Downloads/" "Documents/" "Desktop/" "Definições Locais/" "data/" "Cookies/" "Contacts/" "Books/" "aulas/" "Application Data/" "AppData/" "ansel/" "3D Objects/" ".yarnrc" ".vscode/" ".viminfo" ".thumbnails/" ".ssh/" ".sqlite_history" ".slime-history.eld" ".slime/" ".sbclrc" ".saves/" ".rediscli_history" ".qiskit/" ".Protege/" ".node_repl_history" ".minttyrc" ".matplotlib/" ".m2/" ".local/" ".lein/" ".keras/" ".jupyter/" ".ipython/" ".history" ".gradle/" ".gitconfig" ".emacs.d/" ".elfeed/" ".deps.clj/" ".deno/" ".dbus-keyrings/" ".config/" ".cache/" ".bash_history" ".backups/" "../" "./")
-
  ("c:/Users/afons/aulas/2_Sem/TecComp/" (24657 13891 0 0) "TP/" "compiler/" "classes.org" "../" "./")
-
- ("c:/Users/afons/aulas/2_Sem/TecComp/compiler/" (24661 20517 0 0) "casualTest.py" "casualGrammar.lark" "Casual.org" ".git/" "../" "./")
 
  ("c:/Users/afons/aulas/2_Sem/CompQuantica/biblio/" (24646 4982 0 0) "slides/" "extra/" "../" "./")
 
