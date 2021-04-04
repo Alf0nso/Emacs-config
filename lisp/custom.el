@@ -16,10 +16,3 @@
   (setq input (s-split " " txt))
   (print input))
 
-;;(org_babel_print
-;; "hey hey hey, this a test to
-;;  see if works" 3)
-
-;;Turns off emacs
-(defun EmacsOff ()
-  (let ((last-nonmenu-event nil))(save-buffers-kill-emacs)))

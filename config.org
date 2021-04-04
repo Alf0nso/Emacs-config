@@ -361,13 +361,16 @@
 		 ("C-c n f" . org-roam-find-file)
 		 ("C-c n g" . org-roam-graph)
 		 ("C-c n b" . org-roam-switch-to-buffer)
-		 ("C-c n r" . org-roam-find-ref)
-		 ("C-c n d" . org-roam-find-directory))
+		 ("C-c n r" . org-roam-find-ref))
 		:map org-mode-map
 		(("C-c n i" . org-roam-insert))))
 
        (setq org-roam-completion-system 'ivy)
+       (setq org-roam-db-update-method 'immediate)
      #+end_src
+
+     #+RESULTS:
+     : immediate
 
 **** Org Roam Server
      
@@ -401,6 +404,24 @@
 
        (global-set-key (kbd "C-c n G") 'Graph)
      #+end_src
+
+*** Deft
+
+    I have intentions on using deft with org roam instead
+    of just searching the directory with dired, mainly because
+    deft looks easier to use.
+
+    #+begin_src emacs-lisp
+      (use-package deft
+	:after org
+	:bind
+	("C-c n d" . deft)
+	:custom
+	(deft-recursive t)
+	(deft-use-filter-string-for-filename t)
+	(deft-default-extension "org")
+	(deft-directory "~/Org/roam"))
+    #+end_src
 
 *** Dired
     

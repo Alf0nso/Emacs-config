@@ -182,12 +182,45 @@
 	  ("C-c n f" . org-roam-find-file)
 	  ("C-c n g" . org-roam-graph)
 	  ("C-c n b" . org-roam-switch-to-buffer)
-	  ("C-c n r" . org-roam-find-ref)
-	  ("C-c n d" . org-roam-find-directory))
+	  ("C-c n r" . org-roam-find-ref))
 	 :map org-mode-map
 	 (("C-c n i" . org-roam-insert))))
 
 (setq org-roam-completion-system 'ivy)
+(setq org-roam-db-update-method 'immediate)
+
+(use-package org-roam-server
+  :ensure t
+  :config
+  (setq org-roam-server-host "127.0.0.1"
+	org-roam-server-port 8080
+	org-roam-server-authenticate nil
+	org-roam-server-export-inline-images t
+	org-roam-server-serve-files nil
+	org-roam-server-served-file-extensions '("pdf" "mp4" "ogv")
+	org-roam-server-network-poll t
+	org-roam-server-network-arrows nil
+	org-roam-server-network-label-truncate t
+	org-roam-server-network-label-truncate-length 60
+	org-roam-server-network-label-wrap-length 20))
+
+(defun Graph ()
+  (interactive)
+  (if (bound-and-true-p org-roam-server-mode)
+      (browse-url "http://127.0.0.1:8080")
+    (org-roam-server-mode) (browse-url "http://127.0.0.1:8080")))
+
+(global-set-key (kbd "C-c n G") 'Graph)
+
+(use-package deft
+  :after org
+  :bind
+  ("C-c n d" . deft)
+  :custom
+  (deft-recursive t)
+  (deft-use-filter-string-for-filename t)
+  (deft-default-extension "org")
+  (deft-directory "~/Org/roam"))
 
 (require 'dired+)
 (use-package treemacs-icons-dired

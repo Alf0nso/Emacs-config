@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- linum-mode
+ load-file
+ yas-new-snippet
+ yas/describe-tables
  writeroom-mode
+ deft
+ linum-mode
  pyvenv-workon
- package-install
- diff-buffers
- org-mode
- prettify-symbols-mode
 )
 
 ;; ----- smex-data -----
@@ -18,7 +18,7 @@
  (pyvenv-workon . 120)
  (pyvenv-menu . 2)
  (pyvenv-create . 19)
- (load-file . 142)
+ (load-file . 143)
  (pyvenv-activate . 8)
  (pyvenv-deactivate . 10)
  (pyvenv-mode . 26)
@@ -209,7 +209,7 @@
  (scad-mode . 3)
  (scad-preview--image-mode . 20)
  (olivetti-mode . 28)
- (writeroom-mode . 42)
+ (writeroom-mode . 44)
  (writeroom-adjust-width . 2)
  (writeroom-toggle-mode-line . 6)
  (mastodon . 3)
@@ -256,10 +256,10 @@
  (inferior-lisp . 2)
  (slime-mode . 5)
  (slime-quit-lisp . 2)
- (yas/describe-tables . 3)
+ (yas/describe-tables . 5)
  (yas-describe-tables . 1)
  (yas-insert-snippet . 1)
- (yas-new-snippet . 1)
+ (yas-new-snippet . 3)
  (vscode . 11)
  (org-roam-mode . 2)
  (explorer . 3)
@@ -268,4 +268,5 @@
  (org-roam . 2)
  (vc-mode-line . 1)
  (diff-buffers . 3)
+ (deft . 1)
 )
