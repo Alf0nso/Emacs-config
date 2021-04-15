@@ -41,6 +41,9 @@
  '(org-agenda-files
    '("~/.emacs.d/config.org" "~/Org/todo.org" "~/Org/Tasks.org" "~/Org/Birthdays.org"))
  '(org-fontify-quote-and-verse-blocks t)
+ '(org-format-latex-options
+   '(:foreground default :background default :scale 1.5 :html-foreground "Black" :html-background "Transparent" :html-scale 1.0 :matchers
+		 ("begin" "$1" "$" "$$" "\\(" "\\[")))
  '(package-selected-packages
    '(ivy deft org-roam-server forth-mode fira-code-mode pretty-mode ob-prolog connection calfw-org calfw org-roam go-autocomplete common-lisp-snippets go-mode ox-hugo ein jdee lsp-java java-snippets yasnippet-classic-snippets elfeed slime ediprolog paredit cider clojure-mode transmission tide js2-mode nodejs-repl auto-complete-c-headers aggressive-indent yasnippet-snippets proof-general writeroom-mode olivetti scad-mode scad-preview chess elpy processing-mode s-buffer let-alist graphviz-dot-mode live-py-mode exwm ytdl haskell-mode treemacs-icons-dired dired-subtree dired+ sparql-mode pdf-tools auto-complete auctex use-package smex pyvenv org-bullets gradle-mode which-key helm gnu-elpa-keyring-update))
  '(writeroom-added-width-left 5)

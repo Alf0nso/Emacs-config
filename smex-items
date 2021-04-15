@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ next-line
+ remember
+ pyvenv-workon
  load-file
  yas-new-snippet
  yas/describe-tables
  writeroom-mode
- deft
- linum-mode
- pyvenv-workon
 )
 
 ;; ----- smex-data -----
@@ -15,7 +15,7 @@
  (eshell . 433)
  (package-install . 51)
  (list-packages . 8)
- (pyvenv-workon . 120)
+ (pyvenv-workon . 121)
  (pyvenv-menu . 2)
  (pyvenv-create . 19)
  (load-file . 143)
@@ -269,4 +269,6 @@
  (vc-mode-line . 1)
  (diff-buffers . 3)
  (deft . 1)
+ (remember . 1)
+ (next-line . 1)
 )

@@ -89,7 +89,7 @@
   (setq org-todo-keywords 
   '((sequence "☛ TODO(t)" "➤ NEXT(n)" "|" "✔ DONE(d)")
   (sequence "∞ WAITING(w)" "|"  "✘ CANCELED(c)")
-  (sequence "∞ READING(r)" "∞ VIEWING(v)" "|"  "◤ FINISHED(f)")))
+  (sequence "∞ READING(r)" "∞ VIEWING(v)" "░ WATCHLIST(l)" "|"  "◤ FINISHED(f)")))
   :config (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
 (org-babel-do-load-languages
@@ -126,7 +126,7 @@
 		      (:startgroup . nil)
 		      ("Books" . ?B) ("Films" . ?F)
 		      ("Series" . ?S) ("Anime" . ?A)
-		      ("Music" . ?m)
+		      ("Music" . ?M)
 		      (:endgroup . nil)
 		      ))
 
@@ -170,6 +170,7 @@
 	  (tags "+Level=3+Books")
 	  (tags "+Level=3+Series")
 	  (tags "+Level=3+Anime")
+	  (tags "+Level=3+Films")
 	  ))))
 
 (use-package org-roam

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: function description
+# key: fco
+# --
+"""
+ $1
+"""
